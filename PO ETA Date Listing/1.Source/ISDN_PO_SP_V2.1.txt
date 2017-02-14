@@ -1,0 +1,278 @@
+--4.
+--call "AE_SP001_ETADateListing_Testing"('538','');
+--5.
+--call "AE_SP001_ETADateListing_Testing"('539','');
+--6.
+--call "AE_SP001_ETADateListing_Testing"('528','');
+--7.
+--call "AE_SP001_ETADateListing_Testing"('529','');
+--8.
+--call "AE_SP001_ETADateListing_Testing"('531','');
+--9.
+--call "AE_SP001_ETADateListing_Testing"('533','');
+--10.
+--call "AE_SP001_ETADateListing_Testing"('534','');
+--11.
+--call "AE_SP001_ETADateListing_Testing"('535','');
+--12.
+--call "AE_SP001_ETADateListing_Testing"('517','');
+--13.
+--call "AE_SP001_ETADateListing_Testing"('536','');
+--call "AE_SP001_ETADateListing_Testing"('537','');
+--14.
+--call "AE_SP001_ETADateListing_Testing"('540','');
+--call "AE_SP001_ETADateListing_Testing"('541','');
+--15.
+--call "AE_SP001_ETADateListing_Testing"('542','');
+--call "AE_SP001_ETADateListing_Testing"('543','');
+
+drop procedure "AE_SP001_ETADateListing_Testing";
+
+CREATE PROCEDURE "AE_SP001_ETADateListing_Testing"
+(IN PONO VARCHAR(20) , IN PRDNO VARCHAR(20))
+
+AS
+LPONO INT;
+LPRDNO INT;
+
+BEGIN
+
+IF PONO = '' THEN
+LPONO := 0;
+ELSE
+LPONO := TO_INTEGER(PONO);
+END IF;
+
+IF PRDNO = '' THEN
+LPRDNO := 0;
+ELSE
+LPRDNO := TO_INTEGER(PRDNO);
+END IF;
+
+CREATE COLUMN TABLE ORDRINFO  ("ItemCode" NVARCHAR(20),"DocNum" INTEGER,"CardName" NVARCHAR(100)
+							  ,"Quantity" DECIMAL(21,6),"DocDueDate" DATE,"DocEntry" INTEGER
+							  ,"WhsCode" NVARCHAR(100));
+							  
+CREATE COLUMN TABLE ORDRINFO_CNFMDATE ("ItemCode" NVARCHAR(20),"DocNum" INTEGER,"CardName" NVARCHAR(100)
+							  ,"Quantity" DECIMAL(21,6),"DocDueDate" DATE,"DocEntry" INTEGER
+							  ,"WhsCode" NVARCHAR(100),"CfmDate" DATE);							  
+
+
+CREATE COLUMN TABLE OPORINFO  ("DocNum" INTEGER,"CardName" NVARCHAR(100),"ItemCode" NVARCHAR(20),"Dscription" NVARCHAR(150)
+							  ,"Quantity" DECIMAL(21,6),"U_SupplierETD" DATE,"U_OldPOETD" DATE,"CShipDate" DATE
+							  ,"ShipDate" DATE,"DocEntry" INTEGER,"OSLDItemCode" NVARCHAR(20),"WhsCode" NVARCHAR(100));
+							  
+CREATE COLUMN TABLE OPOR_SPLITPO  ("DocNum" INTEGER,"CardName" NVARCHAR(100),"ItemCode" NVARCHAR(20),"Dscription" NVARCHAR(150)
+							  ,"Quantity" DECIMAL(21,6),"U_SupplierETD" DATE,"U_OldPOETD" DATE,"CShipDate" DATE
+							  ,"ShipDate" DATE,"DocEntry" INTEGER,"OSLDItemCode" NVARCHAR(20),"WhsCode" NVARCHAR(100));
+
+
+CREATE COLUMN TABLE MINDATE  ("MinDate" Date,"ItemCode" NVARCHAR(100)
+							--,"Quantity" DECIMAL(21,6)
+	);
+
+CREATE COLUMN TABLE SHIPDATE  ("ShipDate" Date,"ItemCode" NVARCHAR(100),"Quantity" DECIMAL(21,6));
+
+CREATE COLUMN TABLE LOGDATE ("SupplierETD" Date,"DocEntry" INTEGER);
+
+
+--ORDR information not yet sched date confirmed
+INSERT INTO ORDRINFO (
+SELECT TT1. "ItemCode",TT0."DocNum",TT0."CardName" ,TT1."Quantity",TT0."DocDueDate",TT0."DocEntry" ,TT1."WhsCode"
+		FROM ORDR TT0 INNER join RDR1 TT1 ON TT0."DocEntry"=TT1."DocEntry"   
+   		WHERE TT0."DocEntry" not in
+     		   (select "DocEntry" from RDR1 where "LineNum" not in (
+       			SELECT T2."DocLineNum"  FROM ORDR TT0 INNER join
+       			RDR1 TT1 ON TT0."DocEntry"=TT1."DocEntry" 
+       			INNER   JOIN OSLD T2 ON TT1."DocEntry" = T2."DocEntry" AND TT1."ItemCode" = T2."ItemCode" 
+       			AND T2."DocLineNum" = TT1."LineNum"
+       			where  T2."ObjType" = 17 ))       
+   		and  TT1."LineNum"  in 
+			  (select T4."LineNum" from RDR1 T4 where T4."LineNum" 
+			  not in (select "DocLineNum" from OSLD where "ObjType"  = 17 and "DocEntry" = TT1."DocEntry")
+			  and T4."DocEntry" = TT1."DocEntry")
+     
+   		and TT0."DocStatus" = 'O' 
+);
+
+--OPOR Information
+INSERT INTO OPORINFO(
+	SELECT  T0."DocNum" "PO No / Prod No", T0."CardName" "Supplier Name", T1."ItemCode" "Item Code",
+   			T1."Dscription" "Item Description", T1."Quantity", T1."U_SupplierETD" "New Supplier ETD", 
+   			T1."U_OldPOETD" "Initial PO ETA", T1."ShipDate" "Current PO ETA", 
+   			T1."ShipDate" "Initial Confirm Delivery Date"
+			--   T2."CfmDate"  "Initial Confirm Delivery Date"
+  			, T0."DocEntry", T2."ItemCode",T1."WhsCode"
+   	FROM "OPOR"  T0 
+   	INNER JOIN POR1 T1 ON T0."DocEntry" = T1."DocEntry"
+   	LEFT OUTER JOIN OSLD T2 ON T1."DocEntry" = T2."DocEntry" AND T1."ItemCode" = T2."ItemCode"
+   	AND T2."DocLineNum" = T1."LineNum" AND T0."ObjType" = T2."ObjType"
+   	WHERE 
+  		T0."DocNum" = :LPONO and
+  		IFNULL(T1."U_OldPOETD",'') <> T1."ShipDate"
+   		AND T0."DocStatus" = 'O'
+);
+
+
+--OPOR Information PO Split
+INSERT INTO OPOR_SPLITPO(
+	SELECT  T0."DocNum" "PO No / Prod No", T0."CardName" "Supplier Name", T1."ItemCode" "Item Code",
+   			T1."Dscription" "Item Description", T1."Quantity", T1."U_SupplierETD" "New Supplier ETD", 
+   			T1."U_OldPOETD" "Initial PO ETA", T1."ShipDate" "Current PO ETA", 
+   			T1."ShipDate" "Initial Confirm Delivery Date"
+  			, T0."DocEntry", T2."ItemCode" "OSLD ItemCode",T1."WhsCode"
+   	FROM "OPOR"  T0 
+   	INNER JOIN POR1 T1 ON T0."DocEntry" = T1."DocEntry"
+   	LEFT OUTER JOIN OSLD T2 ON T1."DocEntry" = T2."DocEntry" AND T1."ItemCode" = T2."ItemCode"
+   	AND T2."DocLineNum" = T1."LineNum" AND T0."ObjType" = T2."ObjType"
+   	WHERE 
+	--   T0."DocNum" in( 529,530) and 
+ 	IFNULL(T1."U_OldPOETD",'') <> T1."ShipDate"
+	-- AND T1."ItemCode" = 'SV10010'
+ 	AND T0."DocStatus" = 'O'
+);
+
+INSERT INTO MINDATE(
+ 	SELECT  min(P1."ShipDate") "MinDate", P1."ItemCode" --,P1."Quantity"
+  	FROM "OPOR"  P0 
+  	INNER JOIN POR1 P1 ON P0."DocEntry" = P1."DocEntry"
+  	LEFT OUTER JOIN OSLD P2 ON P1."DocEntry" = P2."DocEntry" AND P1."ItemCode" = P2."ItemCode"
+  	where   P0."DocStatus" = 'O' group by P1."ItemCode" --,P1."Quantity"
+  );
+  
+  
+ INSERT INTO SHIPDATE(
+   SELECT  P1."ShipDate", P1."ItemCode",P1."Quantity" 
+   FROM "OPOR"  P0 
+   INNER JOIN POR1 P1 ON P0."DocEntry" = P1."DocEntry"
+   LEFT OUTER JOIN OSLD P2 ON P1."DocEntry" = P2."DocEntry" AND P1."ItemCode" = P2."ItemCode"
+   where 
+   P0."DocStatus" = 'O' 
+   and P0."DocNum" = :LPONO  
+	--  and ( P1."Quantity" < TT2."Quantity" )
+ );
+  
+  
+--ORDR information cnformed schd del date
+INSERT INTO ORDRINFO_CNFMDATE (
+  	SELECT 	TT1. "ItemCode",TT0."DocNum",TT0."CardName" ,TT1."Quantity",TT0."DocDueDate",TT0."DocEntry",TT1."WhsCode" 
+  			,T2."CfmDate"
+	FROM ORDR TT0 INNER join
+   	RDR1 TT1 ON TT0."DocEntry"=TT1."DocEntry"  
+    inner join OSLD T2 on T2."DocEntry" = TT1."DocEntry"
+   	-- and TT1."ItemCode"  = 'A00007'  and TT0."DocStatus" = 'O'
+   	WHERE TT0."DocEntry"  in
+     		(select "DocEntry" from RDR1 where "LineNum"  in (
+       			SELECT T2."DocLineNum"  FROM ORDR TT0 INNER join
+       			RDR1 TT1 ON TT0."DocEntry"=TT1."DocEntry" 
+       			INNER   JOIN OSLD T2 ON TT1."DocEntry" = T2."DocEntry" AND TT1."ItemCode" = T2."ItemCode" 
+       			AND T2."DocLineNum" = TT1."LineNum" 
+    			--  AND TT1."Quantity" <> T2."CfmQty"
+				--AND (TT1."Quantity" <> T2."CfmQty" or TT1."Quantity" = T2."CfmQty")
+		       where  T2."ObjType" = 17 ))    
+		   and  TT1."LineNum"  in 
+			 (select T4."LineNum" from RDR1 T4 where T4."LineNum" 
+			   in (select "DocLineNum" from OSLD where "ObjType"  = 17 and "DocEntry" = TT1."DocEntry" 
+			   and TT1."ItemCode" = "ItemCode" 
+			   --AND TT1."Quantity" <> "CfmQty"
+			   --AND (TT1."Quantity" <> "CfmQty" or TT1."Quantity" = "CfmQty")
+			  	  )
+		       and T4."DocEntry" = TT1."DocEntry"
+   			 )
+           and TT0."DocStatus" = 'O'
+);
+
+
+INSERT INTO LOGDATE (
+
+ select  T1."U_SupplierETD" ,T1."DocEntry"  from ADO1 T1 where 
+         T1."DocEntry" = (select "DocEntry" from OPOR where "DocNum" = :LPONO)--642 
+ and
+         T1."LogInstanc" = (Select max(T1."LogInstanc") from ADO1 T1 where 
+         T1."DocEntry" = (select "DocEntry" from OPOR where "DocNum" = :LPONO) --642
+group by T1."DocEntry")
+
+);  
+  
+--  PO ETA Date listing
+
+SELECT DISTINCT T0."DocNum" "PO No / Prod No", T0."CardName" "Supplier Name", T0."ItemCode" "Item Code",
+   		T0."Dscription" "Item Description", T0."Quantity", T0."U_SupplierETD" "New Supplier ETD", 
+   		T4."SupplierETD" "Initial PO ETA", T0."ShipDate" "Current PO ETA", 
+ 		case when IFNULL(TO_ALPHANUM(TT2."DocNum" ),'')= '' then T3."DocNum" else TT2."DocNum" end "SO No"
+ 		,case when IFNULL(TT2."CardName",'') ='' then T3."CardName" else TT2."CardName" end "Customer Name",
+	    T5."CfmDate" "Initial Confirm Delivery Date"
+		--  T0."CShipDate" "Initial Confirm Delivery Date"
+		--  , case when IFNULL(TO_ALPHANUM(TT2."Quantity"),'')= '' then T3."Quantity" else TT2."Quantity" end "Confirmed Qty"
+		,T5."CfmQty" "Confirmed Qty"
+   	FROM 
+   	"OPORINFO" T0 left JOIN "ORDRINFO" TT2 on T0."ItemCode"=TT2."ItemCode" 
+ 	LEFT JOIN "ORDRINFO_CNFMDATE" T3 ON T3."ItemCode" = T0."ItemCode" 
+ 									and T3."CfmDate" <> T0."U_SupplierETD"
+ 	LEFT JOIN "OSLD" T5 ON T3."DocEntry" = T5."DocEntry" 
+   						AND T3."ItemCode" = T5."ItemCode"								
+	LEFT JOIN "LOGDATE" T4 on T4."DocEntry" = T0."DocEntry"		   							
+	-- AND TT2."ItemCode" = T0."OSLDItemCode"
+    LEFT OUTER JOIN MINDATE T1 ON T0."ItemCode" = T1."ItemCode" 
+	--   and (T1."Quantity" <= TT2."Quantity" or TT2."Quantity" <= T1."Quantity")   
+    LEFT OUTER JOIN SHIPDATE T2 ON T0."ItemCode" = T2."ItemCode" and  T0."ShipDate" = T2."ShipDate"        
+   	where 
+	--  T0."DocNum" = :LPONO AND
+	(T0."WhsCode" = TT2."WhsCode" or T0."WhsCode" = T3."WhsCode" )
+	 AND
+	(T0."ShipDate" = T1."MinDate" 
+	--	or T0."ShipDate" = T2."ShipDate"
+	)
+
+
+UNION 
+--Split PO
+SELECT DISTINCT T0."DocNum" "PO No / Prod No", T0."CardName" "Supplier Name", T0."ItemCode" "Item Code",
+   		T0."Dscription" "Item Description", T0."Quantity", T0."U_SupplierETD" "New Supplier ETD", 
+   		T4."SupplierETD" "Initial PO ETA", T0."ShipDate" "Current PO ETA", 
+		TT2."DocNum"  "SO No",TT2."CardName" "Customer Name",
+    	T5."CfmDate" "Initial Confirm Delivery Date"
+		--   T0."CShipDate"  "Initial Confirm Delivery Date"
+		--  , TT2."Quantity" "Confirmed Qty"
+	   ,T5."CfmQty" "Confirmed Qty"
+   	FROM 
+   	"OPOR_SPLITPO" T0 INNER JOIN "OPORINFO" T2 on T0."ItemCode" = T2."ItemCode"
+   	LEFT JOIN "ORDRINFO" TT2 on T0."ItemCode"=TT2."ItemCode" 
+    LEFT JOIN "OSLD" T5 ON T2."DocEntry" = T5."DocEntry" AND T2."ItemCode" = T5."ItemCode"
+   	LEFT JOIN "LOGDATE" T4 on T4."DocEntry" = T0."DocEntry"								
+   	where
+   	(T0."WhsCode" = T2."WhsCode" or T0."WhsCode" = TT2."WhsCode" )
+ 	Group by T0."DocNum" , T0."CardName" , T0."ItemCode" ,
+   			 T0."Dscription" , T0."Quantity", T0."U_SupplierETD" , 
+			 T0."U_OldPOETD" , T0."ShipDate", TT2."DocNum",TT2."CardName",
+			 --   T0."CShipDate" 
+			 T5."CfmDate",T5."CfmQty", TT2."Quantity",T4."SupplierETD"
+  
+ 	having sum(T0."Quantity") <= TT2."Quantity"
+
+UNION ALL
+
+--  PRD ETA Date listing
+
+SELECT T1."DocNum" "PO No / Prod No", '' "Supplier Name" , T1."ItemCode" "Item Code",T4."ItemName" "Item Description",
+ 	   T1."PlannedQty" "Quantity", '' "New Supplier ETD" ,T1."U_OldPRETD" "Initial PO ETA",T1."DueDate" "Current PO ETA"
+	   ,TT2."DocNum" "SO No", TT2."CardName" "Customer Name",
+	   T3."CfmDate" "Initial Confirm Delivery Date",T3."CfmQty" "Confirmed Qty" 
+	FROM "OWOR" T1 
+	LEFT OUTER join "OSLD" T3 on T1."DocEntry"=T3."DocEntry" AND T1."ItemCode" = T3."ItemCode" AND T3."ObjType" = '202'
+	INNER JOIN "OITM" T4 on T4."ItemCode"=T1."ItemCode"
+	LEFT JOIN 
+   	(SELECT TT1. "ItemCode",TT0."DocNum",TT0."CardName"  FROM ORDR TT0 INNER join
+   	  RDR1 TT1 ON TT0."DocEntry"=TT1."DocEntry")  TT2 on T1."ItemCode"=TT2."ItemCode"
+	WHERE T1."DocNum" = :LPRDNO--DocW  
+	AND T1."U_OldPRETD" <> T1."DueDate";
+  
+  
+ DROP TABLE ORDRINFO;
+ DROP TABLE OPORINFO;
+ DROP TABLE MINDATE;
+ DROP TABLE SHIPDATE;
+ DROP TABLE ORDRINFO_CNFMDATE;
+ DROP TABLE OPOR_SPLITPO;
+ DROP TABLE LOGDATE;
+ END;

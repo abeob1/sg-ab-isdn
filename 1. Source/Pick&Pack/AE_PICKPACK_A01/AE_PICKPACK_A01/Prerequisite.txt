@@ -1,0 +1,6 @@
+﻿
+USer defiend fields
+
+Marketing Document - Rows
+
+UnConfirmQty - Un-Confirm Qty - Quantity

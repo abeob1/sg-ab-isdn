@@ -1,0 +1,134 @@
+[02/09/2017 16:37:42][               Single_Signon()] Starting function
+[02/09/2017 16:37:53][               Single_Signon()] Completed with ERROR
+[02/09/2017 16:39:42][               Single_Signon()] Starting function
+[02/09/2017 16:40:00][               Single_Signon()] Completed with SUCCESS
+[02/09/2017 16:41:22][                   Form_Draw()] Starting function
+[02/09/2017 16:41:22][                   Form_Draw()] Getting from OSDL SELECT T0."CfmQty", T0."DocEntry", T0."ItemCode" , T0."DocLineNum" , T0."ObjType" , T1."DocNum"  FROM OSLD T0 join ORDR T1 on T0."DocEntry" = T1."DocEntry" and T0."ObjType" = T1."ObjType"
+[02/09/2017 16:41:23][                   Form_Draw()] Cleaning the UnConfirmQty  update RDR1 set "U_UnConfirmQty" = 0 
+[02/09/2017 16:41:23][                   Form_Draw()] DocEntry='357' and ItemCode='MRP_Item1'  and DocLineNum= 0
+[02/09/2017 16:41:24][                   Form_Draw()] DocEntry='359' and ItemCode='MRP_Item2'  and DocLineNum= 0
+[02/09/2017 16:41:24][                   Form_Draw()] DocEntry='360' and ItemCode='MRP_Item3'  and DocLineNum= 0
+[02/09/2017 16:41:24][                   Form_Draw()] DocEntry='361' and ItemCode='MRP_Item4'  and DocLineNum= 0
+[02/09/2017 16:41:24][                   Form_Draw()] DocEntry='362' and ItemCode='MRP_BOM'  and DocLineNum= 0
+[02/09/2017 16:41:24][                   Form_Draw()] DocEntry='358' and ItemCode='MRP_Item1'  and DocLineNum= 0
+[02/09/2017 16:41:24][                   Form_Draw()] DocEntry='364' and ItemCode='ITEM2701'  and DocLineNum= 0
+[02/09/2017 16:41:25][                   Form_Draw()] DocEntry='374' and ItemCode='I00013'  and DocLineNum= 1
+[02/09/2017 16:41:25][                   Form_Draw()] DocEntry='387' and ItemCode='T0005'  and DocLineNum= 0
+[02/09/2017 16:41:25][                   Form_Draw()] DocEntry='393' and ItemCode='labour_PT'  and DocLineNum= 2
+[02/09/2017 16:41:25][                   Form_Draw()] DocEntry='396' and ItemCode='event'  and DocLineNum= 0
+[02/09/2017 16:41:25][                   Form_Draw()] DocEntry='396' and ItemCode='10KMilageService'  and DocLineNum= 5
+[02/09/2017 16:41:26][                   Form_Draw()] DocEntry='404' and ItemCode='LABOUR'  and DocLineNum= 3
+[02/09/2017 16:41:26][                   Form_Draw()] DocEntry='408' and ItemCode='IS'  and DocLineNum= 0
+[02/09/2017 16:41:26][                   Form_Draw()] DocEntry='409' and ItemCode='IS'  and DocLineNum= 0
+[02/09/2017 16:41:26][                   Form_Draw()] DocEntry='407' and ItemCode='PSales'  and DocLineNum= 0
+[02/09/2017 16:41:26][                   Form_Draw()] DocEntry='426' and ItemCode='SV10009'  and DocLineNum= 0
+[02/09/2017 16:41:27][                   Form_Draw()] DocEntry='427' and ItemCode='I00013'  and DocLineNum= 0
+[02/09/2017 16:41:27][                   Form_Draw()] DocEntry='427' and ItemCode='S10000'  and DocLineNum= 1
+[02/09/2017 16:41:27][                   Form_Draw()] DocEntry='449' and ItemCode='NST-67/12'  and DocLineNum= 3
+[02/09/2017 16:41:27][                   Form_Draw()] DocEntry='449' and ItemCode='NST-111 200 0915'  and DocLineNum= 4
+[02/09/2017 16:41:27][                   Form_Draw()] DocEntry='449' and ItemCode='10KMilageService'  and DocLineNum= 10
+[02/09/2017 16:41:28][                   Form_Draw()] DocEntry='449' and ItemCode='A00007'  and DocLineNum= 22
+[02/09/2017 16:41:28][                   Form_Draw()] DocEntry='449' and ItemCode='AA0001'  and DocLineNum= 23
+[02/09/2017 16:41:28][                   Form_Draw()] DocEntry='449' and ItemCode='AA0003'  and DocLineNum= 25
+[02/09/2017 16:41:28][                   Form_Draw()] DocEntry='468' and ItemCode='newitem2'  and DocLineNum= 1
+[02/09/2017 16:41:28][                   Form_Draw()] DocEntry='443' and ItemCode='04111-64170'  and DocLineNum= 0
+[02/09/2017 16:41:29][                   Form_Draw()] DocEntry='473' and ItemCode='SV10011'  and DocLineNum= 0
+[02/09/2017 16:41:29][                   Form_Draw()] DocEntry='474' and ItemCode='SV10011'  and DocLineNum= 1
+[02/09/2017 16:41:29][                   Form_Draw()] DocEntry='475' and ItemCode='SV10011'  and DocLineNum= 0
+[02/09/2017 16:41:29][                   Form_Draw()] DocEntry='470' and ItemCode='NST-DB1267'  and DocLineNum= 1
+[02/09/2017 16:41:29][                   Form_Draw()] DocEntry='471' and ItemCode='NST-DB1267'  and DocLineNum= 1
+[02/09/2017 16:41:29][                   Form_Draw()] DocEntry='472' and ItemCode='NST-DB1267'  and DocLineNum= 0
+[02/09/2017 16:41:29][                   Form_Draw()] DocEntry='477' and ItemCode='SV10012'  and DocLineNum= 0
+[02/09/2017 16:41:30][                   Form_Draw()] DocEntry='489' and ItemCode='SV10010'  and DocLineNum= 0
+[02/09/2017 16:41:30][                   Form_Draw()] DocEntry='482' and ItemCode='SV10019'  and DocLineNum= 0
+[02/09/2017 16:41:30][                   Form_Draw()] DocEntry='490' and ItemCode='SV10006'  and DocLineNum= 0
+[02/09/2017 16:41:30][                   Form_Draw()] DocEntry='488' and ItemCode='SV10014'  and DocLineNum= 1
+[02/09/2017 16:41:30][                   Form_Draw()] DocEntry='491' and ItemCode='A00007'  and DocLineNum= 1
+[02/09/2017 16:41:30][                   Form_Draw()] DocEntry='492' and ItemCode='TEST123'  and DocLineNum= 1
+[02/09/2017 16:41:31][                   Form_Draw()] DocEntry='496' and ItemCode='SV10001'  and DocLineNum= 0
+[02/09/2017 16:41:31][                   Form_Draw()] DocEntry='493' and ItemCode='T0009'  and DocLineNum= 1
+[02/09/2017 16:41:32][                   Form_Draw()] DocEntry='499' and ItemCode='H20003'  and DocLineNum= 0
+[02/09/2017 16:41:32][                   Form_Draw()] DocEntry='485' and ItemCode='LB0001'  and DocLineNum= 0
+[02/09/2017 16:41:32][                   Form_Draw()] DocEntry='485' and ItemCode='LB0002'  and DocLineNum= 1
+[02/09/2017 16:41:32][                   Form_Draw()] DocEntry='485' and ItemCode='LB0001'  and DocLineNum= 2
+[02/09/2017 16:41:32][                   Form_Draw()] DocEntry='486' and ItemCode='A00006'  and DocLineNum= 0
+[02/09/2017 16:41:33][                   Form_Draw()] DocEntry='486' and ItemCode='A00007'  and DocLineNum= 1
+[02/09/2017 16:41:33][                   Form_Draw()] DocEntry='486' and ItemCode='A00006'  and DocLineNum= 2
+[02/09/2017 16:41:33][                   Form_Draw()] DocEntry='498' and ItemCode='H20004'  and DocLineNum= 0
+[02/09/2017 16:41:33][                   Form_Draw()] DocEntry='511' and ItemCode='RFQItem'  and DocLineNum= 0
+[02/09/2017 16:41:33][                   Form_Draw()] DocEntry='512' and ItemCode='test1'  and DocLineNum= 0
+[02/09/2017 16:41:34][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 5 where "DocEntry" = '660' and "ItemCode" = 'test1' and "LineNum" = 0
+[02/09/2017 16:41:34][                   Form_Draw()] DocEntry='513' and ItemCode='test3'  and DocLineNum= 0
+[02/09/2017 16:41:34][                   Form_Draw()] DocEntry='461' and ItemCode='A00002'  and DocLineNum= 0
+[02/09/2017 16:41:34][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 6 where "DocEntry" = '574' and "ItemCode" = 'A00002' and "LineNum" = 0
+[02/09/2017 16:41:34][                   Form_Draw()] DocEntry='462' and ItemCode='14201-99025'  and DocLineNum= 0
+[02/09/2017 16:41:34][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 1 where "DocEntry" = '575' and "ItemCode" = '14201-99025' and "LineNum" = 0
+[02/09/2017 16:41:34][                   Form_Draw()] DocEntry='465' and ItemCode='14201-99025'  and DocLineNum= 0
+[02/09/2017 16:41:35][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 1 where "DocEntry" = '580' and "ItemCode" = '14201-99025' and "LineNum" = 0
+[02/09/2017 20:05:57][               Single_Signon()] Starting function
+[02/09/2017 20:06:01][               Single_Signon()] Completed with SUCCESS
+[02/09/2017 20:06:41][                   Form_Draw()] Starting function
+[02/09/2017 20:06:41][                   Form_Draw()] Getting from OSDL SELECT T0."CfmQty", T0."DocEntry", T0."ItemCode" , T0."DocLineNum" , T0."ObjType" , T1."DocNum"  FROM OSLD T0 join ORDR T1 on T0."DocEntry" = T1."DocEntry" and T0."ObjType" = T1."ObjType"
+[02/09/2017 20:06:42][                   Form_Draw()] Cleaning the UnConfirmQty  update RDR1 set "U_UnConfirmQty" = 0 
+[02/09/2017 20:06:43][                   Form_Draw()] DocEntry='357' and ItemCode='MRP_Item1'  and DocLineNum= 0
+[02/09/2017 20:06:43][                   Form_Draw()] DocEntry='359' and ItemCode='MRP_Item2'  and DocLineNum= 0
+[02/09/2017 20:06:43][                   Form_Draw()] DocEntry='360' and ItemCode='MRP_Item3'  and DocLineNum= 0
+[02/09/2017 20:06:43][                   Form_Draw()] DocEntry='361' and ItemCode='MRP_Item4'  and DocLineNum= 0
+[02/09/2017 20:06:43][                   Form_Draw()] DocEntry='362' and ItemCode='MRP_BOM'  and DocLineNum= 0
+[02/09/2017 20:06:43][                   Form_Draw()] DocEntry='358' and ItemCode='MRP_Item1'  and DocLineNum= 0
+[02/09/2017 20:06:43][                   Form_Draw()] DocEntry='364' and ItemCode='ITEM2701'  and DocLineNum= 0
+[02/09/2017 20:06:44][                   Form_Draw()] DocEntry='374' and ItemCode='I00013'  and DocLineNum= 1
+[02/09/2017 20:06:44][                   Form_Draw()] DocEntry='387' and ItemCode='T0005'  and DocLineNum= 0
+[02/09/2017 20:06:44][                   Form_Draw()] DocEntry='393' and ItemCode='labour_PT'  and DocLineNum= 2
+[02/09/2017 20:06:44][                   Form_Draw()] DocEntry='396' and ItemCode='event'  and DocLineNum= 0
+[02/09/2017 20:06:44][                   Form_Draw()] DocEntry='396' and ItemCode='10KMilageService'  and DocLineNum= 5
+[02/09/2017 20:06:44][                   Form_Draw()] DocEntry='404' and ItemCode='LABOUR'  and DocLineNum= 3
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='408' and ItemCode='IS'  and DocLineNum= 0
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='409' and ItemCode='IS'  and DocLineNum= 0
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='407' and ItemCode='PSales'  and DocLineNum= 0
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='426' and ItemCode='SV10009'  and DocLineNum= 0
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='427' and ItemCode='I00013'  and DocLineNum= 0
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='427' and ItemCode='S10000'  and DocLineNum= 1
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='449' and ItemCode='NST-67/12'  and DocLineNum= 3
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='449' and ItemCode='NST-111 200 0915'  and DocLineNum= 4
+[02/09/2017 20:06:45][                   Form_Draw()] DocEntry='449' and ItemCode='10KMilageService'  and DocLineNum= 10
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='449' and ItemCode='A00007'  and DocLineNum= 22
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='449' and ItemCode='AA0001'  and DocLineNum= 23
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='449' and ItemCode='AA0003'  and DocLineNum= 25
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='468' and ItemCode='newitem2'  and DocLineNum= 1
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='443' and ItemCode='04111-64170'  and DocLineNum= 0
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='473' and ItemCode='SV10011'  and DocLineNum= 0
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='474' and ItemCode='SV10011'  and DocLineNum= 1
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='475' and ItemCode='SV10011'  and DocLineNum= 0
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='470' and ItemCode='NST-DB1267'  and DocLineNum= 1
+[02/09/2017 20:06:46][                   Form_Draw()] DocEntry='471' and ItemCode='NST-DB1267'  and DocLineNum= 1
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='472' and ItemCode='NST-DB1267'  and DocLineNum= 0
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='477' and ItemCode='SV10012'  and DocLineNum= 0
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='489' and ItemCode='SV10010'  and DocLineNum= 0
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='482' and ItemCode='SV10019'  and DocLineNum= 0
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='490' and ItemCode='SV10006'  and DocLineNum= 0
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='488' and ItemCode='SV10014'  and DocLineNum= 1
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='491' and ItemCode='A00007'  and DocLineNum= 1
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='492' and ItemCode='TEST123'  and DocLineNum= 1
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='496' and ItemCode='SV10001'  and DocLineNum= 0
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='493' and ItemCode='T0009'  and DocLineNum= 1
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='499' and ItemCode='H20003'  and DocLineNum= 0
+[02/09/2017 20:06:47][                   Form_Draw()] DocEntry='485' and ItemCode='LB0001'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='485' and ItemCode='LB0002'  and DocLineNum= 1
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='485' and ItemCode='LB0001'  and DocLineNum= 2
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='486' and ItemCode='A00006'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='486' and ItemCode='A00007'  and DocLineNum= 1
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='486' and ItemCode='A00006'  and DocLineNum= 2
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='498' and ItemCode='H20004'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='511' and ItemCode='RFQItem'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='512' and ItemCode='test1'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 5 where "DocEntry" = '660' and "ItemCode" = 'test1' and "LineNum" = 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='513' and ItemCode='test3'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='461' and ItemCode='A00002'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 6 where "DocEntry" = '574' and "ItemCode" = 'A00002' and "LineNum" = 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='462' and ItemCode='14201-99025'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 1 where "DocEntry" = '575' and "ItemCode" = '14201-99025' and "LineNum" = 0
+[02/09/2017 20:06:48][                   Form_Draw()] DocEntry='465' and ItemCode='14201-99025'  and DocLineNum= 0
+[02/09/2017 20:06:48][                   Form_Draw()] Update Sales Order update RDR1 set "U_UnConfirmQty" = 1 where "DocEntry" = '580' and "ItemCode" = '14201-99025' and "LineNum" = 0
+[02/09/2017 20:07:03][               UnConfirm Qty()] Starting function
+[02/09/2017 20:07:11][               UnConfirm Qty()] Starting function
