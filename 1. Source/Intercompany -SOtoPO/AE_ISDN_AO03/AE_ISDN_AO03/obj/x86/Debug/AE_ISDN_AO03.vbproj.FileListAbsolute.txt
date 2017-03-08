@@ -30,3 +30,9 @@ C:\Solutions_SVN\ISDN\trunk\1. Source\Intercompany (SOtoPO)\AE_ISDN_AO03\AE_ISDN
 C:\Solutions_SVN\ISDN\trunk\1. Source\Intercompany (SOtoPO)\AE_ISDN_AO03\AE_ISDN_AO03\obj\x86\Debug\AE_ISDN_AO03.pdb
 C:\Solutions_SVN\ISDN\trunk\1. Source\Intercompany (SOtoPO)\AE_ISDN_AO03\AE_ISDN_AO03\bin\Debug\AE_ISDN_AO03.exe
 C:\Solutions_SVN\ISDN\trunk\1. Source\Intercompany (SOtoPO)\AE_ISDN_AO03\AE_ISDN_AO03\bin\Debug\AE_ISDN_AO03.pdb
+C:\Solutions_SVN\ISDN Latest\1. Source\Intercompany -SOtoPO\AE_ISDN_AO03\AE_ISDN_AO03\bin\Debug\AE_ISDN_AO03.exe.config
+C:\Solutions_SVN\ISDN Latest\1. Source\Intercompany -SOtoPO\AE_ISDN_AO03\AE_ISDN_AO03\obj\x86\Debug\Interop.SAPbobsCOM.dll
+C:\Solutions_SVN\ISDN Latest\1. Source\Intercompany -SOtoPO\AE_ISDN_AO03\AE_ISDN_AO03\obj\x86\Debug\Interop.SAPbouiCOM.dll
+C:\Solutions_SVN\ISDN Latest\1. Source\Intercompany -SOtoPO\AE_ISDN_AO03\AE_ISDN_AO03\obj\x86\Debug\AE_ISDN_AO03.vbproj.ResolveComReference.cache
+C:\Solutions_SVN\ISDN Latest\1. Source\Intercompany -SOtoPO\AE_ISDN_AO03\AE_ISDN_AO03\obj\x86\Debug\AE_ISDN_AO03.exe
+C:\Solutions_SVN\ISDN Latest\1. Source\Intercompany -SOtoPO\AE_ISDN_AO03\AE_ISDN_AO03\obj\x86\Debug\AE_ISDN_AO03.pdb
