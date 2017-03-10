@@ -1,0 +1,33 @@
+﻿
+Option Strict Off
+Option Explicit On
+
+Imports SAPbouiCOM.Framework
+
+Namespace AE_ISDN_A06
+    <FormAttribute("AE_ISDN_A06.Master_Data_Replication", "Master Data Replication.b1f")>
+    Public Class Master_Data_Replication
+        Inherits UserFormBase
+
+        Private _company As SAPbobsCOM.Company
+        Public WithEvents SBO_Application As SAPbouiCOM.Application
+
+        Sub New(company As SAPbobsCOM.Company, application As SAPbouiCOM.Application, ByRef sErrDesc As String)
+            ' TODO: Complete member initialization 
+            Try
+                _company = company
+                SBO_Application = application
+            Catch ex As Exception
+                sErrDesc = ex.Message
+            End Try
+
+        End Sub
+
+        Public Overrides Sub OnInitializeComponent()
+        End Sub
+
+        Public Overrides Sub OnInitializeFormEvents()
+        End Sub
+
+    End Class
+End Namespace

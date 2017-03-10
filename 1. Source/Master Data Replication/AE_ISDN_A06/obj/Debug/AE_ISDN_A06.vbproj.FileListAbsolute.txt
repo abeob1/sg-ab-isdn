@@ -1,0 +1,9 @@
+E:\ISDN\MasterDataSync\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.exe
+E:\ISDN\MasterDataSync\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.pdb
+E:\ISDN\MasterDataSync\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.exe.config
+E:\ISDN\MasterDataSync\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.Resources.resources
+E:\ISDN\MasterDataSync\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.vbproj.GenerateResource.Cache
+E:\ISDN\MasterDataSync\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.exe
+E:\ISDN\MasterDataSync\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.xml
+E:\ISDN\MasterDataSync\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.pdb
+E:\ISDN\MasterDataSync\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.xml

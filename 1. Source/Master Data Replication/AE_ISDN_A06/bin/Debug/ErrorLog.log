@@ -1,0 +1,39 @@
+[03/08/2017 17:49:56][             SBO_Application_ItemEvent()] 
+[03/08/2017 17:49:56][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_306', Item Unique Id: 'Item_3'
+[03/08/2017 17:50:20][                            ItemMaster()] Completed with ERROR ---1470000597 - The UoM entry "0" specified does not exist in the UoM group entry "1"
+[03/08/2017 17:50:21][             SBO_Application_ItemEvent()] 1470000597 - The UoM entry "0" specified does not exist in the UoM group entry "1"
+[03/08/2017 17:50:27][             SBO_Application_ItemEvent()] 
+[03/08/2017 17:50:27][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/08/2017 18:38:07][             SBO_Application_ItemEvent()] 
+[03/08/2017 18:38:07][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_31', Item Unique Id: 'Item_3'
+[03/08/2017 18:39:00][                            ItemMaster()] No matching records found in the holding DB GASKET O/H T/Y 2C
+[03/08/2017 18:39:19][                            ItemMaster()] No matching records found in the holding DB test 123
+[03/08/2017 18:40:15][                            ItemMaster()] No matching records found in the holding DB GASKET O/H T/Y 2C
+[03/08/2017 18:40:20][                            ItemMaster()] No matching records found in the holding DB test 123
+[03/08/2017 18:40:44][             SBO_Application_ItemEvent()] No matching records found in the holding DB test 123
+[03/08/2017 18:40:47][             SBO_Application_ItemEvent()] 
+[03/08/2017 18:40:47][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/08/2017 18:49:54][             SBO_Application_ItemEvent()] 
+[03/08/2017 18:49:54][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_31', Item Unique Id: 'Item_3'
+[03/08/2017 18:53:57][             SBO_Application_ItemEvent()] 
+[03/08/2017 18:53:57][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_52', Item Unique Id: 'Item_3'
+[03/08/2017 19:00:37][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:00:37][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'dStatus', Item Unique Id: 'Item_3'
+[03/08/2017 19:02:03][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:02:03][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_74', Item Unique Id: 'Item_3'
+[03/08/2017 19:08:02][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:08:02][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_89', Item Unique Id: 'Item_3'
+[03/08/2017 19:16:39][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:16:39][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_118', Item Unique Id: 'Item_3'
+[03/08/2017 19:17:27][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:21:23][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:21:23][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_118', Item Unique Id: 'Item_3'
+[03/08/2017 19:21:46][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:22:12][             SBO_Application_ItemEvent()] 
+[03/08/2017 19:22:12][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/09/2017 13:32:47][               AddUDO() - clsTable class] Ref count for this object is higher then 0
+[03/09/2017 13:33:57][              SBO_Application_AppEvent()] Object reference not set to an instance of an object.
+[03/09/2017 13:36:52][               AddUDO() - clsTable class] Ref count for this object is higher then 0
+[03/09/2017 13:40:04][             AddTable() - clsTable class] Ref count for this object is higher then 0
+[03/09/2017 13:40:47][               AddUDO() - clsTable class]  [OUDO.TableName] , 'Table AE_SYSRATE of type Master Data does not exist'
+[03/09/2017 19:25:10][              SBO_Application_AppEvent()] Object reference not set to an instance of an object.
