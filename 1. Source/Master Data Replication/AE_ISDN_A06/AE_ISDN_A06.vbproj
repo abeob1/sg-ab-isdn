@@ -104,6 +104,7 @@
     <Compile Include="ClsFunction.vb" />
     <Compile Include="ClsTable.vb" />
     <Compile Include="clsWindowWrapper.vb" />
+    <Compile Include="modExchangeRate.vb" />
     <Compile Include="modItemMaster.vb" />
     <Compile Include="modBusinessPartner.vb" />
     <Compile Include="Master Data Replication.b1f.vb">

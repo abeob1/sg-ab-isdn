@@ -21,70 +21,71 @@ Namespace AE_ISDN_A06
         'Sub New()
         '    p_oSBOApplication = New SAPbouiCOM.Application
         'End Sub
-        Public Function EntityLoad(ByRef oform As SAPbouiCOM.Form, ByRef sErrDesc As String) As Long
 
-            Dim oMatrix As SAPbouiCOM.Matrix = oform.Items.Item("Item_10").Specific
-            Dim sSQL As String = String.Empty
-            Dim oCombo As SAPbouiCOM.ComboBox = oform.Items.Item("Item_0").Specific
-            Try
-                sFuncName = "EntityLoad()"
+        'Public Function EntityLoad(ByRef oform As SAPbouiCOM.Form, ByRef sErrDesc As String) As Long
 
-                oform.Freeze(True)
+        '    Dim oMatrix As SAPbouiCOM.Matrix = oform.Items.Item("Item_10").Specific
+        '    Dim sSQL As String = String.Empty
+        '    Dim oCombo As SAPbouiCOM.ComboBox = oform.Items.Item("Item_0").Specific
+        '    Try
+        '        sFuncName = "EntityLoad()"
 
-                oMatrix.Columns.Item("Col_4").Visible = False
-                oMatrix.Columns.Item("Col_5").Visible = False
+        '        oform.Freeze(True)
 
-                oCombo.ValidValues.Add("--Select--", "0")
-                oCombo.ValidValues.Add("Exchange Rate", "EXR")
-                oCombo.ValidValues.Add("Chart of Accounts", "COA")
-                oCombo.ValidValues.Add("Business Partner", "BP")
-                oCombo.ValidValues.Add("Item Master", "ITM")
-                oCombo.Select(0, SAPbouiCOM.BoSearchKey.psk_Index)
+        '        oMatrix.Columns.Item("Col_4").Visible = False
+        '        oMatrix.Columns.Item("Col_5").Visible = False
 
-                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting function", sFuncName)
-                '' sSQL = "SELECT T0.[U_AB_COMCODE], T0.[U_AB_COMPANYNAME], T0.[U_AB_USERCODE], T0.[U_AB_PASSWORD]  FROM [dbo].[@AB_COMPANYDATA]  T0"
+        '        oCombo.ValidValues.Add("--Select--", "0")
+        '        oCombo.ValidValues.Add("Exchange Rate", "EXR")
+        '        oCombo.ValidValues.Add("Chart of Accounts", "COA")
+        '        oCombo.ValidValues.Add("Business Partner", "BP")
+        '        oCombo.ValidValues.Add("Item Master", "ITM")
+        '        oCombo.Select(0, SAPbouiCOM.BoSearchKey.psk_Index)
 
-                sSQL = "SELECT T0.""Name"" ,""U_DBNAME"", T0.""U_SAPUSER"", ""U_SAPPWD"", T0.""Name"" FROM  ""@AE_ENTITYNAME""  T0 "
+        '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting function", sFuncName)
+        '        '' sSQL = "SELECT T0.[U_AB_COMCODE], T0.[U_AB_COMPANYNAME], T0.[U_AB_USERCODE], T0.[U_AB_PASSWORD]  FROM [dbo].[@AB_COMPANYDATA]  T0"
+
+        '        sSQL = "SELECT T0.""Name"" ,""U_DBNAME"", T0.""U_SAPUSER"", ""U_SAPPWD"", T0.""Name"" FROM  ""@AE_ENTITYNAME""  T0 "
 
 
-                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("SQL " & sSQL, sFuncName)
-                Try
-                    oform.DataSources.DataTables.Add("AE_ENTITYNAME")
-                Catch ex As Exception
-                End Try
-                oform.DataSources.DataTables.Item("AE_ENTITYNAME").ExecuteQuery(sSQL)
-                oMatrix.Clear()
-                'oMatrix.Columns.Item("V_1").DataBind.Bind("U_AB_COMPANYNAME", "Choose")
-                oMatrix.Columns.Item("Col_1").DataBind.Bind("AE_ENTITYNAME", "Name")
-                oMatrix.Columns.Item("Col_2").DataBind.Bind("AE_ENTITYNAME", "U_DBNAME")
-                oMatrix.Columns.Item("Col_4").DataBind.Bind("AE_ENTITYNAME", "U_SAPUSER")
-                oMatrix.Columns.Item("Col_5").DataBind.Bind("AE_ENTITYNAME", "U_SAPPWD")
-                oMatrix.LoadFromDataSource()
+        '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("SQL " & sSQL, sFuncName)
+        '        Try
+        '            oform.DataSources.DataTables.Add("AE_ENTITYNAME")
+        '        Catch ex As Exception
+        '        End Try
+        '        oform.DataSources.DataTables.Item("AE_ENTITYNAME").ExecuteQuery(sSQL)
+        '        oMatrix.Clear()
+        '        'oMatrix.Columns.Item("V_1").DataBind.Bind("U_AB_COMPANYNAME", "Choose")
+        '        oMatrix.Columns.Item("Col_1").DataBind.Bind("AE_ENTITYNAME", "Name")
+        '        oMatrix.Columns.Item("Col_2").DataBind.Bind("AE_ENTITYNAME", "U_DBNAME")
+        '        oMatrix.Columns.Item("Col_4").DataBind.Bind("AE_ENTITYNAME", "U_SAPUSER")
+        '        oMatrix.Columns.Item("Col_5").DataBind.Bind("AE_ENTITYNAME", "U_SAPPWD")
+        '        oMatrix.LoadFromDataSource()
 
-                For imjs As Integer = 1 To oMatrix.RowCount
-                    oMatrix.Columns.Item("V_-1").Cells.Item(imjs).Specific.String = imjs
-                Next imjs
+        '        For imjs As Integer = 1 To oMatrix.RowCount
+        '            oMatrix.Columns.Item("V_-1").Cells.Item(imjs).Specific.String = imjs
+        '        Next imjs
 
-                'oMatrix.AutoResizeColumns()
-                oMatrix.Columns.Item("Col_1").Width = 200
-                oMatrix.Columns.Item("Col_2").Width = 170
-                oMatrix.Columns.Item("Col_4").Width = 100
-                oMatrix.Columns.Item("Col_5").Width = 400
+        '        'oMatrix.AutoResizeColumns()
+        '        oMatrix.Columns.Item("Col_1").Width = 200
+        '        oMatrix.Columns.Item("Col_2").Width = 170
+        '        oMatrix.Columns.Item("Col_4").Width = 100
+        '        oMatrix.Columns.Item("Col_5").Width = 400
 
-                ''oMatrix.AutoResizeColumns()
+        '        ''oMatrix.AutoResizeColumns()
 
-                oform.Freeze(False)
-                EntityLoad = RTN_SUCCESS
-                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with SUCCESS", sFuncName)
+        '        oform.Freeze(False)
+        '        EntityLoad = RTN_SUCCESS
+        '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with SUCCESS", sFuncName)
 
-            Catch ex As Exception
-                oform.Freeze(False)
-                sErrDesc = ex.Message
-                Call WriteToLogFile(sErrDesc, sFuncName)
-                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with ERROR", sFuncName)
-                EntityLoad = RTN_ERROR
-            End Try
-        End Function
+        '    Catch ex As Exception
+        '        oform.Freeze(False)
+        '        sErrDesc = ex.Message
+        '        Call WriteToLogFile(sErrDesc, sFuncName)
+        '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with ERROR", sFuncName)
+        '        EntityLoad = RTN_ERROR
+        '    End Try
+        'End Function
         Public Function AddChooseFromList_COA(ByRef oForm As SAPbouiCOM.Form, ByVal sObjectID As String, _
                                             ByRef oApplication As SAPbouiCOM.Application, ByRef sErrDesc As String) As Long
 
@@ -306,7 +307,7 @@ Namespace AE_ISDN_A06
 
         End Function
 
-        Function HeaderValidation(FormUID As SAPbouiCOM.Form, ByRef sErrDesc As String) As Long
+        Public Function HeaderValidation(FormUID As SAPbouiCOM.Form, ByRef sErrDesc As String, ByRef oApplication As SAPbouiCOM.Application) As Long
             Dim sFuncName As String = String.Empty
             Dim oMatrix As SAPbouiCOM.Matrix = FormUID.Items.Item("Item_10").Specific
             Dim oCheckbox As SAPbouiCOM.CheckBox
@@ -322,19 +323,40 @@ Namespace AE_ISDN_A06
             Try
                 sFuncName = "HeaderValidation()"
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting function", sFuncName)
-
                 If FormUID.Items.Item("Item_3").Specific.value.ToString.Trim() = "--Select--" Then
-                    p_oSBOApplication.StatusBar.SetText("Master Data Type can`t be Empty ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+
+                    oApplication.StatusBar.SetText("Master Data Type can`t be Empty ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
                     FormUID.ActiveItem = "Item_0"
                     Return RTN_ERROR
+                Else
 
-                ElseIf FormUID.Items.Item("Item_1").Specific.string = String.Empty Then
-                    p_oSBOApplication.StatusBar.SetText("Replication Item Code can`t be Empty ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
-                    FormUID.ActiveItem = "Item_1"
-                    Return RTN_ERROR
+                    If FormUID.Items.Item("Item_3").Specific.selected.description.trim() = "EXR" Then
+                        If FormUID.Items.Item("Item_5").Specific.string = String.Empty And FormUID.Items.Item("Item_6").Specific.string = String.Empty Then
+
+                            oApplication.StatusBar.SetText("Replication Exchange Date can`t be Empty ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+                            FormUID.ActiveItem = "Item_5"
+                            Return RTN_ERROR
+
+                        End If
+                    ElseIf FormUID.Items.Item("Item_1").Specific.string = String.Empty Then
+                        oApplication.StatusBar.SetText("Replication Item Code can`t be Empty ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+                        FormUID.ActiveItem = "Item_1"
+                        Return RTN_ERROR
+
+                    End If
                 End If
+                'If FormUID.Items.Item("Item_3").Specific.value.ToString.Trim() = "--Select--" Then
+                '    p_oSBOApplication.StatusBar.SetText("Master Data Type can`t be Empty ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+                '    FormUID.ActiveItem = "Item_0"
+                '    Return RTN_ERROR
 
-               
+                'ElseIf FormUID.Items.Item("Item_1").Specific.string = String.Empty Then
+                '    p_oSBOApplication.StatusBar.SetText("Replication Item Code can`t be Empty ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+                '    FormUID.ActiveItem = "Item_1"
+                '    Return RTN_ERROR
+                'End If
+
+
 
                 For imjs As Integer = 1 To oMatrix.RowCount
                     oCheckbox = oMatrix.Columns.Item("Col_0").Cells.Item(imjs).Specific
@@ -345,7 +367,7 @@ Namespace AE_ISDN_A06
                 Next imjs
 
                 If oDT_Entities.Rows.Count = 0 Then
-                    p_oSBOApplication.StatusBar.SetText("Please choose Entity ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+                    oApplication.StatusBar.SetText("Please choose Entity ....... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
                     Return RTN_ERROR
                 End If
 
@@ -361,7 +383,16 @@ Namespace AE_ISDN_A06
             End Try
             Return RTN_SUCCESS
         End Function
-
+        Public Function GetDateInYYYYMMDD(ByVal dt As String) As String
+            Dim str(3) As String
+            str = dt.Split("-")
+            Dim tempdt As String = String.Empty
+            For i As Integer = 2 To 0 Step -1
+                tempdt += str(i) + "-"
+            Next
+            tempdt = tempdt.Substring(0, 10)
+            Return tempdt
+        End Function
         Public Function MasterDataSync(ByRef oForm As SAPbouiCOM.Form, ByVal irow As Integer, _
                                       ByRef oHoldingCompany As SAPbobsCOM.Company, _
                                        ByRef oTragetCompany As SAPbobsCOM.Company, _
@@ -506,9 +537,9 @@ Namespace AE_ISDN_A06
                                       ByRef oHoldingCompany As SAPbobsCOM.Company, _
                                        ByRef oTragetCompany As SAPbobsCOM.Company, _
                                        ByVal sMasterdatatype As String, _
-                                       ByVal sMasterdatacodeF As String, _
-                                       ByVal sMasterdatacodeT As String, _
-                                       ByRef sErrDesc As String) As Long
+                                       ByVal dDateFrom As String, _
+                                       ByVal dDateTO As String, _
+                                       ByRef sErrDesc As String, ByRef oApplication As SAPbouiCOM.Application) As Long
             ' **********************************************************************************
             '   Function    :   MasterDataSync_ExRate()
             '   Purpose     :   This function will be providing to proceed the connectivity of 
@@ -535,42 +566,123 @@ Namespace AE_ISDN_A06
             Dim oMatrix As SAPbouiCOM.Matrix = Nothing
             Dim oRset As SAPbobsCOM.Recordset = oHoldingCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
             Dim sSQL As String = String.Empty
-            Dim sMasterCode As String = String.Empty
-            Dim sMasterName As String = String.Empty
+            Dim sCurrency As String = String.Empty
+            Dim sFromDate As String = String.Empty
+            Dim sToDate As String = String.Empty
+            Dim dSysRate As Double = 0.0
             Dim sOSLPFlag As String = String.Empty
             Dim sErrorMsg As String = String.Empty
             Dim sStatus As String = String.Empty
             Dim bIsError As Boolean = False
+            Dim startDay As Date
+            Dim endDay As Date
+            Dim dayCtr As Date
+
             Try
                 sFuncName = "MasterDataSync_ExRate()"
                 sPath = System.Windows.Forms.Application.StartupPath
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting function", sFuncName)
-
+                Dim oSBObob As SAPbobsCOM.SBObob
+                oSBObob = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoBridge)
                 oMatrix = oForm.Items.Item("Item_10").Specific
 
                 Select Case sMasterdatatype
 
                     Case "EXR"
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Attempting Exchange Rate Sync Function ", sFuncName)
-                        sSQL = "SELECT T0.""ItemCode"", T0.""ItemName"" FROM ""OITM"" T0 WHERE T0.""ItemCode""  BETWEEN '" & sMasterdatacodeF & "' AND '" & sMasterdatacodeT & "'  "
-
+                        'sSQL = "SELECT T0.""ItemCode"", T0.""ItemName"" FROM ""OITM"" T0 WHERE T0.""ItemCode""  BETWEEN '" & dDateFrom & "' AND '" & dDateTO
+                        sSQL = "select T2.""U_CURRENCY"",T2.""U_SYSRATE"",T1.""U_DATEFROM"",T1.""U_DATETO"" from ""@AE_SYSRATE"" T1 INNER JOIN ""@AE_SYSRATE1"" T2 on T1.""Code"" = T2.""Code"" WHERE T1.""U_DATEFROM"" = TO_DATE('" & dDateFrom & "','YYYY-MM-DD') AND T1.""U_DATETO"" = TO_DATE('" & dDateTO & "','YYYY-MM-DD') AND T2.""U_CHKBOX"" = 'Y'"
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Listing Exchange Rate Query " & sSQL, sFuncName)
                         oRset.DoQuery(sSQL)
+
+                        oDT_ExchRates = New DataTable
+                        oDT_ExchRates = ConvertRecordset(oRset)
+                        'Dim dtcount12 As Integer = oDT_ExchRates.Rows.Count
+                       
                         oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String = ""
                         oMatrix.Columns.Item("Col_6").Cells.Item(irow).Specific.String = ""
+                        If oDT_ExchRates.Rows.Count > 0 Then
+                            For Y As Integer = 0 To oDT_ExchRates.Rows.Count - 1
+                                Dim NoRecords As Boolean = True
+                                Dim SucFlag As Boolean = False
+                                Dim flg1 As Boolean = False
+                                startDay = oDT_ExchRates.Rows(0).Item("U_DATEFROM").ToString()
 
-                        For imjs As Integer = 0 To oRset.RecordCount - 1
-                            sMasterCode = oRset.Fields.Item("ItemCode").Value
-                            sMasterName = oRset.Fields.Item("ItemName").Value
-                            If ItemMaster(oHoldingCompany, oTragetCompany, sMasterCode, sErrDesc) = RTN_SUCCESS Then
-                                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Exchange Rate Add/Update successfuly. Dates :  " & sMasterCode, sFuncName)
-                            Else
-                                Call AddDataToTable_Item(p_oDtSyncLogBP, oTragetCompany.CompanyDB, sMasterCode, sMasterName, "ERROR", sErrDesc)
-                                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Exchange Rate Add/Update fail. Dates :  " & sMasterCode, sFuncName)
-                                bIsError = True
-                            End If
-                            oRset.MoveNext()
-                        Next imjs
+                                endDay = oDT_ExchRates.Rows(0).Item("U_DATETO").ToString()
+                                'Dim RsetExchRates As SAPbobsCOM.Recordset = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                                'RsetExchRates.DoQuery(String.Format("Select ""CurrCode"" from ""OCRN"" where ""CurrCode"" = '{0}'", oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString))
+                                'If RsetExchRates.RecordCount = 1 Then
+                                '    Try
+                                '        oSBObob.SetCurrencyRate(oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString, DateTime.Now, Convert.ToDouble(oDT_ExchRates.Rows(Y).Item("U_SYSRATE")), True)
+                                '        SucFlag = True
+                                '        'oApplication.StatusBar.SetText("Replicating Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Successful on.." & oDICompany(S).CompanyDB, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
+                                '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Adding Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Successful on  '" & oDICompany(S).CompanyDB & "'", sFuncName)
+                                '    Catch ex As Exception
+                                '        sErrDesc = ex.Message
+                                '        SucFlag = False
+                                '        'oApplication.StatusBar.SetText("Replicating Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Failed. on '" & oDICompany(S).CompanyDB & "'." & sErrDesc, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                                '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Adding Exchange Rate for Currency'" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Failed on  '" & oDICompany(S).CompanyDB & "'" & sErrDesc, sFuncName)
+
+                                '    End Try
+                                'Else
+                                '    'oApplication.StatusBar.SetText("Replication unsuccessful, Currency : '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' is not Exists on '" & oDICompany(S).CompanyDB & "'." & sErrDesc, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+                                '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Replication unsuccessful, Currency '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' is not Exists on  '" & oDICompany(S).CompanyDB & "'" & sErrDesc, sFuncName)
+                                'End If
+
+                                dayCtr = startDay
+                                Do While (dayCtr <= endDay)
+                                    'MessageBox.Show(dayCtr.Date.Day & "-" & dayCtr.Date.DayOfWeek.ToString())
+                                    'MessageBox.Show(dayCtr.Date)
+
+                                    Dim RsetExchRates As SAPbobsCOM.Recordset = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                                    RsetExchRates.DoQuery(String.Format("Select ""CurrCode"" from ""OCRN"" where ""CurrCode"" = '{0}'", oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString))
+                                    If RsetExchRates.RecordCount = 1 Then
+                                        Try
+                                            oSBObob.SetCurrencyRate(oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString, dayCtr, Convert.ToDouble(oDT_ExchRates.Rows(Y).Item("U_SYSRATE")), True)
+                                            SucFlag = True
+                                            'oApplication.StatusBar.SetText("Replicating Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Successful on.." & oDICompany(S).CompanyDB, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
+
+                                            If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with SUCCESS", sFuncName)
+                                        Catch ex As Exception
+                                            sErrDesc = ex.Message
+                                            SucFlag = False
+                                            'oApplication.StatusBar.SetText("Replicating Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Failed. on '" & oDICompany(S).CompanyDB & "'." & sErrDesc, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                                            If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with FAIL", sFuncName)
+
+                                        End Try
+                                    Else
+                                        'oApplication.StatusBar.SetText("Replication unsuccessful, Currency : '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' is not Exists on '" & oDICompany(S).CompanyDB & "'." & sErrDesc, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+                                        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Replication unsuccessful, Currency '", sFuncName)
+                                    End If
+                                    dayCtr = dayCtr.AddDays(1)
+                                Loop
+                            Next
+                        End If
+
+
+
+                        'For imjs As Integer = 0 To oRset.RecordCount - 1
+                        '    sCurrency = oRset.Fields.Item("U_CURRENCY").Value
+                        '    dSysRate = oRset.Fields.Item("U_SYSRATE").Value
+                        '    startDay = oRset.Fields.Item("U_DATEFROM").Value
+                        '    endDay = oRset.Fields.Item("U_DATETO").Value
+                        '    dayCtr = startDay
+                        '    Do While (dayCtr <= endDay)
+                        '        'MessageBox.Show(dayCtr.Date.Day & "-" & dayCtr.Date.DayOfWeek.ToString())
+                        '        'MessageBox.Show(dayCtr.Date)
+                        '        dayCtr = dayCtr.AddDays(1)
+
+                        '    Loop
+                        '    'If ExchangeRate(oHoldingCompany, oTragetCompany, sCurrency, dSysRate, dayCtr.Date, sErrDesc) = RTN_SUCCESS Then
+                        '    '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Exchange Rate Add/Update successfuly. Dates :  " & sFromDate & "to" & sToDate, sFuncName)
+                        '    'Else
+                        '    '    Call AddDataToTable_ExRate(p_oDtSyncLogER, oTragetCompany.CompanyDB, sCurrency, dSysRate, "ERROR", sErrDesc)
+                        '    '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Exchange Rate Add/Update fail. Dates :  " & sFromDate & "to" & sToDate, sFuncName)
+                        '    '    bIsError = True
+                        '    'End If
+
+                        '    oRset.MoveNext()
+                        'Next imjs
 
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with SUCCESS (Exchange Rate)", sFuncName)
 
@@ -758,7 +870,46 @@ Namespace AE_ISDN_A06
                 GetSystemIntializeInfo = RTN_ERROR
             End Try
         End Function
+        Public Function ConvertRecordset(ByVal SAPRecordset As SAPbobsCOM.Recordset) As DataTable
 
+            '\ This function will take an SAP recordset from the SAPbobsCOM library and convert it to a more
+            '\ easily used ADO.NET datatable which can be used for data binding much easier.
+
+            Dim dtTable As New DataTable
+            Dim NewCol As DataColumn
+            Dim NewRow As DataRow
+            Dim ColCount As Integer
+
+            Try
+                For ColCount = 0 To SAPRecordset.Fields.Count - 1
+                    NewCol = New DataColumn(SAPRecordset.Fields.Item(ColCount).Name)
+                    dtTable.Columns.Add(NewCol)
+                Next
+
+                Do Until SAPRecordset.EoF
+
+                    NewRow = dtTable.NewRow
+                    'populate each column in the row we're creating
+                    For ColCount = 0 To SAPRecordset.Fields.Count - 1
+
+                        NewRow.Item(SAPRecordset.Fields.Item(ColCount).Name) = SAPRecordset.Fields.Item(ColCount).Value
+
+                    Next
+
+                    'Add the row to the datatable
+                    dtTable.Rows.Add(NewRow)
+
+
+                    SAPRecordset.MoveNext()
+                Loop
+
+                Return dtTable
+
+            Catch ex As Exception
+                MsgBox(ex.ToString & Chr(10) & "Error converting SAP Recordset to DataTable", MsgBoxStyle.Exclamation)
+                Exit Function
+            End Try
+        End Function
         Public Function ConnectDICompSSO(ByRef objCompany As SAPbobsCOM.Company, ByRef sErrDesc As String) As Long
             ' ***********************************************************************************
             '   Function   :    ConnectDICompSSO()

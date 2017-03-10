@@ -74,7 +74,7 @@ Namespace AE_ISDN_A06
                         oItemMaster.UserFields.Fields.Item("U_Global").Value = "Global Item"
                     End If
 
-                    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Updating COA", sFuncName)
+                    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Updating Item Master", sFuncName)
                     '
                     ival = oItemMaster.Update() ''Update the Item Master UDF in Source company
                     If ival <> 0 Then

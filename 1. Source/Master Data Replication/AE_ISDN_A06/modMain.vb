@@ -35,10 +35,12 @@ Namespace AE_ISDN_A06
         Public p_oDtSyncLogCOA As DataTable = Nothing
         Public p_oDtSyncLogBP As DataTable = Nothing
         Public p_oDtSyncLogItem As DataTable = Nothing
+        Public p_oDtSyncLogER As DataTable = Nothing
 
         Public p_iDebugMode As Int16
         Public p_iErrDispMethod As Int16
         Public p_iDeleteDebugLog As Int16
+        Public oDT_ExchRates As DataTable = Nothing
 
         Public p_sSQLName As String = String.Empty
         Public p_sSQLPass As String = String.Empty
