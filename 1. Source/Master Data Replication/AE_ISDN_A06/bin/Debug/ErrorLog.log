@@ -325,3 +325,13 @@
 [03/10/2017 19:29:10][                          CurrencyLoad()] Item - Could not commit action because the item is currently in focus  [66000-23]
 [03/10/2017 19:44:22][             SBO_Application_ItemEvent()] 
 [03/10/2017 19:44:22][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_38', Item Unique Id: 'Item_3'
+[03/12/2017 05:31:53][                         Single_Signon()] Value does not fall within the expected range.
+[03/12/2017 05:31:54][                       AddUDT - clsTable] You are not connected to a company
+[03/12/2017 05:31:54][                         Single_Signon()] Object reference not set to an instance of an object.
+[03/12/2017 05:43:49][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:43:49][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_81', Item Unique Id: 'Item_3'
+[03/12/2017 05:45:10][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:51:24][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:51:24][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_81', Item Unique Id: 'Item_3'
+[03/12/2017 05:52:03][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:52:34][             SBO_Application_ItemEvent()] 

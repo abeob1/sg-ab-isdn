@@ -2549,3 +2549,591 @@
 [03/10/2017 20:01:56][                         Single_Signon()] Calling GetSystemIntializeInfo()
 [03/10/2017 20:02:03][                          CurrencyLoad()] Starting function
 [03/10/2017 20:02:03][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:03:01][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:03:01][                         Single_Signon()] Starting function
+[03/12/2017 05:03:10][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:03:12][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:03:12][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:03:12][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:03:12][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:03:12][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:03:12][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:03:12][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:03:12][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:03:12][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:03:12][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:03:12][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:03:12][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:03:12][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:03:12][                                  Main()] Addon started successfully
+[03/12/2017 05:03:12][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:04:01][                          CurrencyLoad()] Starting function
+[03/12/2017 05:04:01][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:04:24][                          CurrencyLoad()] Starting function
+[03/12/2017 05:04:25][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:07:11][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:07:11][                         Single_Signon()] Starting function
+[03/12/2017 05:07:19][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:07:19][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:07:19][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:07:19][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:07:19][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:07:19][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:07:19][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:07:19][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:07:20][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:07:20][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:07:20][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:07:20][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:07:20][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:07:20][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:07:20][                                  Main()] Addon started successfully
+[03/12/2017 05:07:20][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:07:47][                          CurrencyLoad()] Starting function
+[03/12/2017 05:07:47][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:10:00][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:10:01][                         Single_Signon()] Starting function
+[03/12/2017 05:10:09][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:10:09][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:10:09][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:10:09][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:10:09][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:10:09][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:10:09][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:10:09][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:10:09][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:10:10][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:10:10][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:10:10][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:10:10][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:10:10][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:10:10][                                  Main()] Addon started successfully
+[03/12/2017 05:10:10][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:10:31][                          CurrencyLoad()] Starting function
+[03/12/2017 05:10:31][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:12:11][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:12:11][                         Single_Signon()] Starting function
+[03/12/2017 05:12:19][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:12:19][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:12:19][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:12:19][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:12:19][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:12:19][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:12:19][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:12:19][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:12:20][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:12:20][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:12:20][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:12:20][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:12:20][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:12:20][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:12:20][                                  Main()] Addon started successfully
+[03/12/2017 05:12:20][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:12:29][                          CurrencyLoad()] Starting function
+[03/12/2017 05:12:29][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:14:06][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:14:06][                         Single_Signon()] Starting function
+[03/12/2017 05:14:14][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:14:14][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:14:14][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:14:14][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:14:14][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:14:14][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:14:14][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:14:14][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:14:15][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:14:15][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:14:15][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:14:15][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:14:15][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:14:15][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:14:15][                                  Main()] Addon started successfully
+[03/12/2017 05:14:15][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:14:20][                          CurrencyLoad()] Starting function
+[03/12/2017 05:14:20][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:15:11][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:15:11][                         Single_Signon()] Starting function
+[03/12/2017 05:15:19][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:15:19][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:15:19][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:15:19][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:15:19][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:15:19][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:15:19][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:15:19][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:15:19][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:15:19][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:15:19][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:15:19][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:15:19][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:15:19][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:15:19][                                  Main()] Addon started successfully
+[03/12/2017 05:15:19][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:15:26][                          CurrencyLoad()] Starting function
+[03/12/2017 05:15:26][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:16:02][                          CurrencyLoad()] Starting function
+[03/12/2017 05:16:03][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:22:39][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:22:39][                         Single_Signon()] Starting function
+[03/12/2017 05:22:47][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:22:47][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:22:47][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:22:47][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:22:47][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:22:47][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:22:47][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:22:47][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:22:48][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:22:48][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:22:48][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:22:48][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:22:48][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:22:48][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:22:48][                                  Main()] Addon started successfully
+[03/12/2017 05:22:48][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:22:58][                          CurrencyLoad()] Starting function
+[03/12/2017 05:22:58][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:23:39][                          CurrencyLoad()] Starting function
+[03/12/2017 05:23:39][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:24:17][                          CurrencyLoad()] Starting function
+[03/12/2017 05:24:17][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:28:20][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:28:20][                         Single_Signon()] Starting function
+[03/12/2017 05:28:28][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:28:28][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:28:28][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:28:28][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:28:28][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:28:28][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:28:28][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:28:28][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:28:29][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:28:29][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:28:29][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:28:29][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:28:29][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:28:29][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:28:29][                                  Main()] Addon started successfully
+[03/12/2017 05:28:29][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:28:35][                          CurrencyLoad()] Starting function
+[03/12/2017 05:28:36][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:29:46][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:29:46][                         Single_Signon()] Starting function
+[03/12/2017 05:29:54][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:29:54][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:29:54][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:29:54][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:29:54][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:29:54][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:29:54][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:29:54][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:29:55][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:29:55][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:29:55][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:29:55][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:29:55][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:29:55][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:29:55][                                  Main()] Addon started successfully
+[03/12/2017 05:29:55][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:30:01][                          CurrencyLoad()] Starting function
+[03/12/2017 05:30:01][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:31:53][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:31:53][                         Single_Signon()] Starting function
+[03/12/2017 05:31:53][                         Single_Signon()] Completed with ERROR
+[03/12/2017 05:31:53][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:31:53][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:31:54][                         Single_Signon()] Completed with ERROR
+[03/12/2017 05:32:14][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:32:14][                         Single_Signon()] Starting function
+[03/12/2017 05:32:22][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:32:22][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:32:22][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:32:22][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:32:22][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:32:22][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:32:22][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:32:22][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:32:22][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:32:23][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:32:23][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:32:23][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:32:23][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:32:23][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:32:23][                                  Main()] Addon started successfully
+[03/12/2017 05:32:23][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:32:32][                          CurrencyLoad()] Starting function
+[03/12/2017 05:32:32][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:33:09][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:33:09][                         Single_Signon()] Starting function
+[03/12/2017 05:33:17][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:33:18][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:33:18][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:33:18][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:33:18][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:33:18][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:33:18][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:33:18][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:33:18][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:33:18][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:33:18][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:33:18][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:33:18][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:33:18][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:33:18][                                  Main()] Addon started successfully
+[03/12/2017 05:33:18][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:33:33][                          CurrencyLoad()] Starting function
+[03/12/2017 05:33:33][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:34:58][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:34:58][                         Single_Signon()] Starting function
+[03/12/2017 05:35:06][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:35:06][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:35:06][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:35:06][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:35:07][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:35:07][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:35:07][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:35:07][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:35:07][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:35:07][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:35:07][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:35:07][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:35:07][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:35:07][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:35:07][                                  Main()] Addon started successfully
+[03/12/2017 05:35:07][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:35:17][                          CurrencyLoad()] Starting function
+[03/12/2017 05:35:17][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:36:08][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:36:08][                         Single_Signon()] Starting function
+[03/12/2017 05:36:17][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:36:17][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:36:17][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:36:17][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:36:17][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:36:17][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:36:17][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:36:17][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:36:17][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:36:18][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:36:18][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:36:18][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:36:18][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:36:18][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:36:18][                                  Main()] Addon started successfully
+[03/12/2017 05:36:18][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:36:36][                          CurrencyLoad()] Starting function
+[03/12/2017 05:36:37][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:39:29][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:39:29][                         Single_Signon()] Starting function
+[03/12/2017 05:39:38][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:39:38][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:39:38][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:39:38][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:39:38][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:39:38][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:39:38][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:39:38][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:39:38][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:39:38][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:39:38][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:39:38][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:39:38][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:39:38][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:39:38][                                  Main()] Addon started successfully
+[03/12/2017 05:39:38][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:39:44][                          CurrencyLoad()] Starting function
+[03/12/2017 05:39:44][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:40:51][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:40:51][                         Single_Signon()] Starting function
+[03/12/2017 05:40:59][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:40:59][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:40:59][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:40:59][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:40:59][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:40:59][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:40:59][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:40:59][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:40:59][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:40:59][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:40:59][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:40:59][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:40:59][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:40:59][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:40:59][                                  Main()] Addon started successfully
+[03/12/2017 05:40:59][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:41:05][                          CurrencyLoad()] Starting function
+[03/12/2017 05:41:06][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:42:07][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:42:07][                         Single_Signon()] Starting function
+[03/12/2017 05:42:15][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:42:15][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:42:15][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:42:15][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:42:15][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:42:15][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:42:15][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:42:15][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:42:16][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:42:16][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:42:16][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:42:16][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:42:16][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:42:16][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:42:16][                                  Main()] Addon started successfully
+[03/12/2017 05:42:16][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:42:57][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:42:57][                         Single_Signon()] Starting function
+[03/12/2017 05:43:05][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:43:06][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:43:06][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:43:06][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:43:07][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:43:07][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:43:07][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:43:07][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:43:07][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:43:07][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:43:07][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:43:07][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:43:07][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:43:07][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:43:07][                                  Main()] Addon started successfully
+[03/12/2017 05:43:07][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:43:14][                          CurrencyLoad()] Starting function
+[03/12/2017 05:43:15][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:43:41][                          CurrencyLoad()] Starting function
+[03/12/2017 05:43:42][                          CurrencyLoad()] Completed with SUCCESS
+[03/12/2017 05:43:49][             SBO_Application_ItemEvent()] Calling WriteLogFiles()
+[03/12/2017 05:43:49][             SBO_Application_ItemEvent()] Calling EndStatus()
+[03/12/2017 05:43:49][                             EndStatus()] Starting function
+[03/12/2017 05:43:49][                             EndStatus()] Completed with SUCCESS
+[03/12/2017 05:43:49][             SBO_Application_ItemEvent()] Completed with ERROR
+[03/12/2017 05:43:49][                            EntityLoad()] Starting function
+[03/12/2017 05:43:49][                            EntityLoad()] Completed with SUCCESS
+[03/12/2017 05:43:58][                 AddChooseFromList_COA()] Starting Function 
+[03/12/2017 05:43:58][                        Set_Conditions()] Starting function
+[03/12/2017 05:43:58][                        Set_Conditions()] Completed with SUCCESS
+[03/12/2017 05:43:58][                 AddChooseFromList_COA()] Completed with SUCCESS
+[03/12/2017 05:43:58][                   CFL_DataBindingUser()] Starting Function 
+[03/12/2017 05:43:58][                   CFL_DataBindingUser()] Completed with SUCCESS
+[03/12/2017 05:44:07][                  AddChooseFromList_BP()] Starting Function 
+[03/12/2017 05:44:07][                  AddChooseFromList_BP()] Completed with SUCCESS
+[03/12/2017 05:44:07][                     CFL_DataBindingBP()] Starting Function 
+[03/12/2017 05:44:07][                     CFL_DataBindingBP()] Completed with SUCCESS
+[03/12/2017 05:44:35][             SBO_Application_ItemEvent()] Calling Clear_Matrix()
+[03/12/2017 05:44:35][                          Clear_Matrix()] Starting Function
+[03/12/2017 05:44:35][                          Clear_Matrix()] Completed with SUCCESS
+[03/12/2017 05:44:35][             SBO_Application_ItemEvent()] Calling HeaderValidation()
+[03/12/2017 05:44:35][                      HeaderValidation()] Starting function
+[03/12/2017 05:44:35][                      HeaderValidation()] Completed with SUCCESS
+[03/12/2017 05:44:35][             SBO_Application_ItemEvent()] Calling DisplayStatus()
+[03/12/2017 05:44:35][                           DisplayStatus] Starting function
+[03/12/2017 05:44:35][                           DisplayStatus] Creating form......
+[03/12/2017 05:44:35][                           DisplayStatus] Completed with SUCCESS
+[03/12/2017 05:44:36][             SBO_Application_ItemEvent()] Calling ConnectToTargetCompany()
+[03/12/2017 05:44:36][                       ConnectTargetDB()] Starting Function
+[03/12/2017 05:44:51][                       ConnectTargetDB()] Completed with SUCCESS
+[03/12/2017 05:44:51][             SBO_Application_ItemEvent()] Starting transaction on company database ISDN
+[03/12/2017 05:44:51][             SBO_Application_ItemEvent()] Starting transaction on company database ISDN
+[03/12/2017 05:44:51][                        MasterDataSync()] Starting function
+[03/12/2017 05:44:51][                        MasterDataSync()] Completed with SUCCESS
+[03/12/2017 05:44:51][                 MasterDataSync_ExRate()] Starting function
+[03/12/2017 05:44:51][                 MasterDataSync_ExRate()] Attempting Exchange Rate Sync Function 
+[03/12/2017 05:44:51][                 MasterDataSync_ExRate()] Listing Exchange Rate Query select T2."U_CURRENCY",T2."U_SYSRATE",T1."U_DATEFROM",T1."U_DATETO" from "@AE_SYSRATE" T1 INNER JOIN "@AE_SYSRATE1" T2 on T1."Code" = T2."Code" WHERE T1."U_DATEFROM" = TO_DATE('2017-02-09','YYYY-MM-DD') AND T1."U_DATETO" = TO_DATE('2017-02-12','YYYY-MM-DD') AND T2."U_CHKBOX" = 'Y'
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS (Exchange Rate)
+[03/12/2017 05:44:52][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:44:53][             SBO_Application_ItemEvent()] Calling ConnectToTargetCompany()
+[03/12/2017 05:44:53][                       ConnectTargetDB()] Starting Function
+[03/12/2017 05:45:09][                       ConnectTargetDB()] Completed with SUCCESS
+[03/12/2017 05:45:09][             SBO_Application_ItemEvent()] Starting transaction on company database SBODEMOSG_ISDN
+[03/12/2017 05:45:09][             SBO_Application_ItemEvent()] Starting transaction on company database SBODEMOSG_ISDN
+[03/12/2017 05:45:09][                        MasterDataSync()] Starting function
+[03/12/2017 05:45:09][                        MasterDataSync()] Completed with SUCCESS
+[03/12/2017 05:45:09][                 MasterDataSync_ExRate()] Starting function
+[03/12/2017 05:45:09][                 MasterDataSync_ExRate()] Attempting Exchange Rate Sync Function 
+[03/12/2017 05:45:09][                 MasterDataSync_ExRate()] Listing Exchange Rate Query select T2."U_CURRENCY",T2."U_SYSRATE",T1."U_DATEFROM",T1."U_DATETO" from "@AE_SYSRATE" T1 INNER JOIN "@AE_SYSRATE1" T2 on T1."Code" = T2."Code" WHERE T1."U_DATEFROM" = TO_DATE('2017-02-09','YYYY-MM-DD') AND T1."U_DATETO" = TO_DATE('2017-02-12','YYYY-MM-DD') AND T2."U_CHKBOX" = 'Y'
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS (Exchange Rate)
+[03/12/2017 05:45:10][                 MasterDataSync_ExRate()] Completed with SUCCESS
+[03/12/2017 05:45:10][             SBO_Application_ItemEvent()] Calling WriteLogFiles()
+[03/12/2017 05:45:10][             SBO_Application_ItemEvent()] Calling EndStatus()
+[03/12/2017 05:45:10][                             EndStatus()] Starting function
+[03/12/2017 05:45:11][                             EndStatus()] Completed with SUCCESS
+[03/12/2017 05:45:11][             SBO_Application_ItemEvent()] Disconnecting company database ISDN
+[03/12/2017 05:45:11][             SBO_Application_ItemEvent()] Disconnecting company database SBODEMOSG_ISDN
+[03/12/2017 05:45:11][             SBO_Application_ItemEvent()] Completed with SUCCESS .......
+[03/12/2017 05:51:07][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:51:07][                         Single_Signon()] Starting function
+[03/12/2017 05:51:15][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:51:15][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:51:15][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:51:15][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:51:15][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:51:15][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:51:15][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:51:15][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:51:16][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:51:16][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:51:16][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:51:16][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:51:16][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:51:16][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:51:16][                                  Main()] Addon started successfully
+[03/12/2017 05:51:16][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:51:24][             SBO_Application_ItemEvent()] Calling WriteLogFiles()
+[03/12/2017 05:51:24][             SBO_Application_ItemEvent()] Calling EndStatus()
+[03/12/2017 05:51:24][                             EndStatus()] Starting function
+[03/12/2017 05:51:24][                             EndStatus()] Completed with SUCCESS
+[03/12/2017 05:51:24][             SBO_Application_ItemEvent()] Completed with ERROR
+[03/12/2017 05:51:24][                            EntityLoad()] Starting function
+[03/12/2017 05:51:24][                            EntityLoad()] Completed with SUCCESS
+[03/12/2017 05:51:28][                 AddChooseFromList_COA()] Starting Function 
+[03/12/2017 05:51:28][                        Set_Conditions()] Starting function
+[03/12/2017 05:51:28][                        Set_Conditions()] Completed with SUCCESS
+[03/12/2017 05:51:28][                 AddChooseFromList_COA()] Completed with SUCCESS
+[03/12/2017 05:51:28][                   CFL_DataBindingUser()] Starting Function 
+[03/12/2017 05:51:28][                   CFL_DataBindingUser()] Completed with SUCCESS
+[03/12/2017 05:51:59][             SBO_Application_ItemEvent()] Calling Clear_Matrix()
+[03/12/2017 05:51:59][                          Clear_Matrix()] Starting Function
+[03/12/2017 05:51:59][                          Clear_Matrix()] Completed with SUCCESS
+[03/12/2017 05:51:59][             SBO_Application_ItemEvent()] Calling HeaderValidation()
+[03/12/2017 05:51:59][                      HeaderValidation()] Starting function
+[03/12/2017 05:51:59][                      HeaderValidation()] Completed with SUCCESS
+[03/12/2017 05:51:59][             SBO_Application_ItemEvent()] Calling DisplayStatus()
+[03/12/2017 05:51:59][                           DisplayStatus] Starting function
+[03/12/2017 05:52:00][                           DisplayStatus] Creating form......
+[03/12/2017 05:52:00][                           DisplayStatus] Completed with SUCCESS
+[03/12/2017 05:52:00][             SBO_Application_ItemEvent()] Calling ConnectToTargetCompany()
+[03/12/2017 05:52:00][                       ConnectTargetDB()] Starting Function
+[03/12/2017 05:52:02][                       ConnectTargetDB()] Completed with SUCCESS
+[03/12/2017 05:52:02][             SBO_Application_ItemEvent()] Starting transaction on company database SBODEMOSG_ISDN
+[03/12/2017 05:52:02][             SBO_Application_ItemEvent()] Starting transaction on company database SBODEMOSG_ISDN
+[03/12/2017 05:52:02][                        MasterDataSync()] Starting function
+[03/12/2017 05:52:02][                        MasterDataSync()] Attempting COA Sync Function 
+[03/12/2017 05:52:02][                        MasterDataSync()] Listing COA Query SELECT T0."AcctCode", T0."AcctName" FROM "OACT" T0 WHERE T0."AcctCode"  BETWEEN '161091' AND '161093'  
+[03/12/2017 05:52:02][                       ChartofAccounts()] Starting Function 161091
+[03/12/2017 05:52:02][                       ChartofAccounts()] Attempting COA Sync FunctionSBODEMOSG_ISDN
+[03/12/2017 05:52:02][                       ChartofAccounts()] Updating COA
+[03/12/2017 05:52:03][                       ChartofAccounts()] Completed with SUCCESS 
+[03/12/2017 05:52:03][                       ChartofAccounts()] Completed with SUCCESS
+[03/12/2017 05:52:03][                        MasterDataSync()] COA Add/Update successfuly. Account Code :  161091
+[03/12/2017 05:52:03][                       ChartofAccounts()] Starting Function 161092
+[03/12/2017 05:52:03][                       ChartofAccounts()] Attempting COA Sync FunctionSBODEMOSG_ISDN
+[03/12/2017 05:52:03][                       ChartofAccounts()] Updating COA
+[03/12/2017 05:52:03][                       ChartofAccounts()] Completed with SUCCESS 
+[03/12/2017 05:52:03][                       ChartofAccounts()] Completed with SUCCESS
+[03/12/2017 05:52:03][                        MasterDataSync()] COA Add/Update successfuly. Account Code :  161092
+[03/12/2017 05:52:03][                       ChartofAccounts()] Starting Function 161093
+[03/12/2017 05:52:03][                       ChartofAccounts()] Attempting COA Sync FunctionSBODEMOSG_ISDN
+[03/12/2017 05:52:03][                       ChartofAccounts()] Adding COA
+[03/12/2017 05:52:03][                       ChartofAccounts()] Completed with SUCCESS 
+[03/12/2017 05:52:03][                       ChartofAccounts()] Completed with SUCCESS
+[03/12/2017 05:52:03][                        MasterDataSync()] COA Add/Update successfuly. Account Code :  161093
+[03/12/2017 05:52:03][                        MasterDataSync()] Completed with SUCCESS (COA)
+[03/12/2017 05:52:03][                        MasterDataSync()] Completed with SUCCESS
+[03/12/2017 05:52:03][             SBO_Application_ItemEvent()] Calling WriteLogFiles()
+[03/12/2017 05:52:03][             SBO_Application_ItemEvent()] Calling EndStatus()
+[03/12/2017 05:52:03][                             EndStatus()] Starting function
+[03/12/2017 05:52:03][                             EndStatus()] Completed with SUCCESS
+[03/12/2017 05:52:03][             SBO_Application_ItemEvent()] Disconnecting company database SBODEMOSG_ISDN
+[03/12/2017 05:52:03][             SBO_Application_ItemEvent()] Completed with SUCCESS .......
+[03/12/2017 05:52:13][                  AddChooseFromList_BP()] Starting Function 
+[03/12/2017 05:52:13][                  AddChooseFromList_BP()] Completed with SUCCESS
+[03/12/2017 05:52:13][                     CFL_DataBindingBP()] Starting Function 
+[03/12/2017 05:52:13][                     CFL_DataBindingBP()] Completed with SUCCESS
+[03/12/2017 05:52:30][             SBO_Application_ItemEvent()] Calling Clear_Matrix()
+[03/12/2017 05:52:30][                          Clear_Matrix()] Starting Function
+[03/12/2017 05:52:30][                          Clear_Matrix()] Completed with SUCCESS
+[03/12/2017 05:52:30][             SBO_Application_ItemEvent()] Calling HeaderValidation()
+[03/12/2017 05:52:30][                      HeaderValidation()] Starting function
+[03/12/2017 05:52:30][                      HeaderValidation()] Completed with SUCCESS
+[03/12/2017 05:52:30][             SBO_Application_ItemEvent()] Calling DisplayStatus()
+[03/12/2017 05:52:30][                           DisplayStatus] Starting function
+[03/12/2017 05:52:30][                           DisplayStatus] Creating form......
+[03/12/2017 05:52:30][                           DisplayStatus] Completed with SUCCESS
+[03/12/2017 05:52:30][             SBO_Application_ItemEvent()] Calling ConnectToTargetCompany()
+[03/12/2017 05:52:30][                       ConnectTargetDB()] Starting Function
+[03/12/2017 05:52:31][                       ConnectTargetDB()] Completed with SUCCESS
+[03/12/2017 05:52:31][             SBO_Application_ItemEvent()] Starting transaction on company database SBODEMOSG_ISDN
+[03/12/2017 05:52:31][             SBO_Application_ItemEvent()] Starting transaction on company database SBODEMOSG_ISDN
+[03/12/2017 05:52:31][                        MasterDataSync()] Starting function
+[03/12/2017 05:52:31][                        MasterDataSync()] Attempting COA Sync Function 
+[03/12/2017 05:52:31][                        MasterDataSync()] Listing BP Query SELECT T0."CardCode", T0."CardName" FROM "OCRD" T0 WHERE T0."CardCode"  BETWEEN 'A01' AND 'A02'  
+[03/12/2017 05:52:31][                       BusinessPartner()] Starting Function A01
+[03/12/2017 05:52:31][                       BusinessPartner()] Attempting BP Sync FunctionSBODEMOSG_ISDN
+[03/12/2017 05:52:31][                       BusinessPartner()] Attempting to Update BP A01
+[03/12/2017 05:52:31][                       BusinessPartner()] Getting Shipping Code
+[03/12/2017 05:52:31][                       BusinessPartner()] Getting Payment Code
+[03/12/2017 05:52:31][                       BusinessPartner()] Getting Shipping type code in target 
+[03/12/2017 05:52:32][                       BusinessPartner()] Attempting Contact Employees
+[03/12/2017 05:52:32][                       BusinessPartner()] Updating BP
+[03/12/2017 05:52:32][                       BusinessPartner()] Completed with SUCCESS 
+[03/12/2017 05:52:32][                       BusinessPartner()] Completed with SUCCESS
+[03/12/2017 05:52:32][                        MasterDataSync()] BP Add/Update successfuly. Account Code :  A01
+[03/12/2017 05:52:32][                       BusinessPartner()] Starting Function A02
+[03/12/2017 05:52:32][                       BusinessPartner()] Attempting BP Sync FunctionSBODEMOSG_ISDN
+[03/12/2017 05:52:33][                       BusinessPartner()] Getting Shipping Code
+[03/12/2017 05:52:33][                       BusinessPartner()] Getting Shipping Code
+[03/12/2017 05:52:33][                       BusinessPartner()] Adding BP
+[03/12/2017 05:52:34][                       BusinessPartner()] Completed with SUCCESS 
+[03/12/2017 05:52:34][                       BusinessPartner()] Completed with SUCCESS
+[03/12/2017 05:52:34][                        MasterDataSync()] BP Add/Update successfuly. Account Code :  A02
+[03/12/2017 05:52:34][                        MasterDataSync()] Completed with SUCCESS (BP)
+[03/12/2017 05:52:34][                        MasterDataSync()] Completed with SUCCESS
+[03/12/2017 05:52:34][             SBO_Application_ItemEvent()] Calling WriteLogFiles()
+[03/12/2017 05:52:34][             SBO_Application_ItemEvent()] Calling EndStatus()
+[03/12/2017 05:52:34][                             EndStatus()] Starting function
+[03/12/2017 05:52:34][                             EndStatus()] Completed with SUCCESS
+[03/12/2017 05:52:34][             SBO_Application_ItemEvent()] Disconnecting company database SBODEMOSG_ISDN
+[03/12/2017 05:52:34][             SBO_Application_ItemEvent()] Completed with SUCCESS .......
+[03/12/2017 05:55:23][                                  Main()] Calling AddMenuItems()
+[03/12/2017 05:55:23][                         Single_Signon()] Starting function
+[03/12/2017 05:55:31][                         Single_Signon()] Completed with SUCCESS
+[03/12/2017 05:55:31][                         Single_Signon()] Calling Add tables
+[03/12/2017 05:55:31][                         Single_Signon()] Calling function CreateFields() for creating UDF.....
+[03/12/2017 05:55:31][                       AddUDT - clsTable] Creating UDT Table....
+[03/12/2017 05:55:31][                       AddUDT - clsTable] This entry already exists in the following tables (ODBC -2035)
+[03/12/2017 05:55:31][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:55:31][             AddTable() - clsTable class] Creating  Table....
+[03/12/2017 05:55:31][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:55:31][                    AddFields - clsTable] Creating UDF Fileds....
+[03/12/2017 05:55:32][               AddUDO() - clsTable class] Creating UDO....
+[03/12/2017 05:55:32][                         Single_Signon()] Calling CreateDataTable() for COA
+[03/12/2017 05:55:32][                         Single_Signon()] Calling CreateDataTable_BP() for BP
+[03/12/2017 05:55:32][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:55:32][                         Single_Signon()] Calling CreateDataTable_Item() for ItemMaster
+[03/12/2017 05:55:32][                                  Main()] Addon started successfully
+[03/12/2017 05:55:32][                         Single_Signon()] Calling GetSystemIntializeInfo()
+[03/12/2017 05:55:41][                          CurrencyLoad()] Starting function
+[03/12/2017 05:55:41][                          CurrencyLoad()] Completed with SUCCESS
