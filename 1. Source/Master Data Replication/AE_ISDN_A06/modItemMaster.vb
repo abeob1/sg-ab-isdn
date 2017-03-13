@@ -108,6 +108,10 @@ Namespace AE_ISDN_A06
                 Call WriteToLogFile(sErrDesc, sFuncName)
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with ERROR", sFuncName)
             Finally
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(oItemMaster)
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(oTItemMaster)
+                oItemMaster = Nothing
+                oTItemMaster = Nothing
             End Try
         End Function
 

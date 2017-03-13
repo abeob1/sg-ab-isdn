@@ -399,7 +399,7 @@ Namespace AE_ISDN_A06
                                        ByVal sMasterdatatype As String, _
                                        ByVal sMasterdatacodeF As String, _
                                        ByVal sMasterdatacodeT As String, _
-                                       ByRef sErrDesc As String) As Long
+                                       ByRef sErrDesc As String, ByRef oApplication As SAPbouiCOM.Application) As Long
             ' **********************************************************************************
             '   Function    :   MasterDataSync()
             '   Purpose     :   This function will be providing to proceed the connectivity of 
@@ -454,10 +454,17 @@ Namespace AE_ISDN_A06
                         For imjs As Integer = 0 To oRset.RecordCount - 1
                             sMasterCode = oRset.Fields.Item("AcctCode").Value
                             sMasterName = oRset.Fields.Item("AcctName").Value
+                            oApplication.RemoveWindowsMessage(SAPbouiCOM.BoWindowsMessageType.bo_WM_TIMER, True)
                             If ChartofAccounts(oHoldingCompany, oTragetCompany, sMasterCode, sErrDesc) = RTN_SUCCESS Then
                                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("COA Add/Update successfuly. Account Code :  " & sMasterCode, sFuncName)
+                                oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & sMasterCode & " - SUCCESS:  "
                             Else
                                 Call AddDataToTable(p_oDtSyncLogCOA, oTragetCompany.CompanyDB, sMasterCode, sMasterName, "ERROR", sErrDesc)
+
+                                oDT_ErrorMsg.Rows.Add(oMatrix.Columns.Item("Col_2").Cells.Item(irow).Specific.String.ToString.PadRight(20, " "c) & oMatrix.Columns.Item("Col_1").Cells.Item(irow).Specific.String.ToString.PadRight(50, " "c) _
+                                                                      & sMasterCode.PadRight(20, " "c) & sErrDesc)
+                                oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & sMasterCode & " - FAIL:"
+                                oMatrix.Columns.Item("Col_6").Cells.Item(irow).Specific.String += " " & sMasterCode & " - (" & sErrDesc & "):"
                                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("COA Add/Update fail. Account Code :  " & sMasterCode, sFuncName)
                                 bIsError = True
                             End If
@@ -469,7 +476,7 @@ Namespace AE_ISDN_A06
                     Case "BP"
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Attempting COA Sync Function ", sFuncName)
                         sSQL = "SELECT T0.""CardCode"", T0.""CardName"" FROM ""OCRD"" T0 WHERE T0.""CardCode""  BETWEEN '" & sMasterdatacodeF & "' AND '" & sMasterdatacodeT & "'  "
-                        
+
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Listing BP Query " & sSQL, sFuncName)
                         oRset.DoQuery(sSQL)
                         oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String = ""
@@ -478,10 +485,17 @@ Namespace AE_ISDN_A06
                         For imjs As Integer = 0 To oRset.RecordCount - 1
                             sMasterCode = oRset.Fields.Item("CardCode").Value
                             sMasterName = oRset.Fields.Item("CardName").Value
+                            oApplication.RemoveWindowsMessage(SAPbouiCOM.BoWindowsMessageType.bo_WM_TIMER, True)
                             If BusinessPartner(oHoldingCompany, oTragetCompany, sMasterCode, sErrDesc) = RTN_SUCCESS Then
                                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("BP Add/Update successfuly. Account Code :  " & sMasterCode, sFuncName)
+                                oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & sMasterCode & " - SUCCESS:  "
                             Else
                                 Call AddDataToTable_BP(p_oDtSyncLogBP, oTragetCompany.CompanyDB, sMasterCode, sMasterName, "ERROR", sErrDesc)
+
+                                oDT_ErrorMsg.Rows.Add(oMatrix.Columns.Item("Col_2").Cells.Item(irow).Specific.String.ToString.PadRight(20, " "c) & oMatrix.Columns.Item("Col_1").Cells.Item(irow).Specific.String.ToString.PadRight(50, " "c) _
+                                                                     & sMasterCode.PadRight(20, " "c) & sErrDesc)
+                                oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & sMasterCode & " - FAIL:"
+                                oMatrix.Columns.Item("Col_6").Cells.Item(irow).Specific.String += " " & sMasterCode & " - (" & sErrDesc & "):"
                                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("BP Add/Update fail. Account Code :  " & sMasterCode, sFuncName)
                                 bIsError = True
                             End If
@@ -501,11 +515,18 @@ Namespace AE_ISDN_A06
                         For imjs As Integer = 0 To oRset.RecordCount - 1
                             sMasterCode = oRset.Fields.Item("ItemCode").Value
                             sMasterName = oRset.Fields.Item("ItemName").Value
+                            oApplication.RemoveWindowsMessage(SAPbouiCOM.BoWindowsMessageType.bo_WM_TIMER, True)
                             If ItemMaster(oHoldingCompany, oTragetCompany, sMasterCode, sErrDesc) = RTN_SUCCESS Then
                                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("ItemMaster Add/Update successfuly. Account Code :  " & sMasterCode, sFuncName)
+                                oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & sMasterCode & " - SUCCESS:  "
                             Else
                                 Call AddDataToTable_Item(p_oDtSyncLogBP, oTragetCompany.CompanyDB, sMasterCode, sMasterName, "ERROR", sErrDesc)
+
+                                oDT_ErrorMsg.Rows.Add(oMatrix.Columns.Item("Col_2").Cells.Item(irow).Specific.String.ToString.PadRight(20, " "c) & oMatrix.Columns.Item("Col_1").Cells.Item(irow).Specific.String.ToString.PadRight(50, " "c) _
+                                                                     & sMasterCode.PadRight(20, " "c) & sErrDesc)
                                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("ItemMaster Add/Update fail. Account Code :  " & sMasterCode, sFuncName)
+                                oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & sMasterCode & " - FAIL:"
+                                oMatrix.Columns.Item("Col_6").Cells.Item(irow).Specific.String += " " & sMasterCode & " - (" & sErrDesc & "):"
                                 bIsError = True
                             End If
                             oRset.MoveNext()
@@ -607,32 +628,9 @@ Namespace AE_ISDN_A06
                                 Dim SucFlag As Boolean = False
                                 Dim flg1 As Boolean = False
                                 startDay = oDT_ExchRates.Rows(0).Item("U_DATEFROM").ToString()
-
                                 endDay = oDT_ExchRates.Rows(0).Item("U_DATETO").ToString()
-                                'Dim RsetExchRates As SAPbobsCOM.Recordset = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
-                                'RsetExchRates.DoQuery(String.Format("Select ""CurrCode"" from ""OCRN"" where ""CurrCode"" = '{0}'", oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString))
-                                'If RsetExchRates.RecordCount = 1 Then
-                                '    Try
-                                '        oSBObob.SetCurrencyRate(oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString, DateTime.Now, Convert.ToDouble(oDT_ExchRates.Rows(Y).Item("U_SYSRATE")), True)
-                                '        SucFlag = True
-                                '        'oApplication.StatusBar.SetText("Replicating Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Successful on.." & oDICompany(S).CompanyDB, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
-                                '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Adding Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Successful on  '" & oDICompany(S).CompanyDB & "'", sFuncName)
-                                '    Catch ex As Exception
-                                '        sErrDesc = ex.Message
-                                '        SucFlag = False
-                                '        'oApplication.StatusBar.SetText("Replicating Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Failed. on '" & oDICompany(S).CompanyDB & "'." & sErrDesc, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
-                                '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Adding Exchange Rate for Currency'" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Failed on  '" & oDICompany(S).CompanyDB & "'" & sErrDesc, sFuncName)
-
-                                '    End Try
-                                'Else
-                                '    'oApplication.StatusBar.SetText("Replication unsuccessful, Currency : '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' is not Exists on '" & oDICompany(S).CompanyDB & "'." & sErrDesc, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
-                                '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Replication unsuccessful, Currency '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' is not Exists on  '" & oDICompany(S).CompanyDB & "'" & sErrDesc, sFuncName)
-                                'End If
-
                                 dayCtr = startDay
                                 Do While (dayCtr <= endDay)
-                                    'MessageBox.Show(dayCtr.Date.Day & "-" & dayCtr.Date.DayOfWeek.ToString())
-                                    'MessageBox.Show(dayCtr.Date)
 
                                     Dim RsetExchRates As SAPbobsCOM.Recordset = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
                                     RsetExchRates.DoQuery(String.Format("Select ""CurrCode"" from ""OCRN"" where ""CurrCode"" = '{0}'", oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString))
@@ -641,7 +639,7 @@ Namespace AE_ISDN_A06
                                             oSBObob.SetCurrencyRate(oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString, dayCtr, Convert.ToDouble(oDT_ExchRates.Rows(Y).Item("U_SYSRATE")), True)
                                             SucFlag = True
                                             'oApplication.StatusBar.SetText("Replicating Exchange Rate for Currency: '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' Successful on.." & oDICompany(S).CompanyDB, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
-
+                                            'oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString & " - SUCCESS:  "
                                             If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with SUCCESS", sFuncName)
                                         Catch ex As Exception
                                             sErrDesc = ex.Message
@@ -653,36 +651,16 @@ Namespace AE_ISDN_A06
                                     Else
                                         'oApplication.StatusBar.SetText("Replication unsuccessful, Currency : '" & oDT_ExchRates.Rows(Y).Item("Currency").ToString & "' is not Exists on '" & oDICompany(S).CompanyDB & "'." & sErrDesc, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
                                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Replication unsuccessful, Currency '", sFuncName)
+                                        'oDT_ErrorMsg.Rows.Add(oMatrix.Columns.Item("Col_2").Cells.Item(irow).Specific.String.ToString.PadRight(20, " "c) & oMatrix.Columns.Item("Col_1").Cells.Item(irow).Specific.String.ToString.PadRight(50, " "c) _
+                                        '                             & oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString.PadRight(20, " "c) & sErrDesc)
+
+                                        'oMatrix.Columns.Item("Col_3").Cells.Item(irow).Specific.String += " " & oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString & " - FAIL:"
+                                        'oMatrix.Columns.Item("Col_6").Cells.Item(irow).Specific.String += " " & oDT_ExchRates.Rows(Y).Item("U_CURRENCY").ToString & " - (" & sErrDesc & "):"
                                     End If
                                     dayCtr = dayCtr.AddDays(1)
                                 Loop
                             Next
                         End If
-
-
-
-                        'For imjs As Integer = 0 To oRset.RecordCount - 1
-                        '    sCurrency = oRset.Fields.Item("U_CURRENCY").Value
-                        '    dSysRate = oRset.Fields.Item("U_SYSRATE").Value
-                        '    startDay = oRset.Fields.Item("U_DATEFROM").Value
-                        '    endDay = oRset.Fields.Item("U_DATETO").Value
-                        '    dayCtr = startDay
-                        '    Do While (dayCtr <= endDay)
-                        '        'MessageBox.Show(dayCtr.Date.Day & "-" & dayCtr.Date.DayOfWeek.ToString())
-                        '        'MessageBox.Show(dayCtr.Date)
-                        '        dayCtr = dayCtr.AddDays(1)
-
-                        '    Loop
-                        '    'If ExchangeRate(oHoldingCompany, oTragetCompany, sCurrency, dSysRate, dayCtr.Date, sErrDesc) = RTN_SUCCESS Then
-                        '    '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Exchange Rate Add/Update successfuly. Dates :  " & sFromDate & "to" & sToDate, sFuncName)
-                        '    'Else
-                        '    '    Call AddDataToTable_ExRate(p_oDtSyncLogER, oTragetCompany.CompanyDB, sCurrency, dSysRate, "ERROR", sErrDesc)
-                        '    '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Exchange Rate Add/Update fail. Dates :  " & sFromDate & "to" & sToDate, sFuncName)
-                        '    '    bIsError = True
-                        '    'End If
-
-                        '    oRset.MoveNext()
-                        'Next imjs
 
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with SUCCESS (Exchange Rate)", sFuncName)
 
@@ -2152,7 +2130,51 @@ Namespace AE_ISDN_A06
             End Try
 
         End Function
+        Public Function Write_TextFile_Error(ByVal oDT_FinalResult As DataTable, ByVal sPAth As String, ByRef sErrDesc As String) As Long
+            Try
+                Dim sFuncName As String = String.Empty
+                Dim irow As Integer
+                Dim sFileName As String = "\MasterSyncError.txt"
+                Dim sbuffer As String = String.Empty
+                Dim sline As String = "="
+                sFuncName = "Write_TextFile_Error()"
+                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting Function ", sFuncName)
 
+                If File.Exists(sPAth & sFileName) Then
+                    Try
+                        File.Delete(sPAth & sFileName)
+                    Catch ex As Exception
+                    End Try
+                End If
+
+                Dim sw As StreamWriter = New StreamWriter(sPAth & sFileName)
+                ' Add some text to the file.
+                sw.WriteLine(p_stype)
+                sw.WriteLine("      ")
+                sw.WriteLine("      ")
+                sw.WriteLine("Entity Code        " & "Entity" & Space(44) & "Item Code " & Space(10) & "Error Msg")
+                sw.WriteLine(sline.PadRight(150, "="c))
+                sw.WriteLine("      ")
+
+                For imjs = 0 To oDT_FinalResult.Rows.Count - 1
+
+                    sw.WriteLine(oDT_FinalResult.Rows(imjs).Item("ErrorMsg").ToString)
+
+                Next imjs
+                sw.Close()
+                Process.Start(sPAth & sFileName)
+
+                Write_TextFile_Error = RTN_SUCCESS
+                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed With SUCCESS ", sFuncName)
+
+            Catch ex As Exception
+                Write_TextFile_Error = RTN_ERROR
+                sErrDesc = ex.Message
+                Call WriteToLogFile(sErrDesc, sFuncName)
+                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with ERROR", sFuncName)
+            End Try
+
+        End Function
         Public Function ConvertStringToDate(ByRef sDate As String) As Date
             Try
                 'Dim iIndex As Integer = 0

@@ -36,6 +36,9 @@ Namespace AE_ISDN_A06
             Dim sFuncName As String = String.Empty
             Dim iHashCode As Integer = 0
             Dim flg1 As Boolean = False
+            Dim oCOA As SAPbobsCOM.ChartOfAccounts = Nothing
+            Dim oTargetCOA As SAPbobsCOM.ChartOfAccounts = Nothing
+
             Try
                 sFuncName = "ChartofAccounts()"
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Starting Function " & sMasterdatacode, sFuncName)
@@ -44,8 +47,8 @@ Namespace AE_ISDN_A06
                 'oTragetCompany.XmlExportType = SAPbobsCOM.BoXmlExportTypes.xet_ExportImportMode
 
                 '' initialize the objects 
-                Dim oCOA As SAPbobsCOM.ChartOfAccounts = oHoldingCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oChartOfAccounts)
-                Dim oTargetCOA As SAPbobsCOM.ChartOfAccounts = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oChartOfAccounts)
+                oCOA = oHoldingCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oChartOfAccounts)
+                oTargetCOA = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oChartOfAccounts)
 
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Attempting COA Sync Function" & oTragetCompany.CompanyDB, sFuncName)
                
@@ -77,40 +80,6 @@ Namespace AE_ISDN_A06
                         oTargetCOA.ProjectRelevant = oCOA.ProjectRelevant
                         oTargetCOA.ProjectCode = oCOA.ProjectCode
 
-                        'oTargetCOA.Name = oCOA.Name
-                        'oTargetCOA.ForeignName = oCOA.ForeignName
-                        'oTargetCOA.AccountType = oCOA.AccountType
-                        'oTargetCOA.ExternalCode = oCOA.ExternalCode
-                        'oTargetCOA.ActiveAccount = oCOA.ActiveAccount
-                        'oTargetCOA.FatherAccountKey = oCOA.FatherAccountKey
-                        'oTargetCOA.AcctCurrency = oCOA.AcctCurrency
-                        'oTargetCOA.CashAccount = oCOA.CashAccount
-                        'oTargetCOA.Protected = oCOA.Protected
-                        'oTargetCOA.LockManualTransaction = oCOA.LockManualTransaction
-                        'oTargetCOA.Details = oCOA.Details
-                        'oTargetCOA.ValidFor = oCOA.ValidFor
-                        'oTargetCOA.FrozenFor = oCOA.FrozenFor
-                        'oTargetCOA.ValidFrom = oCOA.ValidFrom
-                        'oTargetCOA.ValidTo = oCOA.ValidTo
-                        'oTargetCOA.ValidRemarks = oCOA.ValidRemarks
-                        'oTargetCOA.FrozenFrom = oCOA.FrozenFrom
-                        'oTargetCOA.FrozenTo = oCOA.FrozenTo
-                        'oTargetCOA.FrozenRemarks = oCOA.FrozenRemarks
-                        'oTargetCOA.AllowChangeVatGroup = oCOA.AllowChangeVatGroup
-                        'oTargetCOA.AllowMultipleLinking = oCOA.AllowMultipleLinking
-                        'oTargetCOA.BudgetAccount = oCOA.BudgetAccount
-                        'oTargetCOA.DataExportCode = oCOA.DataExportCode
-                        'oTargetCOA.LiableForAdvances = oCOA.LiableForAdvances
-                        'oTargetCOA.LoadingType = oCOA.LoadingType
-                        'oTargetCOA.PlanningLevel = oCOA.PlanningLevel
-                        'oTargetCOA.ProjectRelevant = oCOA.ProjectRelevant
-                        'oTargetCOA.ProjectCode = oCOA.ProjectCode
-                        'oTargetCOA.RateConversion = oCOA.RateConversion
-                        'oTargetCOA.ReconciledAccount = oCOA.ReconciledAccount
-                        'oTargetCOA.RevaluationCoordinated = oCOA.RevaluationCoordinated
-                        'oTargetCOA.TaxExemptAccount = oCOA.TaxExemptAccount
-                        'oTargetCOA.TaxLiableAccount = oCOA.TaxLiableAccount
-
                     Else
 
                         oTargetCOA.Code = oCOA.Code
@@ -140,39 +109,6 @@ Namespace AE_ISDN_A06
                         oTargetCOA.ProjectRelevant = oCOA.ProjectRelevant
                         oTargetCOA.ProjectCode = oCOA.ProjectCode
 
-                        'oTargetCOA.Name = oCOA.Name
-                        'oTargetCOA.ForeignName = oCOA.ForeignName
-                        'oTargetCOA.AccountType = oCOA.AccountType
-                        'oTargetCOA.ExternalCode = oCOA.ExternalCode
-                        'oTargetCOA.ActiveAccount = oCOA.ActiveAccount
-                        'oTargetCOA.FatherAccountKey = oCOA.FatherAccountKey
-                        'oTargetCOA.AcctCurrency = oCOA.AcctCurrency
-                        'oTargetCOA.CashAccount = oCOA.CashAccount
-                        'oTargetCOA.Protected = oCOA.Protected
-                        'oTargetCOA.LockManualTransaction = oCOA.LockManualTransaction
-                        'oTargetCOA.Details = oCOA.Details
-                        'oTargetCOA.ValidFor = oCOA.ValidFor
-                        'oTargetCOA.FrozenFor = oCOA.FrozenFor
-                        'oTargetCOA.ValidFrom = oCOA.ValidFrom
-                        'oTargetCOA.ValidTo = oCOA.ValidTo
-                        'oTargetCOA.ValidRemarks = oCOA.ValidRemarks
-                        'oTargetCOA.FrozenFrom = oCOA.FrozenFrom
-                        'oTargetCOA.FrozenTo = oCOA.FrozenTo
-                        'oTargetCOA.FrozenRemarks = oCOA.FrozenRemarks
-                        'oTargetCOA.AllowChangeVatGroup = oCOA.AllowChangeVatGroup
-                        'oTargetCOA.AllowMultipleLinking = oCOA.AllowMultipleLinking
-                        'oTargetCOA.BudgetAccount = oCOA.BudgetAccount
-                        'oTargetCOA.DataExportCode = oCOA.DataExportCode
-                        'oTargetCOA.LiableForAdvances = oCOA.LiableForAdvances
-                        'oTargetCOA.LoadingType = oCOA.LoadingType
-                        'oTargetCOA.PlanningLevel = oCOA.PlanningLevel
-                        'oTargetCOA.ProjectRelevant = oCOA.ProjectRelevant
-                        'oTargetCOA.ProjectCode = oCOA.ProjectCode
-                        'oTargetCOA.RateConversion = oCOA.RateConversion
-                        'oTargetCOA.ReconciledAccount = oCOA.ReconciledAccount
-                        'oTargetCOA.RevaluationCoordinated = oCOA.RevaluationCoordinated
-                        'oTargetCOA.TaxExemptAccount = oCOA.TaxExemptAccount
-                        'oTargetCOA.TaxLiableAccount = oCOA.TaxLiableAccount
                     End If
                     If flg1 = True Then
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Updating COA", sFuncName)
@@ -204,41 +140,7 @@ Namespace AE_ISDN_A06
                     End If
 
 
-                    'If oTarCOA.GetByKey(sMasterdatacode) Then ''Check the account code is exist or not in the target company
-                    '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Caling Function COA_Assignment()", sFuncName)
-                    '    ''COA_Assignment(oTarCOA, oChartofAccounts)
-                    '    'oTarCOA.Browser.ReadXml(sFileName, 0) '' Read the values from XML file 
-
-                    '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Attempting to Update the COA " & oTragetCompany.CompanyDB, sFuncName)
-                    '    ival = oTarCOA.Update() ''Update the Account in target company
-                    '    If ival <> 0 Then
-                    '        IsError = True
-                    '        oTragetCompany.GetLastError(iErr, sErr)
-                    '        Call WriteToLogFile("Completed with ERROR ---" & sErr, sFuncName)
-                    '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with ERROR " & sErr, sFuncName)
-                    '        sErrDesc = sErr
-                    '        ChartofAccounts = RTN_ERROR
-                    '        Exit Function
-                    '    End If
-                    'Else
-                    '    '' oTarCOA.Code = oChartofAccounts.Code
-                    '    '' COA_Assignment(oTarCOA, oChartofAccounts)
-                    '    oTarCOA = oTragetCompany.GetBusinessObjectFromXML(sFileName, 0) '' Reading all values from the XML file
-
-                    '    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Attempting to Add the COA " & oTragetCompany.CompanyDB, sFuncName)
-                    '    ival = oTarCOA.Add() ''Add the account in target company
-                    '    If ival <> 0 Then
-                    '        ''if any error occurs during the add then throw the error message in status bar
-                    '        IsError = True
-                    '        oTragetCompany.GetLastError(iErr, sErr)
-                    '        Call WriteToLogFile("Completed with ERROR ---" & sErr, sFuncName)
-                    '        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with ERROR " & sErr, sFuncName)
-                    '        sErrDesc = sErr
-                    '        ChartofAccounts = RTN_ERROR
-                    '        Exit Function
-                    '    End If
-
-                    'End If
+               
                     If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with SUCCESS " & sErrDesc, sFuncName)
                 Else
                     sErrDesc = "No matching records found in the holding DB " & sMasterdatacode
@@ -264,6 +166,11 @@ Namespace AE_ISDN_A06
                 Call WriteToLogFile(sErrDesc, sFuncName)
                 If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Completed with ERROR", sFuncName)
             Finally
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(oCOA)
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(oTargetCOA)
+                oCOA = Nothing
+                oTargetCOA = Nothing
+
             End Try
         End Function
 
