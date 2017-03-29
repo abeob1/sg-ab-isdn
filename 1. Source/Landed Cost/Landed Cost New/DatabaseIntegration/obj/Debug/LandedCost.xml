@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LandedCost
+</name>
+</assembly>
+<members>
+<member name="P:LandedCost.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LandedCost.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:LandedCost.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:LandedCost.GolabalVariables">
+	<summary>
+ GGlobally whatever variable do you want declare here 
+ We can use any class and module from here  
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LandedCost.GlobalFunctions">
+	<summary>
+ Globally whatever Function and method do you want define here 
+ We can use any class and module from here  
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

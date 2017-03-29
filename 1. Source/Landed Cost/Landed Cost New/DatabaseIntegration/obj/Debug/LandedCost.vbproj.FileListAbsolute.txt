@@ -1,0 +1,30 @@
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.exe.config
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.vbproj.ResolveComReference.cache
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.exe
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.xml
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.pdb
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.exe
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.pdb
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.xml
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.vbprojResolveAssemblyReference.cache
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.Resources.resources
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.vbproj.GenerateResource.Cache
+E:\Senthil G\Landed Cost New\DatabaseIntegration\bin\Debug\LandedCost.exe.config
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.vbproj.ResolveComReference.cache
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.exe
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.xml
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.pdb
+E:\Senthil G\Landed Cost New\DatabaseIntegration\bin\Debug\LandedCost.exe
+E:\Senthil G\Landed Cost New\DatabaseIntegration\bin\Debug\LandedCost.pdb
+E:\Senthil G\Landed Cost New\DatabaseIntegration\bin\Debug\LandedCost.xml
+E:\Senthil G\Landed Cost New\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Landed Cost New\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.vbprojResolveAssemblyReference.cache
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.Resources.resources
+E:\Senthil G\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.vbproj.GenerateResource.Cache

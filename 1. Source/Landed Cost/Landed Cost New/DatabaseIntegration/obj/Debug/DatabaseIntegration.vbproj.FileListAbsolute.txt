@@ -1,0 +1,92 @@
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe.config
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.ResolveComReference.cache
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\DatabaseIntegration.xml
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\DatabaseIntegration.pdb
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\DatabaseIntegration.Resources.resources
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.GenerateResource.Cache
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\bin\Debug\DatabaseIntegration.pdb
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\bin\Debug\DatabaseIntegration.xml
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\bin\Debug\Interop.SBODI_Server.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\Interop.SBODI_Server.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration_20131210\DatabaseIntegration\obj\Debug\DatabaseIntegration.exe
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe.config
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\Interop.SBODI_Server.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.ResolveComReference.cache
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\DatabaseIntegration.exe
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\DatabaseIntegration.xml
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\DatabaseIntegration.pdb
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\bin\Debug\DatabaseIntegration.pdb
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\bin\Debug\DatabaseIntegration.xml
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\bin\Debug\Interop.SBODI_Server.dll
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\DatabaseIntegration.Resources.resources
+D:\Senthil kumar. G\CODE\Despec_DatabaseIntegration\Despec_DatabaseIntegration\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.GenerateResource.Cache
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe.config
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SBODI_Server.dll
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.ResolveComReference.cache
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.exe
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.xml
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.pdb
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.pdb
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.xml
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SBODI_Server.dll
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.Resources.resources
+D:\Senthil kumar. G\CODE\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.GenerateResource.Cache
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe.config
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SBODI_Server.dll
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.ResolveComReference.cache
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.exe
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.xml
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.pdb
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.Resources.resources
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.GenerateResource.Cache
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.pdb
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.xml
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+D:\Right Senthil\Files\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SBODI_Server.dll
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe.config
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.ResolveComReference.cache
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.exe
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.xml
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.pdb
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.exe
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.pdb
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\DatabaseIntegration.xml
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.Resources.resources
+E:\Senthil G\Daily_Transactions_18072015\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.GenerateResource.Cache
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.ResolveComReference.cache
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\DatabaseIntegration.vbproj.GenerateResource.Cache
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.exe.config
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.exe
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.pdb
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\bin\Debug\LandedCost.xml
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.Resources.resources
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.exe
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.xml
+E:\Senthil G\Landed Cost\Daily_Transactions\Daily_Transactions\DatabaseIntegration\obj\Debug\LandedCost.pdb
