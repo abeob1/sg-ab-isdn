@@ -1,5 +1,9 @@
 
 Public Class TableCreation
+    Dim DocType As String(,) = New String(,) {{"YES", "YES"}, {"NO", "NO"}}
+    Dim DType As String(,) = New String(,) {{"Amount", "Amount"}, {"Percent", "Percent"}}
+    Dim DType1 As String(,) = New String(,) {{"KG", "KG"}, {"NET", "NET"}}
+    Dim MethodType As String(,) = New String(,) {{"None", "None"}, {"Courier", "Courier"}, {"Forwarder", "Forwarder"}, {"SpotRate", "SpotRate"}, {"Lump Sum", "Lump Sum"}}
     Sub New()
 
         Me.TableCreation()
@@ -12,8 +16,13 @@ Public Class TableCreation
 
     Sub TableCreation()
         Try
-           
+
             Me.Zone()
+            Me.Courier()
+            Me.DimensionSurCharges()
+            Me.Forwarder()
+            Me.FuelSurCharge()
+            Me.IncoTerms()
 
         Catch ex As Exception
             oApplication.StatusBar.SetText("Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
@@ -33,6 +42,88 @@ Public Class TableCreation
 
         Catch ex As Exception
             oApplication.StatusBar.SetText("Zone Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+        End Try
+    End Sub
+
+    Sub Courier()
+        Try
+            CreateTable("COURIER", "Courier", SAPbobsCOM.BoUTBTableType.bott_NoObject)
+
+            CreateUserFields("@COURIER", "ForwarderCode", "Forwarder Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("@COURIER", "Weight", "Weight", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@COURIER", "Zone1", "Zone1", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+            CreateUserFields("@COURIER", "Zone2", "Zone2", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+            CreateUserFields("@COURIER", "Zone3", "Zone3", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+            CreateUserFields("@COURIER", "Zone7", "Zone7", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+
+        Catch ex As Exception
+            oApplication.StatusBar.SetText("Courier Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+        End Try
+    End Sub
+
+    Sub DimensionSurCharges()
+        Try
+            CreateTable("DIMENSIONSURG", "Dimension Sur Charge", SAPbobsCOM.BoUTBTableType.bott_NoObject)
+
+            CreateUserFields("@DIMENSIONSURG", "ForwarderOrCourier", "Forwarder Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFieldsComboBox("@DIMENSIONSURG", "ExtraCharge", "Extra Charges", SAPbobsCOM.BoFieldTypes.db_Alpha, 3, , , DocType, "")
+            CreateUserFields("@DIMENSIONSURG", "Weight", "Weight", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@DIMENSIONSURG", "WeightSurcharge", "Weight Surcharge", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+            CreateUserFields("@DIMENSIONSURG", "Dimension", "Dimension", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@DIMENSIONSURG", "DimensionSurcharge", "Dimension Surcharge", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+
+        Catch ex As Exception
+            oApplication.StatusBar.SetText("Dimension SurCharges Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+        End Try
+    End Sub
+
+    Sub Forwarder()
+        Try
+            CreateTable("FORWARDER", "Forwarder", SAPbobsCOM.BoUTBTableType.bott_NoObject)
+
+            CreateUserFields("@FORWARDER", "Forwarder", "Forwarder Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("@FORWARDER", "Country", "Country", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
+            CreateUserFields("@FORWARDER", "SupplierBPCode", "Supplier BP Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("@FORWARDER", "Cur", "Currency", SAPbobsCOM.BoFieldTypes.db_Alpha, 30)
+            CreateUserFields("@FORWARDER", "Component", "Component", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFieldsComboBox("@FORWARDER", "ByAmtOrPrcnt", "By Amount/Percent", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType, "")
+            CreateUserFieldsComboBox("@FORWARDER", "ByKgOrNet", "By KG/Net", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType1, "")
+            CreateUserFields("@FORWARDER", "Min", "Minimum", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@FORWARDER", "Flat", "Flat", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@FORWARDER", "Basic", "Basic", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@FORWARDER", "FromDate", "FromDate", SAPbobsCOM.BoFieldTypes.db_Date)
+            CreateUserFields("@FORWARDER", "ToDate", "ToDate", SAPbobsCOM.BoFieldTypes.db_Date)
+        Catch ex As Exception
+            oApplication.StatusBar.SetText("Forwarder Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+        End Try
+    End Sub
+
+    Sub FuelSurCharge()
+        Try
+            CreateTable("FUELSURCHARGE", "Fuel SurCharge", SAPbobsCOM.BoUTBTableType.bott_NoObject)
+
+            CreateUserFields("@FUELSURCHARGE", "Courier", "Courier Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("@FUELSURCHARGE", "Country", "Country", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
+            CreateUserFieldsComboBox("@FUELSURCHARGE", "ByAmtOrPrcnt", "By Amount/Percent", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType, "")
+            CreateUserFieldsComboBox("@FUELSURCHARGE", "ByKgOrNet", "By KG/Net", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType1, "")
+            CreateUserFields("@FUELSURCHARGE", "Rate", "Rate", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Rate)
+            CreateUserFields("@FUELSURCHARGE", "Month", "Month", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
+        Catch ex As Exception
+            oApplication.StatusBar.SetText("Fuel SurCharge Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+        End Try
+    End Sub
+
+    Sub IncoTerms()
+        Try
+            CreateTable("INCOTERM", "Inco Terms", SAPbobsCOM.BoUTBTableType.bott_NoObject)
+
+            CreateUserFields("@INCOTERM", "IncoTermCode", "Inco Term Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
+            CreateUserFields("@INCOTERM", "POPrintOutDscrip", "Weight", SAPbobsCOM.BoFieldTypes.db_Alpha, 30)
+            CreateUserFields("@INCOTERM", "CFRvalue", "CFR Value", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+            CreateUserFields("@INCOTERM", "InsuranceRate", "Insurance Rate", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Rate)
+
+        Catch ex As Exception
+            oApplication.StatusBar.SetText("Inco Terms Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
         End Try
     End Sub
 
@@ -91,6 +182,13 @@ Public Class TableCreation
     Sub UDFCreation()
         Try
             CreateUserFields("OCRD", "IncoTerm", "Inco Terms", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("OPDN", "IncoTerm", "Inco Terms", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFieldsComboBox("OPDN", "LCMethod", "Method", SAPbobsCOM.BoFieldTypes.db_Alpha, 15, , , MethodType, "")
+            CreateUserFields("OPDN", "Forwarder", "Forwarder", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("OPDN", "LCZone", "LC Zone", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("OPDN", "LCShipFromCountry", "Ship From Country", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("OPDN", "LCToCWeight", "Total Charge Weight", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Sum)
+            CreateUserFields("OPDN", "LCSpotandLS", "Spot Rate/ Lump Sum", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Sum)
         Catch ex As Exception
             oApplication.StatusBar.SetText("UDF Creation Failed: " & ex.Message)
         Finally
@@ -175,6 +273,7 @@ Public Class TableCreation
             oApplication.MessageBox(ex.Message)
         End Try
     End Function
+
     Function UDFExists(ByVal TableName As String, ByVal FieldID As String) As Boolean
         Try
             Dim rs As SAPbobsCOM.Recordset = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
@@ -199,6 +298,7 @@ Public Class TableCreation
         System.Runtime.InteropServices.Marshal.ReleaseComObject(oTables)
         Return oFlag
     End Function
+
     Function ColumnExists(ByVal TableName As String, ByVal FieldID As String) As Boolean
         Try
             Dim rs As SAPbobsCOM.Recordset = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
@@ -246,7 +346,7 @@ Public Class TableCreation
                 Return False
             End If
         Catch ex As Exception
-            oApplication.StatusBar.SetText(AddOnName & ":> " & ex.Message & " @ " & ex.Source)
+            oApplication.StatusBar.SetText(addonName & ":> " & ex.Message & " @ " & ex.Source)
         End Try
     End Function
 
@@ -354,6 +454,55 @@ Public Class TableCreation
             If ActionSuccess = False And oCompany.InTransaction Then oCompany.EndTransaction(SAPbobsCOM.BoWfTransOpt.wf_RollBack)
         Catch ex As Exception
             If oCompany.InTransaction Then oCompany.EndTransaction(SAPbobsCOM.BoWfTransOpt.wf_RollBack)
+        End Try
+    End Function
+
+    Function CreateUserFieldsComboBox(ByVal TableName As String, ByVal FieldName As String, ByVal FieldDescription As String, ByVal type As SAPbobsCOM.BoFieldTypes, Optional ByVal size As Long = 0, Optional ByVal subType As SAPbobsCOM.BoFldSubTypes = SAPbobsCOM.BoFldSubTypes.st_None, Optional ByVal LinkedTable As String = "", Optional ByVal ComboValidValues As String(,) = Nothing, Optional ByVal DefaultValidValues As String = "") As Boolean
+        Try
+            'If TableName.StartsWith("@") = False Then
+            If Not Me.UDFExists(TableName, FieldName) Then
+                Dim v_UserField As SAPbobsCOM.UserFieldsMD
+                v_UserField = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oUserFields)
+                v_UserField.TableName = TableName
+                v_UserField.Name = FieldName
+                v_UserField.Description = FieldDescription
+                v_UserField.Type = type
+                If type <> SAPbobsCOM.BoFieldTypes.db_Date Then
+                    If size <> 0 Then
+                        v_UserField.Size = size
+                    End If
+                End If
+                If subType <> SAPbobsCOM.BoFldSubTypes.st_None Then
+                    v_UserField.SubType = subType
+                End If
+
+                For i As Int16 = 0 To ComboValidValues.GetLength(0) - 1
+                    If i > 0 Then v_UserField.ValidValues.Add()
+                    v_UserField.ValidValues.Value = ComboValidValues(i, 0)
+                    v_UserField.ValidValues.Description = ComboValidValues(i, 1)
+                Next
+                If DefaultValidValues <> "" Then v_UserField.DefaultValue = DefaultValidValues
+
+                If LinkedTable <> "" Then v_UserField.LinkedTable = LinkedTable
+                v_RetVal = v_UserField.Add()
+                If v_RetVal <> 0 Then
+                    oCompany.GetLastError(v_ErrCode, v_ErrMsg)
+                    oApplication.StatusBar.SetText("Failed to add UserField " & FieldDescription & " - " & v_ErrCode & " " & v_ErrMsg, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(v_UserField)
+                    v_UserField = Nothing
+                    Return False
+                Else
+                    oApplication.StatusBar.SetText(" & TableName & - " & FieldDescription & " added successfully!!!", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(v_UserField)
+                    v_UserField = Nothing
+                    Return True
+                End If
+            Else
+                Return False
+            End If
+            ' End If
+        Catch ex As Exception
+            oApplication.MessageBox(ex.Message)
         End Try
     End Function
 End Class

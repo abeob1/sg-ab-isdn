@@ -59,9 +59,6 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SAPBusinessOneSDK">
-      <HintPath>C:\Program Files (x86)\sap\SAP Business One SDK\Lib\SAPBusinessOneSDK.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />

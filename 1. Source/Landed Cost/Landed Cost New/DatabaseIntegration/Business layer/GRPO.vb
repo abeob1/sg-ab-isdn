@@ -516,99 +516,114 @@ Public Class GRPO
                     Try
                         If BusinessObjectInfo.ActionSuccess Then
                             Try
+                                oForm = oApplication.Forms.Item(BusinessObjectInfo.FormUID)
                                 Dim method As String = Trim(oDBDSHeader.GetValue("U_LCMethod", 0).ToString)
-                                If method <> "None" Then
-                                    Dim ErrMsg As String = ""
-                                    Dim iRowIndex As Integer = 0
+                                Dim SS As String = "select ""BaseEntry"" from ""IPF1"" where ""BaseEntry"" = '" & oForm.DataSources.DBDataSources.Item(0).GetValue("DocEntry", 0) & "' and ""BaseType"" = '20';"
+                                Dim Rs As SAPbobsCOM.Recordset = oGFun.DoQuery(SS)
+                                If Rs.RecordCount = 0 Then
 
-                                    oForm = oApplication.Forms.Item(BusinessObjectInfo.FormUID)
-                                    Dim sVendorCode As String = oForm.DataSources.DBDataSources.Item(0).GetValue("CardCode", 0).Trim
+                                    If method <> "None" Then
+                                        Dim ErrMsg As String = ""
+                                        Dim iRowIndex As Integer = 0
+                                        sFuncName = "Landed Cost Posting"
+                                        If p_iDebugMode = DEBUG_ON Then Call oGFun.WriteToLogFile_Debug("Landed Cost Posting Started", sFuncName)
 
-                                    Dim oGRPO As SAPbobsCOM.Documents = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oPurchaseDeliveryNotes)
 
-                                    If oGRPO.GetByKey(oForm.DataSources.DBDataSources.Item(0).GetValue("DocEntry", 0)) Then
+                                        Dim sVendorCode As String = oForm.DataSources.DBDataSources.Item(0).GetValue("CardCode", 0).Trim
 
-                                    End If
-                                    Dim sPostingDate As String = oGRPO.DocDate
+                                        Dim oGRPO As SAPbobsCOM.Documents = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oPurchaseDeliveryNotes)
 
-                                    Dim strQuery As String = String.Empty
+                                        If oGRPO.GetByKey(oForm.DataSources.DBDataSources.Item(0).GetValue("DocEntry", 0)) Then
 
-                                    Dim svrLandedCost As SAPbobsCOM.LandedCostsService = oCompany.GetCompanyService().GetBusinessService(SAPbobsCOM.ServiceTypes.LandedCostsService)
-                                    Dim oLandedCost As SAPbobsCOM.LandedCost = svrLandedCost.GetDataInterface(SAPbobsCOM.LandedCostsServiceDataInterfaces.lcsLandedCost)
-                                    oLandedCost.DocumentCurrency = oGRPO.DocCurrency
-                                    oLandedCost.VendorCode = oGRPO.CardCode
-                                    oLandedCost.DueDate = oGRPO.DocDueDate
-                                    oLandedCost.PostingDate = oGRPO.TaxDate
-                                    Dim oLandedCostEntry As Long = 0
-                                    Dim boolGRN As Boolean = False
-                                    Dim Success As Boolean = False
-                                    Dim oLandedCost_ItemLine As SAPbobsCOM.LandedCost_ItemLine
-                                    Dim sTotalAmount As Double = 0
-                                    If oGRPO.Lines.Count > 0 Then
-                                        For Rows As Integer = 0 To oGRPO.Lines.Count - 1
-                                            oLandedCost_ItemLine = oLandedCost.LandedCost_ItemLines.Add
-                                            Dim LIN As String = oGRPO.Lines.LineNum
-                                            oLandedCost_ItemLine.BaseDocumentType = SAPbobsCOM.LandedCostBaseDocumentTypeEnum.asGoodsReceiptPO
-                                            oLandedCost_ItemLine.BaseEntry = oGRPO.Lines.DocEntry
-                                            oLandedCost_ItemLine.BaseLine = Rows
-                                        Next
-                                    End If
-
-                                    strQuery = "select ""AlcCode"", ""AlcName"", ""OhType"", ""LaCAllcAcc"" from ""OALC"""
-                                    Dim rsetCostType As SAPbobsCOM.Recordset = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
-                                    rsetCostType.DoQuery(strQuery)
-                                    Dim oLandedCost_CostLine As SAPbobsCOM.LandedCost_CostLine
-
-                                    If rsetCostType.RecordCount > 0 Then
-                                        rsetCostType.MoveFirst()
-                                    End If
-                                    For JKS As Integer = 0 To rsetCostType.RecordCount - 1
-                                        If rsetCostType.Fields.Item("AlcCode").Value <> String.Empty Then
-                                            Dim Prce1 As Double = 0
-                                            oLandedCost_CostLine = oLandedCost.LandedCost_CostLines.Add
-                                            oLandedCost_CostLine.CostType = SAPbobsCOM.LCCostTypeEnum.asFixedCosts
-                                            oLandedCost_CostLine.LandedCostCode = rsetCostType.Fields.Item("AlcCode").Value
-                                            oLandedCost_CostLine.AllocationBy = SAPbobsCOM.LandedCostAllocationByEnum.asQuantity
-                                            If rsetCostType.Fields.Item("AlcCode").Value = "FR" Then
-                                                Dim Amount As Double = 0
-                                                If method = "Courier" Then
-                                                    oLandedCost_CostLine.amount = CourierCost(Amount)
-                                                End If
-                                            ElseIf rsetCostType.Fields.Item("AlcCode").Value = "IC" Then
-                                                Dim IncoTerms As String = oDBDSHeader.GetValue("U_IncoTerm", 0).Trim
-                                                If IncoTerms <> "" Then
-                                                    Dim DocTotal As Double = oGRPO.DocTotal
-                                                    Dim Sqr As String = "select ""U_IncoTermCode"", ""U_CFRvalue"", ""U_InsuranceRate"" from ""@INCOTERM"" where ""U_IncoTermCode"" = '" & IncoTerms & "';"
-                                                    Dim Rse As SAPbobsCOM.Recordset = oGFun.DoQuery(Sqr)
-                                                    If Rse.RecordCount > 0 Then
-                                                        Dim CFRVal As Double = Rse.Fields.Item("U_CFRvalue").Value
-                                                        Dim InsVal As Double = Rse.Fields.Item("U_InsuranceRate").Value
-                                                        Dim IncCharges As Double = DocTotal * CFRVal * InsVal
-                                                        oLandedCost_CostLine.amount = Math.Round(IncCharges)
-                                                    End If
-                                                End If
-                                            Else
-                                                oLandedCost_CostLine.amount = 12
-                                            End If
                                         End If
-                                        rsetCostType.MoveNext()
-                                    Next
+                                        Dim sPostingDate As String = oGRPO.DocDate
 
-                                    Dim oLandedCostParams As SAPbobsCOM.LandedCostParams = svrLandedCost.GetDataInterface(SAPbobsCOM.LandedCostsServiceDataInterfaces.lcsLandedCostParams)
+                                        Dim strQuery As String = String.Empty
 
-                                    Try
-                                        oLandedCostEntry = oLandedCostParams.LandedCostNumber
-                                        oLandedCostParams = svrLandedCost.AddLandedCost(oLandedCost)
-                                        Success = True
-                                    Catch ex As Exception
-                                        oApplication.StatusBar.SetText(ex.ToString, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
-                                        Success = False
-                                    End Try
+                                        Dim svrLandedCost As SAPbobsCOM.LandedCostsService = oCompany.GetCompanyService().GetBusinessService(SAPbobsCOM.ServiceTypes.LandedCostsService)
+                                        Dim oLandedCost As SAPbobsCOM.LandedCost = svrLandedCost.GetDataInterface(SAPbobsCOM.LandedCostsServiceDataInterfaces.lcsLandedCost)
+                                        oLandedCost.DocumentCurrency = oGRPO.DocCurrency
+                                        oLandedCost.VendorCode = oGRPO.CardCode
+                                        oLandedCost.DueDate = oGRPO.DocDueDate
+                                        oLandedCost.PostingDate = oGRPO.TaxDate
+                                        Dim oLandedCostEntry As Long = 0
+                                        Dim boolGRN As Boolean = False
+                                        Dim Success As Boolean = False
+                                        Dim oLandedCost_ItemLine As SAPbobsCOM.LandedCost_ItemLine
+                                        Dim sTotalAmount As Double = 0
+                                        If oGRPO.Lines.Count > 0 Then
+                                            For Rows As Integer = 0 To oGRPO.Lines.Count - 1
+                                                oLandedCost_ItemLine = oLandedCost.LandedCost_ItemLines.Add
+                                                Dim LIN As String = oGRPO.Lines.LineNum
+                                                oLandedCost_ItemLine.BaseDocumentType = SAPbobsCOM.LandedCostBaseDocumentTypeEnum.asGoodsReceiptPO
+                                                oLandedCost_ItemLine.BaseEntry = oGRPO.Lines.DocEntry
+                                                oLandedCost_ItemLine.BaseLine = Rows
+                                            Next
+                                        End If
 
-                                    If Success = True Then
-                                        If oCompany.InTransaction Then oCompany.EndTransaction(SAPbobsCOM.BoWfTransOpt.wf_Commit)
-                                    Else
-                                        If oCompany.InTransaction Then oCompany.EndTransaction(SAPbobsCOM.BoWfTransOpt.wf_RollBack)
+                                        strQuery = "select ""AlcCode"", ""AlcName"", ""OhType"", ""LaCAllcAcc"" from ""OALC"""
+                                        Dim rsetCostType As SAPbobsCOM.Recordset = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                                        rsetCostType.DoQuery(strQuery)
+                                        Dim oLandedCost_CostLine As SAPbobsCOM.LandedCost_CostLine
+
+                                        If rsetCostType.RecordCount > 0 Then
+                                            rsetCostType.MoveFirst()
+                                        End If
+                                        For JKS As Integer = 0 To rsetCostType.RecordCount - 1
+                                            If rsetCostType.Fields.Item("AlcCode").Value <> String.Empty Then
+                                                Dim Prce1 As Double = 0
+                                                oLandedCost_CostLine = oLandedCost.LandedCost_CostLines.Add
+                                                oLandedCost_CostLine.CostType = SAPbobsCOM.LCCostTypeEnum.asFixedCosts
+                                                oLandedCost_CostLine.LandedCostCode = rsetCostType.Fields.Item("AlcCode").Value
+                                                oLandedCost_CostLine.AllocationBy = SAPbobsCOM.LandedCostAllocationByEnum.asQuantity
+                                                If rsetCostType.Fields.Item("AlcCode").Value = "FR" Then
+                                                    Dim Amount As Double = 0
+                                                    If p_iDebugMode = DEBUG_ON Then Call oGFun.WriteToLogFile_Debug("Landed Cost - Courier Cost Calculation", sFuncName)
+                                                    If method = "Courier" Then
+                                                        oLandedCost_CostLine.amount = CourierCost(Amount)
+                                                    End If
+                                                ElseIf rsetCostType.Fields.Item("AlcCode").Value = "IC" Then
+
+                                                    If p_iDebugMode = DEBUG_ON Then Call oGFun.WriteToLogFile_Debug("Landed Cost - Insurance Cost Calculation", sFuncName)
+
+                                                    Dim IncoTerms As String = oDBDSHeader.GetValue("U_IncoTerm", 0).Trim
+                                                    If IncoTerms <> "" Then
+                                                        Dim DocTotal As Double = oGRPO.DocTotal
+                                                        Dim Sqr As String = "select ""U_IncoTermCode"", ""U_CFRvalue"", ""U_InsuranceRate"" from ""@INCOTERM"" where ""U_IncoTermCode"" = '" & IncoTerms & "';"
+                                                        Dim Rse As SAPbobsCOM.Recordset = oGFun.DoQuery(Sqr)
+                                                        If Rse.RecordCount > 0 Then
+                                                            Dim CFRVal As Double = Rse.Fields.Item("U_CFRvalue").Value
+                                                            Dim InsVal As Double = Rse.Fields.Item("U_InsuranceRate").Value
+                                                            Dim IncCharges As Double = DocTotal * CFRVal * InsVal
+                                                            oLandedCost_CostLine.amount = Math.Round(IncCharges)
+                                                        End If
+                                                    End If
+                                                    'Else
+                                                    '    oLandedCost_CostLine.amount = 12
+                                                End If
+                                            End If
+                                            rsetCostType.MoveNext()
+                                        Next
+
+                                        Dim oLandedCostParams As SAPbobsCOM.LandedCostParams = svrLandedCost.GetDataInterface(SAPbobsCOM.LandedCostsServiceDataInterfaces.lcsLandedCostParams)
+
+                                        If p_iDebugMode = DEBUG_ON Then Call oGFun.WriteToLogFile_Debug("Landed Cost Creation", sFuncName)
+                                        Try
+                                            oLandedCostEntry = oLandedCostParams.LandedCostNumber
+                                            oLandedCostParams = svrLandedCost.AddLandedCost(oLandedCost)
+                                            Success = True
+                                            If p_iDebugMode = DEBUG_ON Then Call oGFun.WriteToLogFile_Debug("Landed Cost Created Successfully", sFuncName)
+                                        Catch ex As Exception
+                                            oApplication.StatusBar.SetText(ex.ToString, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                                            Success = False
+                                            If p_iDebugMode = DEBUG_ON Then Call oGFun.WriteToLogFile_Debug("Landed Cost Creation Failed", sFuncName)
+                                        End Try
+
+                                        If Success = True Then
+                                            If oCompany.InTransaction Then oCompany.EndTransaction(SAPbobsCOM.BoWfTransOpt.wf_Commit)
+                                        Else
+                                            If oCompany.InTransaction Then oCompany.EndTransaction(SAPbobsCOM.BoWfTransOpt.wf_RollBack)
+                                        End If
                                     End If
                                 End If
                             Catch ex As Exception

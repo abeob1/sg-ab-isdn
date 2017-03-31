@@ -14,6 +14,15 @@ Module GolabalVariables
     Public GRPOFormID As String = "143"
     Public oGRPO As New GRPO
 
+    Public Const DEBUG_ON As Int16 = 1
+    Public Const DEBUG_OFF As Int16 = 0
+    Public sFuncName As String
+    Public Const RTN_SUCCESS As Int16 = 1
+    Public Const RTN_ERROR As Int16 = 0
+
+    Public p_iDebugMode As Int16
+    Public p_iErrDispMethod As Int16
+    Public p_iDeleteDebugLog As Int16
 
     Public v_RetVal, v_ErrCode As Long
     Public v_ErrMsg As String = ""
