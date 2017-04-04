@@ -1,0 +1,22 @@
+[Courier Table + Fuel Surcharge Table + Inco Table + Dimension Surcharge table + Fuel Surcharge x Total Dimension Surcharge]
+Courier Table
+(156+67+6) * Zone
+
+Forwarder Table
+- By Percent and By KG => Formula?
+- By Percent and By NET => Formula?
+- By Amount and By NET => Formula?
+- Percentage of what field?
+
+Fuel Surcharge Table
+- By Percent and By KG=> Rate % * weight
+  DHL , 2.0	=> (11% * 2.0) = 0.22
+- By Amount and By KG => Rate ($) * weight
+- By Amount and By NET => Rate ($)
+
+Inco Table
+- FCA-Overseas => GRPO total amount * 1.1 * 0.00025
+
+Dimension Surcharge table
+- Compare weight and dimension surcharge and take whichever is higher
+- If extra='Yes' then double charge.

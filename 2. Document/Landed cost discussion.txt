@@ -1,0 +1,14 @@
+[Courier Table + Fuel Surcharge Table + Inco Table + Dimension Surcharge table + Fuel Surcharge x Total Dimension Surcharge]
+Courier Table
+(156+67+6) * Zone
+
+Fuel Surcharge Table
+- By Percent and By KG=> Rate % * weight
+  DHL , 2.0	=> (11% * 2.0) = 0.22
+- By Amount and By KG => Rate ($) * weight
+- By Amount and By NET => Rate ($)
+
+Inco Table
+- FCA-Overseas => GRPO total amount * 1.1 * 0.00025
+
+Dimension Surcharge table
