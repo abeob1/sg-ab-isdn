@@ -1,0 +1,458 @@
+[03/10/2017 17:12:22][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:12:22][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_222', Item Unique Id: 'Item_3'
+[03/10/2017 17:12:40][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:16:38][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:16:38][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_263', Item Unique Id: 'Item_3'
+[03/10/2017 17:16:52][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:18:48][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:18:48][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_274', Item Unique Id: 'Item_3'
+[03/10/2017 17:19:10][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[03/10/2017 17:19:10][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[03/10/2017 17:19:17][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[03/10/2017 17:22:07][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:22:07][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_274', Item Unique Id: 'Item_3'
+[03/10/2017 17:22:30][             SBO_Application_ItemEvent()] Conversion from string "13.03.2017" to type 'Date' is not valid.
+[03/10/2017 17:22:56][             SBO_Application_ItemEvent()] Conversion from string "13.03.2017" to type 'Date' is not valid.
+[03/10/2017 17:23:04][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:23:04][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:28:04][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:28:04][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_274', Item Unique Id: 'Item_3'
+[03/10/2017 17:33:06][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:33:06][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_303', Item Unique Id: 'Item_3'
+[03/10/2017 17:35:17][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:17][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_303', Item Unique Id: 'Item_3'
+[03/10/2017 17:35:23][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:23][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:25][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:25][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:30][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:30][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:35][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:35][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:38][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:38][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:39][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:39][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:41][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:41][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:42][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:35:44][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:35:44][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:36:40][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:40][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:36:46][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:46][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:48][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:48][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:49][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:50][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:54][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:54][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:56][             SBO_Application_ItemEvent()] Conversion from string "" to type 'Date' is not valid.
+[03/10/2017 17:36:58][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:36:58][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 17:37:34][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:37:34][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:37:34][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:37:34][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:37:48][             SBO_Application_ItemEvent()] Unable to cast object of type 'System.String' to type 'System.IFormatProvider'.
+[03/10/2017 17:37:49][             SBO_Application_ItemEvent()] Unable to cast object of type 'System.String' to type 'System.IFormatProvider'.
+[03/10/2017 17:39:43][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:39:43][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:42:28][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:42:28][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:46:41][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:46:41][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:53:30][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:53:30][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:55:55][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:55:55][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 17:58:14][             SBO_Application_ItemEvent()] 
+[03/10/2017 17:58:14][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_315', Item Unique Id: 'Item_3'
+[03/10/2017 18:03:34][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:03:34][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_348', Item Unique Id: 'Item_3'
+[03/10/2017 18:05:00][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:05:15][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:05:15][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:16:56][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:16:56][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_348', Item Unique Id: 'Item_3'
+[03/10/2017 18:18:19][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:18:19][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_363', Item Unique Id: 'Item_3'
+[03/10/2017 18:22:02][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:22:02][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_372', Item Unique Id: 'Item_3'
+[03/10/2017 18:26:29][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:26:29][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:26:48][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:26:48][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:26:48][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:26:51][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:26:51][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:26:56][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:26:56][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:26:56][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:26:56][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:27:04][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:04][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:04][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:04][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:04][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:04][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:19][                AddChooseFromList_Item()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:27:19][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:27:19][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:27:23][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:27:23][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:27:23][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:27:27][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:27][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:27][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:27][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:27][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:27][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:39][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:39][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:39][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:39][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:39][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:39][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:43][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:27:43][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:27:43][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:27:43][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:27:47][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:27:47][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:27:47][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:27:47][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:27:47][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:27:47][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:27:59][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:27:59][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:28:06][                AddChooseFromList_Item()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:28:06][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:28:06][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:28:06][                AddChooseFromList_Item()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:28:06][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:28:06][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:28:13][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:28:13][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:28:13][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:28:13][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:28:13][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:28:13][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:29:41][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:29:41][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:30:24][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:30:25][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:32:19][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:32:19][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:33:04][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:33:04][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:35:42][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:35:42][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:37:01][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:37:01][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:37:51][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:37:51][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:37:51][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:37:51][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:38:00][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:00][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:00][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:00][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:00][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:01][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:24][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:24][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:24][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:24][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:24][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:38:24][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:40:09][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:40:09][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:42:41][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:42:41][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:43:51][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:43:51][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:43:51][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:44:23][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:44:23][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:44:23][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:44:27][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:44:27][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:44:39][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:44:39][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:44:39][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:44:39][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:45:06][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:06][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:45:06][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:06][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:45:10][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:11][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:45:11][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:11][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:45:11][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:11][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:45:14][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:14][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[03/10/2017 18:45:31][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:45:31][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:45:31][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:45:31][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:45:31][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:45:31][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:45:34][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:34][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:45:34][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:34][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:45:34][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:45:34][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:50:19][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:50:19][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:50:42][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:50:42][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:50:42][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:50:42][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_382', Item Unique Id: 'Item_3'
+[03/10/2017 18:52:57][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:52:57][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 18:54:21][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:54:21][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 18:54:21][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:54:21][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 18:55:09][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:55:09][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:55:09][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:56:05][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:56:05][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 18:56:20][                AddChooseFromList_Item()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:56:20][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:56:20][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:56:23][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:56:23][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 18:56:31][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:56:31][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:56:31][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:57:02][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 18:58:54][             SBO_Application_ItemEvent()] 
+[03/10/2017 18:58:54][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:02:38][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:02:38][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:04:19][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:04:19][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:05:36][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:05:36][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:07:06][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:07:06][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:09:27][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:09:27][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:12:07][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:12:07][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:12:35][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 19:12:35][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 19:12:35][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/10/2017 19:15:25][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:15:25][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:15:41][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:15:41][             SBO_Application_ItemEvent()] Item - Could not commit action because the item is currently in focus  [66000-23]
+[03/10/2017 19:17:02][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:17:02][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:17:17][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:17:17][             SBO_Application_ItemEvent()] Item - Could not commit action because the item is currently in focus  [66000-23]
+[03/10/2017 19:18:01][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:18:01][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:18:09][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:18:09][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 19:18:13][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:18:13][             SBO_Application_ItemEvent()] Item - Could not commit action because the item is currently in focus  [66000-23]
+[03/10/2017 19:20:05][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:20:05][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_406', Item Unique Id: 'Item_3'
+[03/10/2017 19:20:17][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:20:17][             SBO_Application_ItemEvent()] Item - Could not commit action because the item is currently in focus  [66000-23]
+[03/10/2017 19:22:18][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:22:18][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_459', Item Unique Id: 'Item_3'
+[03/10/2017 19:22:21][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:22:21][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/10/2017 19:29:10][                          CurrencyLoad()] Item - Could not commit action because the item is currently in focus  [66000-23]
+[03/10/2017 19:44:22][             SBO_Application_ItemEvent()] 
+[03/10/2017 19:44:22][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_38', Item Unique Id: 'Item_3'
+[03/12/2017 05:31:53][                         Single_Signon()] Value does not fall within the expected range.
+[03/12/2017 05:31:54][                       AddUDT - clsTable] You are not connected to a company
+[03/12/2017 05:31:54][                         Single_Signon()] Object reference not set to an instance of an object.
+[03/12/2017 05:43:49][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:43:49][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_81', Item Unique Id: 'Item_3'
+[03/12/2017 05:45:10][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:51:24][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:51:24][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_81', Item Unique Id: 'Item_3'
+[03/12/2017 05:52:03][             SBO_Application_ItemEvent()] 
+[03/12/2017 05:52:34][             SBO_Application_ItemEvent()] 
+[03/13/2017 10:52:20][             SBO_Application_ItemEvent()] 
+[03/13/2017 10:52:20][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_66', Item Unique Id: 'Item_3'
+[03/13/2017 10:52:39][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 10:52:39][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 10:52:39][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 10:59:25][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:00:02][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:00:42][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:01:01][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:01][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:01][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:28][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:28][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:28][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:47][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:47][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:01:47][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:01][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:02:01][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_66', Item Unique Id: 'Item_3'
+[03/13/2017 11:02:01][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:02:02][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_66', Item Unique Id: 'Item_3'
+[03/13/2017 11:02:05][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:05][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:05][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:11][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:11][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:11][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:17][                AddChooseFromList_Item()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:17][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:17][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:24][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:24][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:24][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:37][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:37][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:02:37][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 11:09:53][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:09:53][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_23', Item Unique Id: 'Item_3'
+[03/13/2017 11:10:27][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:10:35][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:10:35][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/13/2017 11:10:45][                       ChartofAccounts()] Completed with ERROR ---Illegal parent number 
+[03/13/2017 11:10:45][             SBO_Application_ItemEvent()] Illegal parent number 
+[03/13/2017 11:12:42][                       ChartofAccounts()] Completed with ERROR ---Illegal parent number 
+[03/13/2017 11:12:42][             SBO_Application_ItemEvent()] Illegal parent number 
+[03/13/2017 11:13:52][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:16:23][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:38:41][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:38:41][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_23', Item Unique Id: 'Item_3'
+[03/13/2017 11:39:06][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:40:47][             SBO_Application_ItemEvent()] 
+[03/13/2017 11:41:58][                        MasterDataSync()] Object reference not set to an instance of an object.
+[03/13/2017 11:41:58][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/13/2017 11:42:31][                       BusinessPartner()] Object reference not set to an instance of an object.
+[03/13/2017 11:42:36][                       BusinessPartner()] Object reference not set to an instance of an object.
+[03/13/2017 11:42:36][                       BusinessPartner()] Object reference not set to an instance of an object.
+[03/13/2017 11:42:37][                       BusinessPartner()] Object reference not set to an instance of an object.
+[03/13/2017 11:42:40][                       BusinessPartner()] Object reference not set to an instance of an object.
+[03/13/2017 11:42:40][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/13/2017 13:04:48][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:04:48][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[03/13/2017 13:05:27][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:05:27][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[03/13/2017 13:05:28][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:05:28][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[03/13/2017 13:05:44][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:05:44][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/13/2017 13:05:44][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:05:44][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[03/13/2017 13:06:12][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:06:22][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:06:59][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 13:06:59][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 13:06:59][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 13:12:24][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:12:24][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[03/13/2017 13:12:53][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:12:53][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_31', Item Unique Id: 'Item_10'
+[03/13/2017 13:13:11][                       ChartofAccounts()] Completed with ERROR ---Illegal parent number 
+[03/13/2017 13:13:11][             SBO_Application_ItemEvent()] Illegal parent number 
+[03/13/2017 13:13:12][             SBO_Application_ItemEvent()] Public member 'StartupPath' on type 'ApplicationClass' not found.
+[03/13/2017 13:13:50][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:13:50][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[03/13/2017 13:13:50][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:13:50][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[03/13/2017 13:13:53][                 AddChooseFromList_COA()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 13:13:53][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 13:13:53][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[03/13/2017 13:14:05][                       ChartofAccounts()] Completed with ERROR ---Illegal parent number 
+[03/13/2017 13:14:05][             SBO_Application_ItemEvent()] Illegal parent number 
+[03/13/2017 13:14:34][             SBO_Application_ItemEvent()] Public member 'StartupPath' on type 'ApplicationClass' not found.
+[03/13/2017 13:14:36][                       ChartofAccounts()] Completed with ERROR ---Illegal parent number 
+[03/13/2017 13:14:36][             SBO_Application_ItemEvent()] Illegal parent number 
+[03/13/2017 13:14:39][             SBO_Application_ItemEvent()] Public member 'StartupPath' on type 'ApplicationClass' not found.
+[03/13/2017 13:17:27][             SBO_Application_ItemEvent()] 
+[03/13/2017 13:17:27][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[03/13/2017 13:18:05][                       ChartofAccounts()] Completed with ERROR ---Illegal parent number 
+[03/13/2017 13:18:05][                       ChartofAccounts()] Completed with ERROR ---Illegal parent number 
+[03/13/2017 13:18:08][             SBO_Application_ItemEvent()] Illegal parent number 
+[03/13/2017 13:18:58][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[03/13/2017 13:18:58][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[03/13/2017 13:18:59][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[03/13/2017 13:19:00][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[03/13/2017 13:19:05][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[03/13/2017 13:19:40][             SBO_Application_ItemEvent()] 
+[04/17/2017 14:50:58][             SBO_Application_ItemEvent()] 
+[04/17/2017 14:50:58][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_23', Item Unique Id: 'Item_3'
+[04/18/2017 13:02:52][             SBO_Application_ItemEvent()] 
+[04/18/2017 13:02:53][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_33', Item Unique Id: 'Item_3'
+[04/18/2017 13:05:32][             SBO_Application_ItemEvent()] 
+[04/18/2017 13:05:32][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_33', Item Unique Id: 'Item_3'
+[04/18/2017 13:07:44][             SBO_Application_ItemEvent()] 
+[04/18/2017 13:07:44][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_33', Item Unique Id: 'Item_3'
+[04/18/2017 13:07:44][             SBO_Application_ItemEvent()] 
+[04/18/2017 13:07:44][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_33', Item Unique Id: 'Item_3'
+[04/18/2017 14:38:13][             SBO_Application_ItemEvent()] 
+[04/18/2017 14:38:13][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_3', Item Unique Id: 'Item_3'
+[04/18/2017 14:39:13][             SBO_Application_ItemEvent()] 
+[04/18/2017 14:39:13][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_3', Item Unique Id: 'Item_3'
+[04/18/2017 14:39:13][             SBO_Application_ItemEvent()] 
+[04/18/2017 14:39:13][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_3', Item Unique Id: 'Item_3'

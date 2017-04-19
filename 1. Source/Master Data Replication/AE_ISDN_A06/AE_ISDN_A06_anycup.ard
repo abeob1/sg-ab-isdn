@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="Abeo" SchemaVersion="" Type="" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="AE_ISDN_IN04" ExtVersion="0.5" Contdata="Abeo" Partner="Abeo" DBType="HANA" ClientType="A">
+  <Validity>
+    <SBOCompatibility>
+      <Version From="910.210.11" To="910.210.11" />
+    </SBOCompatibility>
+  </Validity>
+  <Configuration>
+    <Repository />
+    <Deployment>
+      <Properties />
+    </Deployment>
+    <Assignment>
+      <Properties />
+    </Assignment>
+  </Configuration>
+  <Addons>
+    <Addon Name="" Group="" ForceFlag="" Visible="" AutoAssign="" SelfUpgrd="">
+      <x86 AddonExe="C:\Solutions_SVN\ISDN\5. Backup\Master Data Replication\AE_ISDN_A06 - Copy\bin\Debug\AE_ISDN_A06.exe" AddonSig="">
+        <Installation>
+          <Files>
+            <File FileName="AE_ISDN_A06.b1s">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.exe">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.exe.config">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.pdb">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.vshost.exe">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.vshost.exe.config">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.vshost.exe.manifest">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.xml">
+              <Actions />
+            </File>
+            <File FileName="Logo.bmp">
+              <Actions />
+            </File>
+          </Files>
+        </Installation>
+        <Uninstallation>
+          <Files>
+            <File FileName="AE_ISDN_A06.b1s">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.exe">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.exe.config">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.pdb">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.vshost.exe">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.vshost.exe.config">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.vshost.exe.manifest">
+              <Actions />
+            </File>
+            <File FileName="AE_ISDN_A06.xml">
+              <Actions />
+            </File>
+            <File FileName="Logo.bmp">
+              <Actions />
+            </File>
+          </Files>
+        </Uninstallation>
+      </x86>
+      <x64 AddonExe="" AddonSig="">
+        <Installation>
+          <Files />
+        </Installation>
+        <Uninstallation>
+          <Files />
+        </Uninstallation>
+      </x64>
+    </Addon>
+  </Addons>
+  <XApps>
+    <XApp Name="" Path="" FileName="" />
+  </XApps>
+  <UDQs>
+    <UDQ udqname="">
+      <Hana FileName="" />
+    </UDQ>
+  </UDQs>
+</AddOnRegData>
