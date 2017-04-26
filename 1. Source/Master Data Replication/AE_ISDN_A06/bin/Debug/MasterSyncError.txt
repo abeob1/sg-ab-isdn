@@ -4,7 +4,4 @@
 Entity Code        Entity                                            Item Code           Error Msg
 ======================================================================================================================================================
       
-ISDN                ISDN HOLDING                                      AAA                 Internal error (-5002) occurred
-ISDN                ISDN HOLDING                                      A000001             Internal error (-5002) occurred
-ISDN                ISDN HOLDING                                      A01                 Internal error (-5002) occurred
-ISDN                ISDN HOLDING                                      A02                 Internal error (-5002) occurred
+SBODEMOSG           Golden Restaurant                                 A000002             Internal error (-5002) occurred

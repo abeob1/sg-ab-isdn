@@ -456,3 +456,189 @@
 [04/18/2017 14:39:13][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_3', Item Unique Id: 'Item_3'
 [04/18/2017 14:39:13][             SBO_Application_ItemEvent()] 
 [04/18/2017 14:39:13][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_3', Item Unique Id: 'Item_3'
+[04/24/2017 12:03:30][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:03:30][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_14', Item Unique Id: 'Item_3'
+[04/24/2017 12:03:50][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:03:50][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:04:10][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:04:10][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:04:11][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:04:11][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:04:45][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:05:33][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:05:33][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:05:34][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:05:34][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:05:47][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:05:51][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:23:50][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:23:50][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_14', Item Unique Id: 'Item_3'
+[04/24/2017 12:24:37][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:25:10][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:25:25][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:25:25][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_14', Item Unique Id: 'Item_3'
+[04/24/2017 12:25:25][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:25:25][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_14', Item Unique Id: 'Item_3'
+[04/24/2017 12:25:29][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 12:25:29][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 12:25:29][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 12:25:41][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:25:43][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:25:45][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:25:47][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:31:31][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:31:34][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:31:37][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:31:39][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:31:53][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:31:56][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:31:58][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:32:00][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:33:58][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:34:00][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:42:31][               AddUDO() - clsTable class] The logged-on user does not have permission to use this object
+[04/24/2017 12:43:33][               AddUDO() - clsTable class] The logged-on user does not have permission to use this object
+[04/24/2017 12:45:23][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:45:23][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_14', Item Unique Id: 'Item_3'
+[04/24/2017 12:45:31][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:45:31][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:46:11][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:46:15][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 12:46:44][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:46:44][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:46:46][                       BusinessPartner()] Object reference not set to an instance of an object.
+[04/24/2017 12:46:48][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:47:26][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 12:47:28][                       BusinessPartner()] Object reference not set to an instance of an object.
+[04/24/2017 12:47:28][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 12:59:59][             SBO_Application_ItemEvent()] 
+[04/24/2017 12:59:59][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:02:36][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:02:37][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:02:37][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:02:37][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:02:41][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:02:41][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:02:41][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:03:49][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 13:05:41][                        MasterDataSync()] System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED))
+[04/24/2017 13:05:41][             SBO_Application_ItemEvent()] Unable to cast COM object of type 'System.__ComObject' to interface type 'System.Runtime.InteropServices.ComTypes.IConnectionPoint'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{B196B286-BAB4-101A-B69C-00AA00341D07}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:05:41][                             EndStatus()] Unable to cast COM object of type 'SAPbouiCOM.ApplicationClass' to interface type 'SAPbouiCOM.IApplication'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{D1F75D47-137C-4335-AC2A-3FE209831B6A}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:05:41][             SBO_Application_ItemEvent()] Unable to cast COM object of type 'SAPbouiCOM.ApplicationClass' to interface type 'SAPbouiCOM.IApplication'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{D1F75D47-137C-4335-AC2A-3FE209831B6A}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:05:41][                             EndStatus()] Unable to cast COM object of type 'SAPbouiCOM.ApplicationClass' to interface type 'SAPbouiCOM.IApplication'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{D1F75D47-137C-4335-AC2A-3FE209831B6A}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:12:07][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:12:07][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:12:30][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 13:12:34][                       BusinessPartner()] Object reference not set to an instance of an object.
+[04/24/2017 13:12:34][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 13:19:00][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:19:00][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 13:19:15][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 13:19:17][                       BusinessPartner()] Object reference not set to an instance of an object.
+[04/24/2017 13:19:17][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 13:19:35][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 13:19:38][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 13:22:50][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 13:22:51][                       BusinessPartner()] Completed with ERROR --- [OCRD.ListNum] , 'Linked value 10 does not exist'
+[04/24/2017 13:22:51][             SBO_Application_ItemEvent()]  [OCRD.ListNum] , 'Linked value 10 does not exist'
+[04/24/2017 13:38:18][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:38:18][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:38:41][                       BusinessPartner()] Object reference not set to an instance of an object.
+[04/24/2017 13:38:41][             SBO_Application_ItemEvent()] Object reference not set to an instance of an object.
+[04/24/2017 13:39:12][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:12][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:12][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:15][                   CFL_DataBindingUser()] Invalid Choose From List  [66000-104]
+[04/24/2017 13:39:15][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[04/24/2017 13:39:15][             SBO_Application_ItemEvent()] Invalid Choose From List  [66000-104]
+[04/24/2017 13:39:17][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:17][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:17][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:23][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:39:23][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:39:23][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:39:23][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:39:28][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:28][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:39:28][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:33][                       BusinessPartner()] Object reference not set to an instance of an object.
+[04/24/2017 13:42:33][                        MasterDataSync()] System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED))
+[04/24/2017 13:42:33][             SBO_Application_ItemEvent()] Unable to cast COM object of type 'System.__ComObject' to interface type 'System.Runtime.InteropServices.ComTypes.IConnectionPoint'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{B196B286-BAB4-101A-B69C-00AA00341D07}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:42:33][                             EndStatus()] Unable to cast COM object of type 'SAPbouiCOM.ApplicationClass' to interface type 'SAPbouiCOM.IApplication'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{D1F75D47-137C-4335-AC2A-3FE209831B6A}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:42:33][             SBO_Application_ItemEvent()] Unable to cast COM object of type 'SAPbouiCOM.ApplicationClass' to interface type 'SAPbouiCOM.IApplication'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{D1F75D47-137C-4335-AC2A-3FE209831B6A}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:42:33][             SBO_Application_ItemEvent()] Unable to cast COM object of type 'System.__ComObject' to interface type 'System.Runtime.InteropServices.ComTypes.IConnectionPoint'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{B196B286-BAB4-101A-B69C-00AA00341D07}' failed due to the following error: System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED)).
+[04/24/2017 13:42:33][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:42:33][             SBO_Application_ItemEvent()] System call failed. (Exception from HRESULT: 0x80010100 (RPC_E_SYS_CALL_FAILED))
+[04/24/2017 13:42:47][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:42:47][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:42:47][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:42:47][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:42:47][             SBO_Application_ItemEvent()] 
+[04/24/2017 13:42:47][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_12', Item Unique Id: 'Item_3'
+[04/24/2017 13:42:52][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 13:42:52][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:19:04][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:19:04][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_4', Item Unique Id: 'Item_3'
+[04/24/2017 14:19:56][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 14:25:46][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:25:46][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_53', Item Unique Id: 'Item_3'
+[04/24/2017 14:26:49][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:28:03][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:28:03][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:28:03][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:33:46][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:33:46][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_76', Item Unique Id: 'Item_3'
+[04/24/2017 14:35:42][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 14:36:09][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 14:36:38][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:36:38][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_76', Item Unique Id: 'Item_3'
+[04/24/2017 14:36:38][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:36:38][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_76', Item Unique Id: 'Item_3'
+[04/24/2017 14:36:44][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:36:44][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:36:44][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:37:46][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 14:38:05][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 14:38:22][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:38:22][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_76', Item Unique Id: 'Item_3'
+[04/24/2017 14:38:22][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:38:22][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_76', Item Unique Id: 'Item_3'
+[04/24/2017 14:38:22][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:38:22][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_76', Item Unique Id: 'Item_3'
+[04/24/2017 14:38:29][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:38:29][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:38:29][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:38:29][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:38:29][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:38:29][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:42:39][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 14:42:50][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 14:47:50][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:47:50][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_105', Item Unique Id: 'Item_3'
+[04/24/2017 14:50:06][                       BusinessPartner()] Completed with ERROR ---Internal error (-5002) occurred
+[04/24/2017 14:50:17][             SBO_Application_ItemEvent()] Internal error (-5002) occurred
+[04/24/2017 14:53:42][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:53:42][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_105', Item Unique Id: 'Item_3'
+[04/24/2017 14:53:42][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:53:42][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_105', Item Unique Id: 'Item_3'
+[04/24/2017 14:53:46][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:53:46][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:53:46][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:57:29][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:57:29][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_105', Item Unique Id: 'Item_3'
+[04/24/2017 14:58:56][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:59:11][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:59:11][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_105', Item Unique Id: 'Item_3'
+[04/24/2017 14:59:11][             SBO_Application_ItemEvent()] 
+[04/24/2017 14:59:11][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_105', Item Unique Id: 'Item_3'
+[04/24/2017 14:59:14][                  AddChooseFromList_BP()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:59:14][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 14:59:14][             SBO_Application_ItemEvent()] The Choose From List unique ID already exists  [66000-106]
+[04/24/2017 15:01:18][             SBO_Application_ItemEvent()] 

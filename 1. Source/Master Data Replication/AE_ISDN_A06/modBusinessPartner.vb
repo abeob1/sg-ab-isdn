@@ -8,7 +8,7 @@ Namespace AE_ISDN_A06
 
         Dim sPath As String = String.Empty
         Dim sFuncName As String = String.Empty
-        Dim ival As Integer
+        Dim ival As Integer = 0
         Dim IsError As Boolean
         Dim iErr As Integer = 0
         Dim sErr As String = String.Empty
@@ -45,6 +45,7 @@ Namespace AE_ISDN_A06
             Dim GroupName As String = ""
 
             Dim sSQL As String = String.Empty
+            Dim sSQLBP As String = String.Empty
             Dim oDVContact As DataView = Nothing
             Dim sSrcShipTypeName As String = String.Empty
             Dim sSrcPymntTrmsCod As String = String.Empty
@@ -62,6 +63,13 @@ Namespace AE_ISDN_A06
                         ' ''Update BP MAster
                         flg1 = True
                         orsTarget = oTragetCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+
+                        sSQLBP = "select ROW_NUMBER() OVER(ORDER BY T1.""CntctCode"" ) -1 ""No"", T1.""CntctCode"" , T1.""Name"" , T1.""Position""  from" & _
+                        """OCPR"" T1  where T1.""CardCode"" ='" & sMasterdatacode & "' order by T1.""CntctCode"" "
+                        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Getting Contact Info " & sSQLBP, sFuncName)
+                        orsTarget.DoQuery(sSQLBP)
+                        oDVContact = New DataView(ConvertRecordset(orsTarget))
+
                         If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Attempting to Update BP " & sMasterdatacode, sFuncName)
 
                         oTargetBP.CardName = oBP.CardName

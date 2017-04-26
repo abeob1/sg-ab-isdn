@@ -2191,9 +2191,28 @@ Namespace AE_ISDN_A06
 
         End Function
 
+        Public Function GetExchangeRate(oholdingCompany As SAPbobsCOM.Company, sCurrency As String, dCurDate As Date) As Double
+            Dim ovObj As SAPbobsCOM.SBObob = Nothing
+            Dim ors As SAPbobsCOM.Recordset = Nothing
+            Try
+                Dim Result As Double = 1
+                ovObj = oholdingCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoBridge)
+                ors = oholdingCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
 
+                ors = ovObj.GetCurrencyRate(sCurrency, dCurDate)
+                Result = ors.Fields.Item(0).Value
+                Return Result
+            Catch ex As Exception
+                Throw New Exception(ex.Message & " Curr : " & sCurrency)
+            Finally
+                ovObj = Nothing
+                ors = Nothing
+            End Try
+        End Function
 
-
+        Public Function DateRange(Start As DateTime, Thru As DateTime) As IEnumerable(Of Date)
+            Return Enumerable.Range(0, (Thru.Date - Start.Date).Days + 1).Select(Function(i) Start.AddDays(i))
+        End Function
 
     End Module
 End Namespace

@@ -22,6 +22,7 @@ Namespace AE_ISDN_A06
         Public p_iBPCount As Integer = 0
         Public p_iItemCount As Integer = 0
         Public p_iExchangeCount As Integer = 0
+        Public p_iReplication As Integer = 0
         Public p_iAddMode As Integer = 0
         Public p_oApps As SAPbouiCOM.SboGuiApi
         '  Public p_oEventHandler As clsEventHandler
