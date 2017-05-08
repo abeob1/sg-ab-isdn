@@ -39,6 +39,7 @@ Public Class TableCreation
             CreateUserFields("@ZONEDETAILS", "BPCOde", "BP Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
             CreateUserFields("@ZONEDETAILS", "Country", "Country", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
             CreateUserFields("@ZONEDETAILS", "Zone", "Zone", SAPbobsCOM.BoFieldTypes.db_Alpha, 30)
+            CreateUserFields("@ZONEDETAILS", "Volumetric", "Volumetric", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Rate)
 
         Catch ex As Exception
             oApplication.StatusBar.SetText("Zone Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
@@ -51,10 +52,14 @@ Public Class TableCreation
 
             CreateUserFields("@COURIER", "ForwarderCode", "Forwarder Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
             CreateUserFields("@COURIER", "Weight", "Weight", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
-            CreateUserFields("@COURIER", "Zone1", "Zone1", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
-            CreateUserFields("@COURIER", "Zone2", "Zone2", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
-            CreateUserFields("@COURIER", "Zone3", "Zone3", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
-            CreateUserFields("@COURIER", "Zone7", "Zone7", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
+            CreateUserFields("@COURIER", "ApplyFlat", "ApplyFlat", SAPbobsCOM.BoFieldTypes.db_Alpha, 10)
+            CreateUserFields("@COURIER", "Zone1", "Zone1", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@COURIER", "Zone2", "Zone2", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@COURIER", "Zone3", "Zone3", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@COURIER", "Zone4", "Zone4", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@COURIER", "Zone7", "Zone7", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@COURIER", "FDate", "From Date", SAPbobsCOM.BoFieldTypes.db_Date, 0, SAPbobsCOM.BoFldSubTypes.st_None)
+            CreateUserFields("@COURIER", "TDate", "To Date", SAPbobsCOM.BoFieldTypes.db_Date, 0, SAPbobsCOM.BoFldSubTypes.st_None)
 
         Catch ex As Exception
             oApplication.StatusBar.SetText("Courier Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
@@ -66,6 +71,7 @@ Public Class TableCreation
             CreateTable("DIMENSIONSURG", "Dimension Sur Charge", SAPbobsCOM.BoUTBTableType.bott_NoObject)
 
             CreateUserFields("@DIMENSIONSURG", "ForwarderOrCourier", "Forwarder Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("@DIMENSIONSURG", "Currency", "Currency", SAPbobsCOM.BoFieldTypes.db_Alpha, 10)
             CreateUserFieldsComboBox("@DIMENSIONSURG", "ExtraCharge", "Extra Charges", SAPbobsCOM.BoFieldTypes.db_Alpha, 3, , , DocType, "")
             CreateUserFields("@DIMENSIONSURG", "Weight", "Weight", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
             CreateUserFields("@DIMENSIONSURG", "WeightSurcharge", "Weight Surcharge", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
@@ -83,12 +89,15 @@ Public Class TableCreation
 
             CreateUserFields("@FORWARDER", "Forwarder", "Forwarder Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
             CreateUserFields("@FORWARDER", "Country", "Country", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
-            CreateUserFields("@FORWARDER", "SupplierBPCode", "Supplier BP Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
+            CreateUserFields("@FORWARDER", "Port", "Port", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
+            CreateUserFields("@FORWARDER", "Incoterms", "Inco Terms", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
             CreateUserFields("@FORWARDER", "Cur", "Currency", SAPbobsCOM.BoFieldTypes.db_Alpha, 30)
             CreateUserFields("@FORWARDER", "Component", "Component", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
             CreateUserFieldsComboBox("@FORWARDER", "ByAmtOrPrcnt", "By Amount/Percent", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType, "")
             CreateUserFieldsComboBox("@FORWARDER", "ByKgOrNet", "By KG/Net", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType1, "")
+            CreateUserFields("@FORWARDER", "Weight", "Weight", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
             CreateUserFields("@FORWARDER", "Min", "Minimum", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
+            CreateUserFields("@FORWARDER", "Max", "Minimum", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
             CreateUserFields("@FORWARDER", "Flat", "Flat", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
             CreateUserFields("@FORWARDER", "Basic", "Basic", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Measurement)
             CreateUserFields("@FORWARDER", "FromDate", "FromDate", SAPbobsCOM.BoFieldTypes.db_Date)
@@ -103,11 +112,12 @@ Public Class TableCreation
             CreateTable("FUELSURCHARGE", "Fuel SurCharge", SAPbobsCOM.BoUTBTableType.bott_NoObject)
 
             CreateUserFields("@FUELSURCHARGE", "Courier", "Courier Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 100)
-            CreateUserFields("@FUELSURCHARGE", "Country", "Country", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
             CreateUserFieldsComboBox("@FUELSURCHARGE", "ByAmtOrPrcnt", "By Amount/Percent", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType, "")
             CreateUserFieldsComboBox("@FUELSURCHARGE", "ByKgOrNet", "By KG/Net", SAPbobsCOM.BoFieldTypes.db_Alpha, 8, , , DType1, "")
             CreateUserFields("@FUELSURCHARGE", "Rate", "Rate", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Rate)
-            CreateUserFields("@FUELSURCHARGE", "Month", "Month", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
+            CreateUserFields("@FUELSURCHARGE", "FromDate", "FromDate", SAPbobsCOM.BoFieldTypes.db_Date)
+            CreateUserFields("@FUELSURCHARGE", "ToDate", "ToDate", SAPbobsCOM.BoFieldTypes.db_Date)
+
         Catch ex As Exception
             oApplication.StatusBar.SetText("Fuel SurCharge Table Creation Failed: " & ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
         End Try
@@ -118,7 +128,7 @@ Public Class TableCreation
             CreateTable("INCOTERM", "Inco Terms", SAPbobsCOM.BoUTBTableType.bott_NoObject)
 
             CreateUserFields("@INCOTERM", "IncoTermCode", "Inco Term Code", SAPbobsCOM.BoFieldTypes.db_Alpha, 50)
-            CreateUserFields("@INCOTERM", "POPrintOutDscrip", "Weight", SAPbobsCOM.BoFieldTypes.db_Alpha, 30)
+            CreateUserFields("@INCOTERM", "POPrintOutDscrip", "Document Print Out Description", SAPbobsCOM.BoFieldTypes.db_Alpha, 249)
             CreateUserFields("@INCOTERM", "CFRvalue", "CFR Value", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Price)
             CreateUserFields("@INCOTERM", "InsuranceRate", "Insurance Rate", SAPbobsCOM.BoFieldTypes.db_Float, 0, SAPbobsCOM.BoFldSubTypes.st_Rate)
 
@@ -216,6 +226,16 @@ Public Class TableCreation
                     End If
                     If LinkedTable <> "" Then v_UserField.LinkedTable = LinkedTable
                     If DefaultValue <> "" Then v_UserField.DefaultValue = DefaultValue
+                    If FieldName = "ApplyFlat" Then
+                        v_UserField.ValidValues.SetCurrentLine(0)
+                        v_UserField.ValidValues.Value = "Y"
+                        v_UserField.ValidValues.Description = "Y"
+                        v_UserField.ValidValues.Add()
+                        v_UserField.ValidValues.SetCurrentLine(1)
+                        v_UserField.ValidValues.Value = "N"
+                        v_UserField.ValidValues.Description = "N"
+                        v_UserField.ValidValues.Add()
+                    End If
 
                     v_RetVal = v_UserField.Add()
                     If v_RetVal <> 0 Then

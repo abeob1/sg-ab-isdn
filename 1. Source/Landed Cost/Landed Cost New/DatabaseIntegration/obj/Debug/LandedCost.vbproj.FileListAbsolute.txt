@@ -32,8 +32,6 @@ C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\
 C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\bin\Debug\LandedCost.exe
 C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\bin\Debug\LandedCost.pdb
 C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\bin\Debug\LandedCost.xml
-C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\bin\Debug\Interop.SAPbobsCOM.dll
-C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\bin\Debug\Interop.SAPbouiCOM.dll
 C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\obj\Debug\Interop.SAPbobsCOM.dll
 C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\obj\Debug\Interop.SAPbouiCOM.dll
 C:\Solutions_SVN\ISDN\1. Source\Landed Cost\Landed Cost New\DatabaseIntegration\obj\Debug\LandedCost.vbproj.ResolveComReference.cache

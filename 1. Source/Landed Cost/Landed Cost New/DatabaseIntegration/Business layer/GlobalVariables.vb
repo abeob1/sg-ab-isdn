@@ -20,7 +20,7 @@ Module GolabalVariables
     Public Const RTN_SUCCESS As Int16 = 1
     Public Const RTN_ERROR As Int16 = 0
 
-    Public p_iDebugMode As Int16
+    Public p_iDebugMode As Int16 = 1
     Public p_iErrDispMethod As Int16
     Public p_iDeleteDebugLog As Int16
 
@@ -30,6 +30,18 @@ Module GolabalVariables
     Public ShowFolderBrowserThread As Threading.Thread
     Public BankFileName As String
     Public sQuery As String
+
+    Public p_dFrieghtAmount As Double = 0
+    Public p_dInsuranceAmount As Double = 0
+
+
+    Public p_odtCourier As DataTable
+    Public p_odtForwarded As DataTable
+    Public p_odtDimensionSurcharge As DataTable
+    Public p_odtFuelSurcharge As DataTable
+    Public p_odtIncoTable As DataTable
+    Public p_odtZoneDetails As DataTable
+
 
 
 End Module

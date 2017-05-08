@@ -1,0 +1,2 @@
+DB : SBODEMOSG_ISDN
+manager2 / 1234
