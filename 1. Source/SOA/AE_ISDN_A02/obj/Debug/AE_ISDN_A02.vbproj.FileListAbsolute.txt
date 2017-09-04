@@ -13,3 +13,14 @@ E:\Abeo Projects\ISDN\1. Source\Statement of Account\AE_ISDN_A02\bin\Debug\AE_IS
 E:\Abeo Projects\ISDN\1. Source\Statement of Account\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.exe
 E:\Abeo Projects\ISDN\1. Source\Statement of Account\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.xml
 E:\Abeo Projects\ISDN\1. Source\Statement of Account\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.pdb
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\bin\Debug\AE_ISDN_A02.exe.config
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.exe
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.xml
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.pdb
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\bin\Debug\AE_ISDN_A02.exe
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\bin\Debug\AE_ISDN_A02.pdb
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\bin\Debug\AE_ISDN_A02.xml
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.vbprojResolveAssemblyReference.cache
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.Browse.resources
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.Resources.resources
+E:\SVN\ISDN\1. Source\SOA\AE_ISDN_A02\obj\Debug\AE_ISDN_A02.vbproj.GenerateResource.Cache
