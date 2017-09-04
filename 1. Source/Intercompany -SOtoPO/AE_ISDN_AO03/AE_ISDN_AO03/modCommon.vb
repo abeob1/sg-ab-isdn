@@ -79,7 +79,7 @@ Module modCommon
                 Throw New ArgumentException("SetSboLoginContext of Single SignOn Failed.")
             End If
             p_oSBOApplication.StatusBar.SetText("Please Wait While Company Connecting... ", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
-            objCompany.LicenseServer = ConfigurationManager.AppSettings("LicenseServer")
+            '' objCompany.LicenseServer = ConfigurationManager.AppSettings("LicenseServer")
             lRetval = objCompany.Connect
             If lRetval <> 0 Then
                 objCompany.GetLastError(iErrCode, sErrDesc)
