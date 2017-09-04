@@ -1,0 +1,7 @@
+
+      
+      
+Entity Code        Entity                                            Item Code           Error Msg
+======================================================================================================================================================
+      
+SBODEMOSG           Golden Restaurant                                 A000002             Internal error (-5002) occurred
