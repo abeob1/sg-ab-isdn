@@ -16,14 +16,14 @@ Namespace AE_PICKPACK_A01
                 End If
                 Application.SBO_Application.StatusBar.SetText("Please Wait While Company Connecting... ", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
                 p_oDICompany = New SAPbobsCOM.Company
-                ''p_oDICompany = Application.SBO_Application.Company.GetDICompany()
-                ''If p_oDICompany.Connected Then
-                ''    Application.SBO_Application.StatusBar.SetText("Company Connection Has Established with the " & p_oDICompany.CompanyName, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
-                ''    '' Application.SBO_Application.MessageBox("Connected Successfully ... !" & "   " & p_oDICompany.CompanyName)
-                ''Else
-                ''    Application.SBO_Application.StatusBar.SetText("Connect of Single SignOn failed : ... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                'p_oDICompany = Application.SBO_Application.Company.GetDICompany()
+                'If p_oDICompany.Connected Then
+                '    Application.SBO_Application.StatusBar.SetText("Company Connection Has Established with the " & p_oDICompany.CompanyName, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success)
+                '    '' Application.SBO_Application.MessageBox("Connected Successfully ... !" & "   " & p_oDICompany.CompanyName)
+                'Else
+                '    Application.SBO_Application.StatusBar.SetText("Connect of Single SignOn failed : ... !", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
 
-                ''End If
+                'End If
 
                 Dim MyMenu As Menu
                 MyMenu = New Menu()
