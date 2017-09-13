@@ -6,7 +6,13 @@ LandedCost
 </name>
 </assembly>
 <members>
-<member name="P:LandedCost.My.Resources.Resources.ResourceManager">
+<member name="T:LandedCost.GolabalVariables">
+	<summary>
+ GGlobally whatever variable do you want declare here 
+ We can use any class and module from here  
+ </summary>
+	<remarks></remarks>
+</member><member name="P:LandedCost.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -22,12 +28,6 @@ LandedCost
 </member><member name="T:LandedCost.GlobalFunctions">
 	<summary>
  Globally whatever Function and method do you want define here 
- We can use any class and module from here  
- </summary>
-	<remarks></remarks>
-</member><member name="T:LandedCost.GolabalVariables">
-	<summary>
- GGlobally whatever variable do you want declare here 
  We can use any class and module from here  
  </summary>
 	<remarks></remarks>

@@ -168,9 +168,9 @@ Public Class GRPO
                 End If
             End If
 
-            If String.IsNullOrEmpty(sIncoTerms) Then
-                Throw New ArgumentException("Inco Terms Should not be Blank ...!")
-            End If
+            'If String.IsNullOrEmpty(sIncoTerms) Then
+            '    Throw New ArgumentException("Inco Terms Should not be Blank ...!")
+            'End If
 
             Dim dDocDate As Date
 
@@ -338,7 +338,7 @@ Public Class GRPO
 
                     sFilter = "U_Forwarder = '" & sBPCode & "' and U_FromDate <= '" & dDocDate & "' and U_ToDate >= '" & dDocDate & "'"
                     If Not String.IsNullOrEmpty(sCountry) Then
-                        sFilter += " and U_Country= '" & sCountry.ToUpper.Trim() & "'"
+                        sFilter += " and (U_Country= '" & sCountry.ToUpper.Trim() & "' or U_Country= 'ALL') "
                     End If
 
                     If Not String.IsNullOrEmpty(sPort) Then
@@ -353,46 +353,54 @@ Public Class GRPO
                     odttmp = oDvForwarded.ToTable
                     odvtmp = New DataView(odttmp)
 
-                    If CDbl(oDvForwarded.Item(0)("U_Weight").ToString) > 0 Then
-                        odvtmp.RowFilter = "U_Weight >= '" & dCWeight & "'"
-                        odvtmp.Sort = "U_Weight ASC"
+                    If oDvForwarded.Count > 0 Then
+                        odvtmp.RowFilter = "U_Weight > 0"
                         If odvtmp.Count > 0 Then
-                            If CDbl(odvtmp.Item(0)("U_Flat").ToString) = 0 Then
-                                dFrieght = CDbl(odvtmp.Item(0)("U_Basic").ToString)
-                                If odvtmp.Item(0)("U_Cur").ToString() <> "SGD" Then
-                                    Dim dexchangerate As Double = 0
-                                    dexchangerate = GlobalClass.GetExchangeRate(oCompany, odvtmp.Item(0)("U_Cur").ToString().ToUpper.Trim, dDocDate)
-                                    dFrieght = dFrieght * dexchangerate
+                            odvtmp.RowFilter = "U_Weight >= '" & dCWeight & "'"
+                            odvtmp.Sort = "U_Weight ASC"
+                            If odvtmp.Count > 0 Then
+                                If CDbl(odvtmp.Item(0)("U_Flat").ToString) = 0 Then
+                                    dFrieght = CDbl(odvtmp.Item(0)("U_Basic").ToString)
+                                    If odvtmp.Item(0)("U_Cur").ToString() <> "SGD" Then
+                                        Dim dexchangerate As Double = 0
+                                        dexchangerate = GlobalClass.GetExchangeRate(oCompany, odvtmp.Item(0)("U_Cur").ToString().ToUpper.Trim, dDocDate)
+                                        dFrieght = dFrieght * dexchangerate
+                                    End If
+                                Else
+                                    dFrieght = CDbl(odvtmp.Item(0)("U_Flat").ToString) * Math.Ceiling(dCWeight)
+                                    If odvtmp.Item(0)("U_Cur").ToString() <> "SGD" Then
+                                        Dim dexchangerate As Double = 0
+                                        dexchangerate = GlobalClass.GetExchangeRate(oCompany, odvtmp.Item(0)("U_Cur").ToString().ToUpper.Trim, dDocDate)
+                                        dFrieght = dFrieght * dexchangerate
+                                    End If
                                 End If
                             Else
-                                dFrieght = CDbl(odvtmp.Item(0)("U_Flat").ToString) * dCWeight
-                                If odvtmp.Item(0)("U_Cur").ToString() <> "SGD" Then
-                                    Dim dexchangerate As Double = 0
-                                    dexchangerate = GlobalClass.GetExchangeRate(oCompany, odvtmp.Item(0)("U_Cur").ToString().ToUpper.Trim, dDocDate)
-                                    dFrieght = dFrieght * dexchangerate
-                                End If
+                                dFrieght = 0
                             End If
+                        End If
 
-                        Else
-                            dFrieght = 0
+                        odvtmp.RowFilter = "U_Weight = 0"
+                        If odvtmp.Count > 0 Then
+                            For Each odr As DataRowView In oDvForwarded
+
+                                iMin = odr("U_Min")
+                                iFlat = (CDbl(odr("U_Flat").ToString) * Math.Ceiling(dCWeight)) '' + CDbl(odr("U_Basic").ToString)
+                                If iMin > iFlat Then
+                                    iFlat = iMin + CDbl(odr("U_Basic").ToString)
+                                Else
+                                    iFlat = iFlat + CDbl(odr("U_Basic").ToString)
+                                End If
+                                If odr("U_Cur").ToString() <> "SGD" Then
+                                    Dim dexchangerate As Double = 0
+                                    dexchangerate = GlobalClass.GetExchangeRate(oCompany, odr("U_Cur").ToString().ToUpper.Trim, dDocDate)
+                                    iFlat = iFlat * dexchangerate
+                                End If
+                                dFrieght += iFlat
+                            Next
                         End If
                     Else
-                        For Each odr As DataRowView In oDvForwarded
-
-                            iMin = odr("U_Min")
-                            iFlat = (CDbl(odr("U_Flat").ToString) * Math.Ceiling(dCWeight)) + CDbl(odr("U_Basic").ToString)
-                            If iMin > iFlat Then
-                                iFlat = iMin
-                            End If
-                            If odr("U_Cur").ToString() <> "SGD" Then
-                                Dim dexchangerate As Double = 0
-                                dexchangerate = GlobalClass.GetExchangeRate(oCompany, odr("U_Cur").ToString().ToUpper.Trim, dDocDate)
-                                iFlat = iFlat * dexchangerate
-                            End If
-                            dFrieght += iFlat
-                        Next
+                        dFrieght = 0
                     End If
-
 
                     ''-------------------- Dimension SurCharge
 
