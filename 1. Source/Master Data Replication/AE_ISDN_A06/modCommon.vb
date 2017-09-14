@@ -1046,16 +1046,30 @@ Namespace AE_ISDN_A06
                 oTargetCmp = Nothing
                 oTargetCmp = New SAPbobsCOM.Company
 
+                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Connection " & p_oDICompany.Server _
+                    & " - " & p_oDICompany.DbServerType & " - " & sTargetDB & " - " & sSAPUser & " - " & sSAPPwd, sFuncName)
+
                 With oTargetCmp
-                    .Server = p_oDICompany.Server                           'Name of the DB Server 
-                    .DbServerType = p_oDICompany.DbServerType 'Database Type
+                    .Server = p_oDICompany.Server
+                    .DbServerType = p_oDICompany.DbServerType
+
+                    'Name of the DB Server 
+                    'Select Case p_oDICompany.DbServerType
+                    '    Case "2012"
+                    '        .DbServerType = SAPbobsCOM.BoDataServerTypes.dst_MSSQL2012  'Database Type
+                    '    Case "2014"
+                    '        .DbServerType = SAPbobsCOM.BoDataServerTypes.dst_MSSQL2014  'Database Type
+                    '    Case "2016"
+                    '        .DbServerType = SAPbobsCOM.BoDataServerTypes.dst_MSSQL2016  'Database Type
+                    'End Select
+
                     .CompanyDB = sTargetDB                        'Enter the name of Target company
                     .UserName = sSAPUser                           'Enter the B1 user name
                     .Password = sSAPPwd                           'Enter the B1 password
                     .language = SAPbobsCOM.BoSuppLangs.ln_English          'Enter the logon language
                     .UseTrusted = False
                 End With
-
+                If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Attempting to connect Company", sFuncName)
                 lRetval = oTargetCmp.Connect()
                 If lRetval <> 0 Then
                     oTargetCmp.GetLastError(iErrCode, sErrDesc)

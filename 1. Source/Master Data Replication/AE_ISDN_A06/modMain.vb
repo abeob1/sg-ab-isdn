@@ -16,6 +16,7 @@ Namespace AE_ISDN_A06
         End Structure
 
         Public p_iDRP As Integer = 0
+        Public p_iUDO As Integer = 0
         Public p_iEXR As Integer = 0
         Public p_iSearch As Integer = 0
         Public p_iCOACount As Integer = 0

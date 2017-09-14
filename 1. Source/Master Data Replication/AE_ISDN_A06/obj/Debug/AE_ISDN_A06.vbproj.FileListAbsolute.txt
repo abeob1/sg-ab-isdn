@@ -25,7 +25,13 @@ C:\Solutions_SVN\ISDN\5. Backup\Master Data Replication\AE_ISDN_A06 - Copy\bin\D
 C:\Solutions_SVN\ISDN\5. Backup\Master Data Replication\AE_ISDN_A06 - Copy\bin\Debug\AE_ISDN_A06.xml
 C:\Solutions_SVN\ISDN\5. Backup\Master Data Replication\AE_ISDN_A06 - Copy\obj\Debug\AE_ISDN_A06.Resources.resources
 C:\Solutions_SVN\ISDN\5. Backup\Master Data Replication\AE_ISDN_A06 - Copy\obj\Debug\AE_ISDN_A06.vbproj.GenerateResource.Cache
+E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.pdb
+E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.exe
 E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.exe.config
+E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.Resources.resources
+E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.vbproj.GenerateResource.Cache
 E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.exe
 E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.xml
-E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.pdb
+E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\obj\Debug\AE_ISDN_A06.vbprojResolveAssemblyReference.cache
+E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.pdb
+E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\bin\Debug\AE_ISDN_A06.xml

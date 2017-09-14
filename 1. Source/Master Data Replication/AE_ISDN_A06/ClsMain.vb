@@ -65,15 +65,16 @@ Namespace AE_ISDN_A06
 
             Try
                 If (pVal.BeforeAction And pVal.MenuUID = "MSD") Then
-
-
+                    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Calling MenuEvent()", sFuncName)
+                    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("p_iDRP " & p_iDRP, sFuncName)
                     If p_iDRP = 0 Then
-
+                        p_iDRP = 1
                         Dim activeForm As Master_Data_Replication_b1f
                         activeForm = New Master_Data_Replication_b1f(ClsFunction.Company, SBO_Application, sErrDesc)
                         If String.IsNullOrEmpty(sErrDesc) Then
                             activeForm.Show()
                         Else
+                            If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Error  " & sErrDesc, sFuncName)
                             'Dim oForm As SAPbouiCOM.Form = SBO_Application.Forms.Item("MSD")
 
                         End If
@@ -96,17 +97,21 @@ Namespace AE_ISDN_A06
                     'Dim activeForm1 As SysRate
                     'activeForm1 = New SysRate(ClsFunction.Company, SBO_Application)
                     'activeForm1.Show()
-
-                    Dim activeForm1 As UDOSYS_b1f
-                    activeForm1 = New UDOSYS_b1f(ClsFunction.Company, SBO_Application, sErrDesc)
-                    If String.IsNullOrEmpty(sErrDesc) Then
-
-                        activeForm1.Show()
-
+                    If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Calling MenuEvent()", "UDO MenuEvent")
+                    If p_iUDO = 0 Then
+                        p_iUDO = 1
+                        Dim activeForm1 As UDOSYS_b1f
+                        If p_iDebugMode = DEBUG_ON Then Call WriteToLogFile_Debug("Calling UDOSYS_b1f()", "UDO MenuEvent")
+                        activeForm1 = New UDOSYS_b1f(ClsFunction.Company, SBO_Application, sErrDesc)
+                        If String.IsNullOrEmpty(sErrDesc) Then
+                            activeForm1.Show()
+                        End If
                     End If
+                  
                 
                 End If
             Catch ex As System.Exception
+                WriteToLogFile(ex.ToString(), sFuncName)
                 SBO_Application.MessageBox(ex.ToString(), 1, "Ok", "", "")
             End Try
 

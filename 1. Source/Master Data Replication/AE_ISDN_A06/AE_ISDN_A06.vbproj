@@ -76,7 +76,7 @@
   <ItemGroup>
     <Reference Include="SAPBusinessOneSDK, Version=1.0.0.1, Culture=neutral, PublicKeyToken=c7c3cb60e45d119f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\sap\SAP Business One SDK\Lib\SAPBusinessOneSDK.dll</HintPath>
+      <HintPath>..\SAPBusinessOneSDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -107,8 +107,8 @@
     <Compile Include="modExchangeRate.vb" />
     <Compile Include="modItemMaster.vb" />
     <Compile Include="modBusinessPartner.vb" />
-    <Compile Include="Master Data Replication.b1f.vb">
-      <DependentUpon>Master Data Replication.b1f</DependentUpon>
+    <Compile Include="MstDataRep.b1f.vb">
+      <DependentUpon>MstDataRep.b1f</DependentUpon>
     </Compile>
     <Compile Include="modChartofAccounts.vb" />
     <Compile Include="modCommon.vb" />
@@ -144,7 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Master Data Replication.b1f">
+    <None Include="MstDataRep.b1f">
       <FormCategory>UserForm</FormCategory>
     </None>
     <None Include="My Project\app.manifest" />

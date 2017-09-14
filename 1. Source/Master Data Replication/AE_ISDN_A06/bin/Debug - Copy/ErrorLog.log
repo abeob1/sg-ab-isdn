@@ -659,26 +659,3 @@
 [09/14/2017 23:08:00][             SBO_Application_ItemEvent()] 
 [09/14/2017 23:08:00][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
 [09/14/2017 23:08:31][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:07:37][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:07:37][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 00:07:41][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:07:41][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 00:07:41][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:07:41][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 00:09:01][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:09:01][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 00:54:06][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:54:06][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 00:54:11][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:54:11][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 00:54:11][             SBO_Application_ItemEvent()] 
-[09/15/2017 00:54:11][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 01:01:49][             SBO_Application_ItemEvent()] 
-[09/15/2017 01:01:49][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 02:42:55][             SBO_Application_ItemEvent()] 
-[09/15/2017 02:42:55][             SBO_Application_ItemEvent()] Item - Invalid item  [66000-3]. Form Unique Id: 'F_59', Item Unique Id: 'Item_3'
-[09/15/2017 05:46:02][                         Single_Signon()] System.InvalidOperationException: b1s file is not found!
-   at SAPbouiCOM.Framework.Application.UserFormLoadBatchAction(String resource, FormBase form)
-   at SAPbouiCOM.Framework.UserFormBase..ctor()
-   at AE_ISDN_A06.AE_ISDN_A06.UDOSYS_b1f..ctor(Company company, Application application, String& sErrDesc) in E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\UDOSYS.b1f.vb:line 16
-   at AE_ISDN_A06.AE_ISDN_A06.ClsMain.SBO_Application_MenuEvent(MenuEvent& pVal, Boolean& BubbleEvent) in E:\SVN\ISDN\1. Source\Master Data Replication\AE_ISDN_A06\ClsMain.vb:line 105
